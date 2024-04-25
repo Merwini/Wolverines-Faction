@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="BaseGun">
-		<defName>AMP_FSMG</defName>
+		<defName>Must_FSMG</defName>
 		<label>mounted SMG</label>
 		<description>A drone-mounted submachine gun chambered for 5.7x28mm pistol cartridges.</description>
 		<graphicData>
@@ -55,7 +55,7 @@
 			</li>
 		</comps>
 		<weaponTags>
-			<li>AMP_FerretSMG</li>
+			<li>Must_FerretSMG</li>
 			<li>CE_AI_Suppressive</li>
 			<li>CE_MachineGun</li>
 			<li>NoSwitch</li>

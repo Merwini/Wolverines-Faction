@@ -4,7 +4,7 @@
 	<!-- ==================== Incendiary grenade ========================== -->
 
 	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>AMP_Proj_GrenadeIncendiary</defName>
+		<defName>Must_Proj_GrenadeIncendiary</defName>
 		<label>incendiary grenade</label>
 		<graphicData>
 			<texPath>Wolverines/Weapons/PROJECTILE/IncendiaryGrenade_projectile</texPath>
@@ -35,7 +35,7 @@
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
-		<defName>AMP_GrenadeIncendiary</defName>
+		<defName>Must_GrenadeIncendiary</defName>
 		<equipmentType>Primary</equipmentType>
 		<label>incendiary grenade</label>
 		<description>A cylindrical incendiary grenade, lighter and more compact than a molotov cocktail but performs slightly better due to improved materials.</description>
@@ -58,8 +58,8 @@
 			<li>CE_AI_Grenade</li>
 			<li>CE_AI_AOE</li>
 			<li>CE_OneHandedWeapon</li>
-			<li>AMP_Grenade</li>
-			<li>AMP_Incendiary</li>
+			<li>Must_Grenade</li>
+			<li>Must_Incendiary</li>
 		</weaponTags>
 		<thingCategories>
 			<li>Grenades</li>
@@ -78,13 +78,13 @@
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<defaultProjectile>AMP_Proj_GrenadeIncendiary</defaultProjectile>
+				<defaultProjectile>Must_Proj_GrenadeIncendiary</defaultProjectile>
 				<onlyManualCast>true</onlyManualCast>
 				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
 				<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
 			</li>
 		</verbs>
-		<detonateProjectile>AMP_Proj_GrenadeIncendiary</detonateProjectile>
+		<detonateProjectile>Must_Proj_GrenadeIncendiary</detonateProjectile>
 	</ThingDef>
 	
 	
@@ -138,7 +138,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<AMP_GrenadeIncendiary>10</AMP_GrenadeIncendiary>
+			<Must_GrenadeIncendiary>10</Must_GrenadeIncendiary>
 		</products>
 	</RecipeDef>
 

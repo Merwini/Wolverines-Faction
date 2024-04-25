@@ -4,7 +4,7 @@
 	<!-- ==================== battle dress ==================== -->
 
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>AMP_BattleDress</defName>
+		<defName>Must_BattleDress</defName>
 		<label>battle dress (digital camo)</label>
 		<description>Standard combat uniform.</description>
 		<graphicData>
@@ -51,7 +51,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>AMP_Uniform</li>
+				<li>Must_Uniform</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

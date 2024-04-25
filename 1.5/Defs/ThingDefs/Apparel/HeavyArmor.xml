@@ -4,7 +4,7 @@
 	<!-- ==================== Composite Armor ==================== -->
 
 	<ThingDef ParentName="ArmorMachineableBase">
-		<defName>AMP_HeavyArmor</defName>
+		<defName>Must_HeavyArmor</defName>
 		<label>heavy armor (digital camo)</label>
 		<description>Ceramic armor vest with all the available coverage extension addon parts, covering the user from neck to toe. It is rather heavy and impractical for prolonged use, intended mainly for turret gunners and entrance teams.</description>
 		<graphicData>
@@ -59,7 +59,7 @@
 				<li>Webbing</li>
 			</layers>
 			<tags>
-				<li>AMP_HeavyArmor</li>
+				<li>Must_HeavyArmor</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

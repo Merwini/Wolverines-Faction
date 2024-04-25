@@ -4,7 +4,7 @@
 	<!-- ==================== M250 ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>AMP_M250lmg</defName>
+		<defName>Must_M250lmg</defName>
 		<label>M250</label>
 		<description>A late-industrial military light machine gun using the high velocity .277 cartridge. Fitted with a holographic sight and high-capacity ammo feed pouch.</description>
 		<graphicData>
@@ -64,7 +64,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>AMP_LMG</li>
+			<li>Must_LMG</li>
 			<li>Bipod_LMG</li>
 		</weaponTags>
 		<recipeMaker>

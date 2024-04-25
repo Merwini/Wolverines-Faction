@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="BaseGun">
-		<defName>AMP_SDMG</defName>
+		<defName>Must_SDMG</defName>
 		<label>.338 SDMG</label>
 		<description>A late-industrial drone-mounted machinegun chambered in .338 Norma Magnum.</description>
 		<graphicData>
@@ -56,7 +56,7 @@
 			</li>
 		</comps>
 		<weaponTags>
-			<li>AMP_SDMG</li>
+			<li>Must_SDMG</li>
 			<li>CE_AI_Suppressive</li>
 			<li>CE_MachineGun</li>
 			<li>NoSwitch</li>

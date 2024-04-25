@@ -4,7 +4,7 @@
 	<!-- ==================== M7 ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>AMP_M7rifle</defName>
+		<defName>Must_M7rifle</defName>
 		<label>M7</label>
 		<description>A late-industrial military battle rifle using the high velocity .277 cartridge. Fitted with a holographic sight for close combat.</description>
 		<soundInteract>Interact_Rifle</soundInteract>
@@ -28,7 +28,7 @@
 		</costList>
 		<weaponTags>
 			<li>CE_AI_AR</li>
-			<li>AMP_BR</li>
+			<li>Must_BR</li>
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">

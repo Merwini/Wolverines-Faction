@@ -4,7 +4,7 @@
 	<!-- ==================== Incendiary grenade ========================== -->
 
 	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>AMP_Proj_SatchelCharge</defName>
+		<defName>Must_Proj_SatchelCharge</defName>
 		<label>satchel charge</label>
 		<graphicData>
 			<texPath>Wolverines/Weapons/PROJECTILE/Satchel_projectile</texPath>
@@ -32,7 +32,7 @@
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
-		<defName>AMP_SatchelCharge</defName>
+		<defName>Must_SatchelCharge</defName>
 		<equipmentType>Primary</equipmentType>
 		<label>satchel charge</label>
 		<description>A demolition charge for breaching and sabotage.</description>
@@ -55,8 +55,8 @@
 			<li>CE_AI_Grenade</li>
 			<li>CE_AI_AOE</li>
 			<li>CE_OneHandedWeapon</li>
-			<li>AMP_Grenade</li>
-			<li>AMP_Demolition</li>
+			<li>Must_Grenade</li>
+			<li>Must_Demolition</li>
 		</weaponTags>
 		<thingCategories>
 			<li>Grenades</li>
@@ -75,13 +75,13 @@
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<defaultProjectile>AMP_Proj_SatchelCharge</defaultProjectile>
+				<defaultProjectile>Must_Proj_SatchelCharge</defaultProjectile>
 				<onlyManualCast>true</onlyManualCast>
 				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
 				<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
 			</li>
 		</verbs>
-		<detonateProjectile>AMP_Proj_SatchelCharge</detonateProjectile>
+		<detonateProjectile>Must_Proj_SatchelCharge</detonateProjectile>
 	</ThingDef>
 	
 	
@@ -127,7 +127,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<AMP_SatchelCharge>5</AMP_SatchelCharge>
+			<Must_SatchelCharge>5</Must_SatchelCharge>
 		</products>
 	</RecipeDef>
 

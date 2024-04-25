@@ -15,9 +15,8 @@
 			<downloadUrl>https://github.com/CombatExtended-Continued/CombatExtended/releases/</downloadUrl>
 		</li>
 		<li>
-			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
-			<displayName>Vanilla Expanded Framework</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
+			<packageId>rep.framework</packageId>
+			<displayName>REP Framework</displayName>
 		</li>
 	</modDependencies>
 </ModMetaData>

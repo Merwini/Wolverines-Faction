@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<DamageDef>
-		<defName>AMP_RC_BombSelfDestruct</defName>
+		<defName>Must_RC_BombSelfDestruct</defName>
 		<label>bomb self-destruct</label>
-		<workerClass>nuff.ArmyModernizationProject.DamageWorker_SelfDestruct</workerClass>
+		<workerClass>rep.factions.wolverines.DamageWorker_SelfDestruct</workerClass>
 		<externalViolence>true</externalViolence>
 		<canInterruptJobs>false</canInterruptJobs>
 		<makesBlood>false</makesBlood>
@@ -14,9 +14,9 @@
 	</DamageDef>
 
 	<DamageDef>
-		<defName>AMP_RC_IncendiarySelfDestruct</defName>
+		<defName>Must_RC_IncendiarySelfDestruct</defName>
 		<label>incendiary self-destruct</label>
-		<workerClass>nuff.ArmyModernizationProject.DamageWorker_SelfDestruct</workerClass>
+		<workerClass>rep.factions.wolverines.DamageWorker_SelfDestruct</workerClass>
 		<externalViolence>true</externalViolence>
 		<canInterruptJobs>false</canInterruptJobs>
 		<makesBlood>false</makesBlood>

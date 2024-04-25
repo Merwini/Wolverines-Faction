@@ -4,7 +4,7 @@
 	<!-- ==================== SIG MCX ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>AMP_MCX300BLcarbine</defName>
+		<defName>Must_MCX300BLcarbine</defName>
 		<label>MCX carbine</label>
 		<description>A late-industrial military carbine chambered for the subsonic .300 Blackout cartridge. The slow, heavy rounds are effective at close ranges, but quickly lose effectiveness at range.</description>
 		<graphicData>
@@ -46,7 +46,7 @@
 		</thingSetMakerTags>
 		<weaponTags>
 			<li>CE_AI_AR</li>
-			<li>AMP_PDW</li>
+			<li>Must_PDW</li>
 		</weaponTags>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">

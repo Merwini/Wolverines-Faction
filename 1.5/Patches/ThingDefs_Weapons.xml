@@ -4,14 +4,14 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_LMG"]/weaponTags</xpath>
 		<value>
-			<li>AMP_LMG</li>
+			<li>Must_LMG</li>
 		</value>
 	</Operation>
 -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="CE_DisposableRocketLauncher"]/weaponTags</xpath>
 		<value>
-			<li>AMP_LAW</li>
+			<li>Must_LAW</li>
 		</value>
 	</Operation>
 </Patch>

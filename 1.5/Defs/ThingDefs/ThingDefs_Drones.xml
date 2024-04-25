@@ -6,7 +6,7 @@
 		<visible>false</visible>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BaseMechanoid" Name="AMP_DroneBase" Abstract="True">
+	<ThingDef ParentName="BaseMechanoid" Name="Must_DroneBase" Abstract="True">
 		<statBases>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
@@ -20,7 +20,7 @@
 	</ThingDef>
 	
 	<!--RC Car Race-->
-	<ThingDef ParentName="AMP_DroneBase" Name="AMP_RC_Base" Abstract="True">
+	<ThingDef ParentName="Must_DroneBase" Name="Must_RC_Base" Abstract="True">
 		<description>Wheeled combat drones, designed to be cheap and disposable. Their light armor gives them a low durability but high speed. It is recommended to try to destroy them at range, as they are still exceedingly deadly up close.</description>
 		<statBases>
 			<MarketValue>300</MarketValue>
@@ -69,7 +69,7 @@
 		</butcherProducts>
 	</ThingDef>
 
-	<PawnKindDef  ParentName="BaseMechanoidKind" Name="AMP_RC_BaseKind" Abstract="True">
+	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_RC_BaseKind" Abstract="True">
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -81,17 +81,17 @@
 		<combatPower>50</combatPower>
 	</PawnKindDef>
 
-	<ThingDef ParentName="AMP_RC_Base">
-		<defName>AMP_RC_SMG</defName>
+	<ThingDef ParentName="Must_RC_Base">
+		<defName>Must_RC_SMG</defName>
 		<label>RC drone</label>
 	</ThingDef>
 
-	<PawnKindDef ParentName="AMP_RC_BaseKind">
-		<defName>AMP_RC_SMG</defName>
+	<PawnKindDef ParentName="Must_RC_BaseKind">
+		<defName>Must_RC_SMG</defName>
 		<label>RC drone</label>
-		<race>AMP_RC_SMG</race>
+		<race>Must_RC_SMG</race>
 		<weaponTags>
-			<li>AMP_FerretSMG</li>
+			<li>Must_FerretSMG</li>
 		</weaponTags>
 		<weaponMoney>9999~9999</weaponMoney>
 		<modExtensions>
@@ -105,19 +105,19 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<ThingDef ParentName="AMP_RC_Base">
-		<defName>AMP_RC_Explosive</defName>
+	<ThingDef ParentName="Must_RC_Base">
+		<defName>Must_RC_Explosive</defName>
 		<label>explosive RC drone</label>
 		<tools Inherit="False">
 			<li Class="CombatExtended.ToolCE">
 				<label>self-destruct</label>
 				<capacities>
-					<li>AMP_SelfDestruct</li>
+					<li>Must_SelfDestruct</li>
 				</capacities>
 				<power>1</power>
 				<extraMeleeDamages>
 					<li>
-						<def>AMP_RC_BombSelfDestruct</def>
+						<def>Must_RC_BombSelfDestruct</def>
 						<amount>1</amount>
 						<chance>1</chance>
 					</li>
@@ -132,10 +132,10 @@
 		</tools>
 	</ThingDef>
 
-	<PawnKindDef ParentName="AMP_RC_BaseKind">
-		<defName>AMP_RC_Explosive</defName>
+	<PawnKindDef ParentName="Must_RC_BaseKind">
+		<defName>Must_RC_Explosive</defName>
 		<label>explosive RC drone</label>
-		<race>AMP_RC_Explosive</race>
+		<race>Must_RC_Explosive</race>
 		<lifeStages Inherit="False">
 			<li>
 				<bodyGraphicData>
@@ -146,19 +146,19 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="AMP_RC_Base">
-		<defName>AMP_RC_Incendiary</defName>
+	<ThingDef ParentName="Must_RC_Base">
+		<defName>Must_RC_Incendiary</defName>
 		<label>incendiary RC drone</label>
 		<tools Inherit="False">
 			<li Class="CombatExtended.ToolCE">
 				<label>self-destruct</label>
 				<capacities>
-					<li>AMP_SelfDestruct</li>
+					<li>Must_SelfDestruct</li>
 				</capacities>
 				<power>1</power>
 				<extraMeleeDamages>
 					<li>
-						<def>AMP_RC_IncendiarySelfDestruct</def>
+						<def>Must_RC_IncendiarySelfDestruct</def>
 						<amount>1</amount>
 						<chance>1</chance>
 					</li>
@@ -173,10 +173,10 @@
 		</tools>
 	</ThingDef>
 
-	<PawnKindDef ParentName="AMP_RC_BaseKind">
-		<defName>AMP_RC_Incendiary</defName>
+	<PawnKindDef ParentName="Must_RC_BaseKind">
+		<defName>Must_RC_Incendiary</defName>
 		<label>incendiary RC drone</label>
-		<race>AMP_RC_Incendiary</race>
+		<race>Must_RC_Incendiary</race>
 		<lifeStages Inherit="False">
 			<li>
 				<bodyGraphicData>
@@ -188,7 +188,7 @@
 	</PawnKindDef>
 	
 	<!--Gun Dog Race-->
-	<ThingDef ParentName="AMP_DroneBase" Name="AMP_DogBase" Abstract="True">
+	<ThingDef ParentName="Must_DroneBase" Name="Must_DogBase" Abstract="True">
 		<statBases>
 			<MarketValue>900</MarketValue>
 			<MoveSpeed>4.6</MoveSpeed>
@@ -249,7 +249,7 @@
 		</butcherProducts>
 	</ThingDef>
 	
-	<PawnKindDef  ParentName="BaseMechanoidKind" Name="AMP_DogBaseKind" Abstract="True">
+	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_DogBaseKind" Abstract="True">
 		<weaponMoney>9999~9999</weaponMoney>
 		<forceNormalGearQuality>True</forceNormalGearQuality>
 		<lifeStages>
@@ -264,17 +264,17 @@
 		<combatPower>180</combatPower>
 	</PawnKindDef>
 	
-	<ThingDef ParentName="AMP_DogBase">
-		<defName>AMP_DogLMG</defName>
+	<ThingDef ParentName="Must_DogBase">
+		<defName>Must_DogLMG</defName>
 		<label>gun dog</label>
 	</ThingDef>
 
-	<PawnKindDef ParentName="AMP_DogBaseKind">
-		<defName>AMP_DogLMG</defName>
+	<PawnKindDef ParentName="Must_DogBaseKind">
+		<defName>Must_DogLMG</defName>
 		<label>gun dog</label>
-		<race>AMP_DogLMG</race>
+		<race>Must_DogLMG</race>
 		<weaponTags>
-			<li>AMP_LMG</li>
+			<li>Must_LMG</li>
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -288,7 +288,7 @@
 	</PawnKindDef>
 	
 	<!--Tank Drone Race-->
-	<ThingDef ParentName="AMP_DroneBase" Name="AMP_TankBase" Abstract="True">
+	<ThingDef ParentName="Must_DroneBase" Name="Must_TankBase" Abstract="True">
 		<statBases>
 			<MarketValue>2700</MarketValue>
 			<MoveSpeed>2.3</MoveSpeed>
@@ -337,7 +337,7 @@
 		</butcherProducts>
 	</ThingDef>
 	
-	<PawnKindDef  ParentName="BaseMechanoidKind" Name="AMP_TankBaseKind" Abstract="True">
+	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_TankBaseKind" Abstract="True">
 		<weaponMoney>9999~9999</weaponMoney>
 		<forceNormalGearQuality>True</forceNormalGearQuality>
 		<lifeStages>
@@ -351,17 +351,17 @@
 		<combatPower>400</combatPower>
 	</PawnKindDef>
 
-	<ThingDef ParentName="AMP_TankBase">
-		<defName>AMP_TankSDMG</defName>
+	<ThingDef ParentName="Must_TankBase">
+		<defName>Must_TankSDMG</defName>
 		<label>tank drone</label>
 	</ThingDef>
 
-	<PawnKindDef ParentName="AMP_TankBaseKind">
-		<defName>AMP_TankSDMG</defName>
+	<PawnKindDef ParentName="Must_TankBaseKind">
+		<defName>Must_TankSDMG</defName>
 		<label>tank drone</label>
-		<race>AMP_TankSDMG</race>
+		<race>Must_TankSDMG</race>
 		<weaponTags>
-			<li>AMP_SDMG</li>
+			<li>Must_SDMG</li>
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">

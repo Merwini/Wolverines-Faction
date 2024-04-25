@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<KCSG.SymbolDef>
-		<defName>AMP_NonCom_Armorer_Poor</defName>
-		<pawnKindDef>AMP_NonCom_Armorer_Poor</pawnKindDef>
+		<defName>Must_NonCom_Armorer_Poor</defName>
+		<pawnKindDef>Must_NonCom_Armorer_Poor</pawnKindDef>
 		<defendSpawnPoint>true</defendSpawnPoint>
 	</KCSG.SymbolDef>
 
 	<KCSG.SymbolDef>
-		<defName>AMP_NonCom_Armorer_Normal</defName>
-		<pawnKindDef>AMP_NonCom_Armorer_Normal</pawnKindDef>
+		<defName>Must_NonCom_Armorer_Normal</defName>
+		<pawnKindDef>Must_NonCom_Armorer_Normal</pawnKindDef>
 		<defendSpawnPoint>true</defendSpawnPoint>
 	</KCSG.SymbolDef>
 	

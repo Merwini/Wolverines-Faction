@@ -4,7 +4,7 @@
   <!-- ==================== M72-74 ==================== -->
 
   <ThingDef ParentName="BaseEquipment">
-    <defName>AMP_M72-INC</defName>
+    <defName>Must_M72-INC</defName>
     <label>M72-74 incendiary munition</label>
     <description>M72 variant refitted to shoot M74 incendiary rockets.</description>
     <graphicData>
@@ -31,8 +31,8 @@
     </statBases>
     <weaponTags>
       <li>GunHeavy</li>
-			<li>AMP_LAW</li>
-			<li>AMP_Incendiary</li>
+			<li>Must_LAW</li>
+			<li>Must_Incendiary</li>
     </weaponTags>
     <thingCategories>
       <li>WeaponsRanged</li>
@@ -203,7 +203,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <AMP_M72-INC>5</AMP_M72-INC>
+      <Must_M72-INC>5</Must_M72-INC>
     </products>
     <researchPrerequisite>CE_Launchers</researchPrerequisite>
   </RecipeDef>
