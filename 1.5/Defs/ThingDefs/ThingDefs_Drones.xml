@@ -14,9 +14,12 @@
 			<SmokeSensitivity>0</SmokeSensitivity>
 			<NightVisionEfficiency>0.80</NightVisionEfficiency>
 		</statBases>
-		<race>
-			
-		</race>
+		<comps>
+			<li Class="DroneTank.CompProperties_VehicleWeapon">
+				<turretRotationFollowPawn>true</turretRotationFollowPawn>
+				<layerOverrideNorth>true</layerOverrideNorth>
+			</li>
+		</comps>
 	</ThingDef>
 	
 	<!--RC Car Race-->
