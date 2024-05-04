@@ -14,14 +14,9 @@
 			<SmokeSensitivity>0</SmokeSensitivity>
 			<NightVisionEfficiency>0.80</NightVisionEfficiency>
 		</statBases>
-		<comps>
-			<li Class="DroneTank.CompProperties_VehicleWeapon">
-				<turretRotationFollowPawn>true</turretRotationFollowPawn>
-				<layerOverrideNorth>true</layerOverrideNorth>
-			</li>
-		</comps>
 		<race>
 			<fleshType>Must_Drone</fleshType>
+			<trainability>None</trainability>
 		</race>
 	</ThingDef>
 	
@@ -103,6 +98,12 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
+		<comps>
+			<li Class="DroneTank.CompProperties_VehicleWeapon">
+				<turretRotationFollowPawn>true</turretRotationFollowPawn>
+				<layerOverrideNorth>true</layerOverrideNorth>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<PawnKindDef ParentName="Must_RC_BaseKind">
@@ -270,6 +271,12 @@
 			<Steel>30</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</butcherProducts>
+		<comps>
+			<li Class="DroneTank.CompProperties_VehicleWeapon">
+				<turretRotationFollowPawn>true</turretRotationFollowPawn>
+				<layerOverrideNorth>true</layerOverrideNorth>
+			</li>
+		</comps>
 	</ThingDef>
 	
 	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_DogBaseKind" Abstract="True">
@@ -358,6 +365,12 @@
 			<Steel>60</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</butcherProducts>
+		<comps>
+			<li Class="DroneTank.CompProperties_VehicleWeapon">
+				<turretRotationFollowPawn>true</turretRotationFollowPawn>
+				<layerOverrideNorth>true</layerOverrideNorth>
+			</li>
+		</comps>
 	</ThingDef>
 	
 	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_TankBaseKind" Abstract="True">
@@ -367,7 +380,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Wolverines/Drones/UGHoneyBadger/UGHoneyBadger</texPath>
-					<drawSize>4</drawSize>
+					<drawSize>2.5</drawSize>
 				</bodyGraphicData>
 			</li>
 		</lifeStages>

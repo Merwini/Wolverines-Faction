@@ -73,5 +73,23 @@
 				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0,0,0.2)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(-0.23,0,0.22)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0.02,0,0.2)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0.23,0,0.22)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>
