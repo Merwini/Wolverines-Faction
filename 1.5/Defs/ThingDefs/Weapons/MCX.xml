@@ -51,7 +51,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>30</magazineSize>
-				<reloadTime>4.0</reloadTime>
+				<reloadTime>4</reloadTime>
 				<ammoSet>AmmoSet_300AACBlackout</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">

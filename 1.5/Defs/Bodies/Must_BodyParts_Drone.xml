@@ -1,25 +1,165 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	
-	<!--Shared Drone Parts-->
 
-	<BodyPartDef>
-		<defName>Must_DroneDatalink</defName>
+	<BodyPartDef Abstract="True" Name="Must_DroneBodyPartBase">
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<solid>true</solid>
+		<skinCovered>false</skinCovered>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+	</BodyPartDef>
+
+
+	<!--Shared Drone Parts-->
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_DroneBody</defName>
+		<label>chassis</label>
+		<hitPoints>40</hitPoints>
+		<executionPartPriority>500</executionPartPriority>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_DroneHead</defName>
+		<label>control cortex</label>
+		<hitPoints>30</hitPoints>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_DroneNeck</defName>
+		<label>power harness</label>
+		<hitPoints>30</hitPoints>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_DroneFace</defName>
+		<label>sensor array</label>
+		<hitPoints>20</hitPoints>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_DroneBrain</defName>
 		<label>datalink</label>
 		<hitPoints>10</hitPoints>
-		<skinCovered>false</skinCovered>
-		<solid>true</solid>
-		<alive>false</alive>
-		<bleedRate>0</bleedRate>
 		<tags>
 			<li>ConsciousnessSource</li>
 		</tags>
 	</BodyPartDef>
 
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_DroneEye</defName>
+		<label>sight module</label>
+		<hitPoints>10</hitPoints>
+		<frostbiteVulnerability>2</frostbiteVulnerability>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_DroneEar</defName>
+		<label>sound module</label>
+		<hitPoints>10</hitPoints>
+		<frostbiteVulnerability>2</frostbiteVulnerability>
+		<tags>
+			<li>HearingSource</li>
+			<li>TalkingPathway</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_DroneHeart</defName>
+		<label>capacitor matrix</label>
+		<hitPoints>30</hitPoints>
+		<tags>
+			<li>BloodPumpingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_DroneLiver</defName>
+		<label>lubrication system</label>
+		<hitPoints>15</hitPoints>
+		<tags>
+			<li>BloodFiltrationSource</li>
+		</tags>
+	</BodyPartDef>
+
 	<!--RC Parts-->
 
-	<!--Dog Parts-->
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_RC_Leg</defName>
+		<label>wheel</label>
+		<hitPoints>20</hitPoints>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_RC_Foot</defName>
+		<hitPoints>10</hitPoints>
+		<label>tire</label>
+		<tags>
+			<li>MovingLimbSegment</li>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_RC_Tool</defName>
+		<hitPoints>20</hitPoints>
+		<label>melee grille</label>
+	</BodyPartDef>
+
+	<!--Polecat Parts-->
+
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_PC_Leg</defName>
+		<label>leg</label>
+		<hitPoints>25</hitPoints>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
 
 	<!--Tank Parts-->
+
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_TD_Leg</defName>
+		<label>treads</label>
+		<hitPoints>30</hitPoints>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_TD_Foot</defName>
+		<hitPoints>20</hitPoints>
+		<label>road wheel</label>
+		<tags>
+			<li>MovingLimbSegment</li>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_TD_OtherFoot</defName>
+		<hitPoints>20</hitPoints>
+		<label>tensioning wheel</label>
+		<tags>
+			<li>MovingLimbSegment</li>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_TD_Tool</defName>
+		<hitPoints>40</hitPoints>
+		<label>melee grille</label>
+	</BodyPartDef>
 	
 </Defs>

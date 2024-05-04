@@ -22,6 +22,21 @@
 		</disallowedTraits>
 	</PawnKindDef>
 
+	<PawnKindDef ParentName="Must_HumanCombatantBase" Abstract="True" Name="Must_HumanEliteCombatantBase">
+		<initialWillRange>5~7</initialWillRange>
+		<initialResistanceRange>20~28</initialResistanceRange>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~12</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>8~12</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
 	<PawnKindDef ParentName="Must_HumanBase" Abstract="True" Name="Must_HumanNonComBase" >
 		<isFighter>false</isFighter>
 		<invNutrition>2</invNutrition>

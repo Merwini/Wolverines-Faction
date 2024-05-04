@@ -20,11 +20,15 @@ namespace rep.factions.wolverines
 			ThingDef projectileDef = dinfo.Def.explosionCellMote;
 
 			var projectile = (ProjectileCE)ThingMaker.MakeThing(projectileDef);
+			GenSpawn.Spawn(projectile, c, kamikaze.Map);
 			projectile.Launch(
 				launcher: kamikaze,
-				origin: new Vector2(c.x, c.z)
+				origin: new Vector2(c.x, c.y),
+				shotAngle: 0,
+				shotRotation: 0,
+				shotSpeed: 1000
 				);
-
+			projectile.Impact(victim);
 			kamikaze.Kill();
 
 			return result;

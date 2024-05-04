@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<LifeStageDef>
-		<defName>AMPDroneCompleted</defName>
+		<defName>Must_DroneCompleted</defName>
 		<label>complete</label>
 		<visible>false</visible>
 	</LifeStageDef>
@@ -20,6 +20,9 @@
 				<layerOverrideNorth>true</layerOverrideNorth>
 			</li>
 		</comps>
+		<race>
+			<fleshType>Must_Drone</fleshType>
+		</race>
 	</ThingDef>
 	
 	<!--RC Car Race-->
@@ -51,12 +54,12 @@
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
 			<!--TODO correct after creating bodyparts-->
-			<body>MechanicalCentipede</body>
+			<body>Must_RC_Body</body>
 			<baseBodySize>0.2</baseBodySize>
 			<baseHealthScale>0.4</baseHealthScale>
 			<lifeStageAges>
 				<li>
-					<def>AMPDroneCompleted</def>
+					<def>Must_DroneCompleted</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
@@ -87,6 +90,19 @@
 	<ThingDef ParentName="Must_RC_Base">
 		<defName>Must_RC_SMG</defName>
 		<label>RC drone</label>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>ram</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.6</cooldownTime>
+				<!--TODO correct after creating bodyparts-->
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
 	</ThingDef>
 
 	<PawnKindDef ParentName="Must_RC_BaseKind">
@@ -111,6 +127,9 @@
 	<ThingDef ParentName="Must_RC_Base">
 		<defName>Must_RC_Explosive</defName>
 		<label>explosive RC drone</label>
+		<statBases>
+			<MeleeHitChance>10</MeleeHitChance>
+		</statBases>
 		<tools Inherit="False">
 			<li Class="CombatExtended.ToolCE">
 				<label>self-destruct</label>
@@ -125,9 +144,8 @@
 						<chance>1</chance>
 					</li>
 				</extraMeleeDamages>
-				<cooldownTime>2.6</cooldownTime>
-				<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-				<!--TODO correct after creating bodyparts-->
+				<cooldownTime>0.1</cooldownTime>
+				<armorPenetrationBlunt>1000</armorPenetrationBlunt>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>1</chanceFactor>
@@ -152,6 +170,9 @@
 	<ThingDef ParentName="Must_RC_Base">
 		<defName>Must_RC_Incendiary</defName>
 		<label>incendiary RC drone</label>
+		<statBases>
+			<MeleeHitChance>10</MeleeHitChance>
+		</statBases>
 		<tools Inherit="False">
 			<li Class="CombatExtended.ToolCE">
 				<label>self-destruct</label>
@@ -166,9 +187,8 @@
 						<chance>1</chance>
 					</li>
 				</extraMeleeDamages>
-				<cooldownTime>2.6</cooldownTime>
-				<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-				<!--TODO correct after creating bodyparts-->
+				<cooldownTime>0.1</cooldownTime>
+				<armorPenetrationBlunt>1000</armorPenetrationBlunt>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>1</chanceFactor>
@@ -235,7 +255,7 @@
 			<baseHealthScale>1</baseHealthScale>
 			<lifeStageAges>
 				<li>
-					<def>AMPDroneCompleted</def>
+					<def>Must_DroneCompleted</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
@@ -302,7 +322,7 @@
 			<CarryBulk>15</CarryBulk>
 		</statBases>
 		<tools>
-			<li>
+			<li Class="CombatExtended.ToolCE">
 				<label>ram</label>
 				<capacities>
 					<li>Blunt</li>
@@ -323,7 +343,7 @@
 			<baseHealthScale>4</baseHealthScale>
 			<lifeStageAges>
 				<li>
-					<def>AMPDroneCompleted</def>
+					<def>Must_DroneCompleted</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>

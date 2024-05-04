@@ -57,6 +57,7 @@
 			<li>CE_OneHandedWeapon</li>
 			<li>Must_Grenade</li>
 			<li>Must_Demolition</li>
+			<li>Must_Satchel</li>
 		</weaponTags>
 		<thingCategories>
 			<li>Grenades</li>
