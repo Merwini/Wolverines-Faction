@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BaseGun">
 		<defName>Must_FSMG</defName>
 		<label>mounted SMG</label>
-		<description>A drone-mounted submachine gun chambered for 5.7x28mm pistol cartridges.</description>
+		<description>A drone-mounted submachine gun chambered for 5.7x28mm pistol cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
 		<graphicData>
 			<texPath>Wolverines/Weapons/UGFerretTurretSMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -44,8 +44,8 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>50</magazineSize>
-				<reloadTime>4.5</reloadTime>
+				<magazineSize>300</magazineSize>
+				<reloadTime>14.5</reloadTime>
 				<ammoSet>AmmoSet_FN57x28mm</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">

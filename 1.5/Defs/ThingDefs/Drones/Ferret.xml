@@ -94,8 +94,8 @@
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
-					<min>1</min>
-					<max>1</max>
+					<min>0</min>
+					<max>0</max>
 				</primaryMagazineCount>
 				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
 			</li>
