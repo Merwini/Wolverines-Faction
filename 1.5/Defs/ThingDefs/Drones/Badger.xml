@@ -62,7 +62,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Wolverines/Drones/UGHoneyBadger/UGHoneyBadger</texPath>
+					<texPath>Wolverines/Drones/UGBadger/UGBadger</texPath>
 					<drawSize>2.5</drawSize>
 				</bodyGraphicData>
 			</li>
@@ -72,12 +72,12 @@
 
 	<ThingDef ParentName="Must_BadgerBase">
 		<defName>Must_BadgerSDMG</defName>
-		<label>badger drone</label>
+		<label>SDMG badger</label>
 	</ThingDef>
 
 	<PawnKindDef ParentName="Must_BadgerBaseKind">
 		<defName>Must_TankSDMG</defName>
-		<label>badger drone</label>
+		<label>SDMG badger</label>
 		<race>Must_BadgerSDMG</race>
 		<weaponTags>
 			<li>Must_SDMG</li>

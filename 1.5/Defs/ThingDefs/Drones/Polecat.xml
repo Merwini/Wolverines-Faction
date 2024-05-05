@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!--Gun Dog Race-->
-	<ThingDef ParentName="Must_DroneBase" Name="Must_DogBase" Abstract="True">
+	<!--Gun Polecat Race-->
+	<ThingDef ParentName="Must_DroneBase" Name="Must_PolecatBase" Abstract="True">
 		<statBases>
 			<MarketValue>900</MarketValue>
 			<MoveSpeed>4.6</MoveSpeed>
@@ -25,7 +25,7 @@
 				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
-				<label>right lef</label>
+				<label>right leg</label>
 				<labelNoLocation>leg</labelNoLocation>
 				<capacities>
 					<li>Blunt</li>
@@ -68,30 +68,29 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_DogBaseKind" Abstract="True">
+	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_PolecatBaseKind" Abstract="True">
 		<weaponMoney>9999~9999</weaponMoney>
 		<forceNormalGearQuality>True</forceNormalGearQuality>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<!--TODO change this once correct texture is available-->
-					<texPath>Wolverines/Drones/UGFerret/UGFerret</texPath>
-					<drawSize>3</drawSize>
+					<texPath>Wolverines/Drones/UGPolecat/UGPolecat</texPath>
+					<drawSize>2</drawSize>
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
 		<combatPower>180</combatPower>
 	</PawnKindDef>
 
-	<ThingDef ParentName="Must_DogBase">
-		<defName>Must_DogLMG</defName>
-		<label>gun dog</label>
+	<ThingDef ParentName="Must_PolecatBase">
+		<defName>Must_PolecatLMG</defName>
+		<label>LMG polecat</label>
 	</ThingDef>
 
-	<PawnKindDef ParentName="Must_DogBaseKind">
-		<defName>Must_DogLMG</defName>
-		<label>gun dog</label>
-		<race>Must_DogLMG</race>
+	<PawnKindDef ParentName="Must_PolecatBaseKind">
+		<defName>Must_PolecatLMG</defName>
+		<label>LMG polecat</label>
+		<race>Must_PolecatLMG</race>
 		<weaponTags>
 			<li>Must_LMG</li>
 		</weaponTags>
