@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<KCSG.SymbolDef>
-		<defName>Must_NonCom_Armorer_Poor</defName>
-		<pawnKindDef>Must_NonCom_Armorer_Poor</pawnKindDef>
+		<defName>Must_NonCom_Armorer_API</defName>
+		<pawnKindDef>Must_NonCom_Armorer_API</pawnKindDef>
 		<defendSpawnPoint>true</defendSpawnPoint>
 	</KCSG.SymbolDef>
 

@@ -8,7 +8,7 @@
 
 	<PawnKindDef ParentName="Must_NonCom_Armorer_Base">
 		<defName>Must_NonCom_Armorer_API</defName>
-		<label>armorer (poor)</label>
+		<label>armorer</label>
 		<combatPower>25</combatPower>
 		<weaponMoney>150~200</weaponMoney>
 		<weaponTags>
