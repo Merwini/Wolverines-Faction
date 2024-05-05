@@ -7,15 +7,28 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Must_NonCom_Armorer_Base">
-		<defName>Must_NonCom_Armorer_Poor</defName>
+		<defName>Must_NonCom_Armorer_API</defName>
 		<label>armorer (poor)</label>
 		<combatPower>25</combatPower>
+		<weaponMoney>150~200</weaponMoney>
+		<weaponTags>
+			<li>CE_Sidearm</li>
+		</weaponTags>
 		<skills>
 			<li>
 				<skill>Crafting</skill>
-				<range>1~4</range>
+				<range>2~5</range>
 			</li>
 		</skills>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>2</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>IncendiaryAP</forcedAmmoCategory>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Must_NonCom_Armorer_Base">
