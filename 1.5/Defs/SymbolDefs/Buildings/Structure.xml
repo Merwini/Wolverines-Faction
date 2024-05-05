@@ -11,4 +11,10 @@
 		<thing>CE_Embrasure</thing>
 		<stuff>BlocksLimestone</stuff>
 	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_Embrasure_BlocksSlate</defName>
+		<thing>CE_Embrasure</thing>
+		<stuff>BlocksSlate</stuff>
+	</KCSG.SymbolDef>
 </Defs>

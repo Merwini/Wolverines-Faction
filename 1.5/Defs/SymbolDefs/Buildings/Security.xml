@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<KCSG.SymbolDef>
-		<defName>CE_BarbedWire_WoodLog</defName>
+		<defName>Must_BarbedWire_WoodLog</defName>
 		<thing>CE_BarbedWire</thing>
 		<stuff>WoodLog</stuff>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Turret_Medium_North</defName>
+		<thing>Turret_Medium</thing>
 	</KCSG.SymbolDef>
 </Defs>
