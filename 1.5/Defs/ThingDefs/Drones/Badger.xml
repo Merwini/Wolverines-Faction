@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--Badger Drone Race-->
+	<ThingDef ParentName="Must_DroneBase" Name="Must_BadgerBase" Abstract="True">
+		<statBases>
+			<MarketValue>2700</MarketValue>
+			<MoveSpeed>2.3</MoveSpeed>
+			<ArmorRating_Sharp>16</ArmorRating_Sharp>
+			<ArmorRating_Blunt>37</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<CarryWeight>40</CarryWeight>
+			<CarryBulk>15</CarryBulk>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>ram</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2.6</cooldownTime>
+				<!--TODO correct after creating bodyparts-->
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<!--TODO correct after creating bodyparts-->
+			<body>MechanicalCentipede</body>
+			<baseBodySize>3</baseBodySize>
+			<baseHealthScale>4</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>Must_DroneCompleted</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+					<soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<Steel>60</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</butcherProducts>
+		<comps>
+			<li Class="DroneTank.CompProperties_VehicleWeapon">
+				<turretRotationFollowPawn>true</turretRotationFollowPawn>
+				<layerOverrideNorth>true</layerOverrideNorth>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_BadgerBaseKind" Abstract="True">
+		<weaponMoney>9999~9999</weaponMoney>
+		<forceNormalGearQuality>True</forceNormalGearQuality>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Wolverines/Drones/UGHoneyBadger/UGHoneyBadger</texPath>
+					<drawSize>2.5</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<combatPower>400</combatPower>
+	</PawnKindDef>
+
+	<ThingDef ParentName="Must_BadgerBase">
+		<defName>Must_BadgerSDMG</defName>
+		<label>badger drone</label>
+	</ThingDef>
+
+	<PawnKindDef ParentName="Must_BadgerBaseKind">
+		<defName>Must_TankSDMG</defName>
+		<label>badger drone</label>
+		<race>Must_BadgerSDMG</race>
+		<weaponTags>
+			<li>Must_SDMG</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>2</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+</Defs>

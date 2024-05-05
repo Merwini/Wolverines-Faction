@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<LifeStageDef>
+		<defName>Must_DroneCompleted</defName>
+		<label>complete</label>
+		<visible>false</visible>
+	</LifeStageDef>
+
+	<ThingDef ParentName="BaseMechanoid" Name="Must_DroneBase" Abstract="True">
+		<statBases>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>120</ComfyTemperatureMax>
+			<SmokeSensitivity>0</SmokeSensitivity>
+			<NightVisionEfficiency>0.80</NightVisionEfficiency>
+		</statBases>
+		<race>
+			<fleshType>Must_Drone</fleshType>
+			<trainability>None</trainability>
+		</race>
+	</ThingDef>
+</Defs>

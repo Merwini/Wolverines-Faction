@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--RC Car-->
+	<!--Ferret-->
 	<BodyDef>
-		<defName>Must_RC_Body</defName>
-		<label>RC drone</label>
+		<defName>Must_Ferret_Body</defName>
+		<label>ferret drone</label>
 		<corePart>
 			<def>Must_DroneBody</def>
 			<height>Middle</height>
@@ -57,52 +57,52 @@
 				</li>
 				<!--Wheels Section-->
 				<li>
-					<def>Must_RC_Leg</def>
+					<def>Must_Ferret_Leg</def>
 					<customLabel>front left wheel</customLabel>
 					<coverage>0.0825</coverage>
 					<height>Bottom</height>
 					<parts>
 						<li>
-							<def>Must_RC_Foot</def>
+							<def>Must_Ferret_Foot</def>
 							<coverage>0.5</coverage>
 							<customLabel>front left tire</customLabel>
 						</li>
 					</parts>
 				</li>
 				<li>
-					<def>Must_RC_Leg</def>
+					<def>Must_Ferret_Leg</def>
 					<customLabel>front right wheel</customLabel>
 					<coverage>0.0825</coverage>
 					<height>Bottom</height>
 					<parts>
 						<li>
-							<def>Must_RC_Foot</def>
+							<def>Must_Ferret_Foot</def>
 							<coverage>0.5</coverage>
 							<customLabel>front right tire</customLabel>
 						</li>
 					</parts>
 				</li>
 				<li>
-					<def>Must_RC_Leg</def>
+					<def>Must_Ferret_Leg</def>
 					<customLabel>rear left wheel</customLabel>
 					<coverage>0.0825</coverage>
 					<height>Bottom</height>
 					<parts>
 						<li>
-							<def>Must_RC_Foot</def>
+							<def>Must_Ferret_Foot</def>
 							<coverage>0.5</coverage>
 							<customLabel>rear left tire</customLabel>
 						</li>
 					</parts>
 				</li>
 				<li>
-					<def>Must_RC_Leg</def>
+					<def>Must_Ferret_Leg</def>
 					<customLabel>rear right wheel</customLabel>
 					<coverage>0.0825</coverage>
 					<height>Bottom</height>
 					<parts>
 						<li>
-							<def>Must_RC_Foot</def>
+							<def>Must_Ferret_Foot</def>
 							<coverage>0.5</coverage>
 							<customLabel>rear right tire</customLabel>
 						</li>
@@ -110,7 +110,7 @@
 				</li>
 				<!--Weapon Section-->
 				<li>
-					<def>Must_RC_Tool</def>
+					<def>Must_Ferret_Tool</def>
 					<coverage>0.1</coverage>
 					<groups>
 						<li>HeadAttackTool</li>

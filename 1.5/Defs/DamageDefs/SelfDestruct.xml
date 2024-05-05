@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<DamageDef>
-		<defName>Must_RC_BombSelfDestruct</defName>
+		<defName>Must_Ferret_BombSelfDestruct</defName>
 		<label>bomb self-destruct</label>
 		<workerClass>rep.factions.wolverines.DamageWorker_SelfDestruct</workerClass>
 		<externalViolence>true</externalViolence>
@@ -14,7 +14,7 @@
 	</DamageDef>
 
 	<DamageDef>
-		<defName>Must_RC_IncendiarySelfDestruct</defName>
+		<defName>Must_Ferret_IncendiarySelfDestruct</defName>
 		<label>incendiary self-destruct</label>
 		<workerClass>rep.factions.wolverines.DamageWorker_SelfDestruct</workerClass>
 		<externalViolence>true</externalViolence>

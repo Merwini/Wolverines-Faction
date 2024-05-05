@@ -84,10 +84,10 @@
 		</tags>
 	</BodyPartDef>
 
-	<!--RC Parts-->
+	<!--Ferret Parts-->
 
 	<BodyPartDef ParentName="Must_DroneBodyPartBase">
-		<defName>Must_RC_Leg</defName>
+		<defName>Must_Ferret_Leg</defName>
 		<label>wheel</label>
 		<hitPoints>20</hitPoints>
 		<tags>
@@ -97,7 +97,7 @@
 	</BodyPartDef>
 
 	<BodyPartDef ParentName="Must_DroneBodyPartBase">
-		<defName>Must_RC_Foot</defName>
+		<defName>Must_Ferret_Foot</defName>
 		<hitPoints>10</hitPoints>
 		<label>tire</label>
 		<tags>
@@ -107,7 +107,7 @@
 	</BodyPartDef>
 	
 	<BodyPartDef ParentName="Must_DroneBodyPartBase">
-		<defName>Must_RC_Tool</defName>
+		<defName>Must_Ferret_Tool</defName>
 		<hitPoints>20</hitPoints>
 		<label>melee grille</label>
 	</BodyPartDef>
@@ -124,10 +124,10 @@
 		</tags>
 	</BodyPartDef>
 
-	<!--Tank Parts-->
+	<!--Badger Parts-->
 
 	<BodyPartDef ParentName="Must_DroneBodyPartBase">
-		<defName>Must_TD_Leg</defName>
+		<defName>Must_Badger_Leg</defName>
 		<label>treads</label>
 		<hitPoints>30</hitPoints>
 		<tags>
@@ -137,7 +137,7 @@
 	</BodyPartDef>
 
 	<BodyPartDef ParentName="Must_DroneBodyPartBase">
-		<defName>Must_TD_Foot</defName>
+		<defName>Must_Badger_Foot</defName>
 		<hitPoints>20</hitPoints>
 		<label>road wheel</label>
 		<tags>
@@ -147,7 +147,7 @@
 	</BodyPartDef>
 
 	<BodyPartDef ParentName="Must_DroneBodyPartBase">
-		<defName>Must_TD_OtherFoot</defName>
+		<defName>Must_Badger_OtherFoot</defName>
 		<hitPoints>20</hitPoints>
 		<label>tensioning wheel</label>
 		<tags>
@@ -157,9 +157,9 @@
 	</BodyPartDef>
 
 	<BodyPartDef ParentName="Must_DroneBodyPartBase">
-		<defName>Must_TD_Tool</defName>
+		<defName>Must_Badger_Tool</defName>
 		<hitPoints>40</hitPoints>
-		<label>melee grille</label>
+		<label>heavy melee grille</label>
 	</BodyPartDef>
 	
 </Defs>
