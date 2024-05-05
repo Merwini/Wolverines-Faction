@@ -17,7 +17,7 @@
 		</weaponClasses>
 		<statBases>
 			<MarketValue>700</MarketValue>
-			<Mass>15</Mass>
+			<Mass>4</Mass>
 			<Bulk>5.75</Bulk>
 			<ShotSpread>0.12</ShotSpread>
 			<SwayFactor>0.55</SwayFactor>
