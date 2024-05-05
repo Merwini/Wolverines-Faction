@@ -56,6 +56,9 @@
 		<genStep Class="KCSG.GenStep_CustomStructureGen">
 			<structureLayoutDefs>
 				<li>Must_API_Limestone</li>
+				<li>Must_API_Granite</li>
+				<li>Must_API_Slate</li>
+				<li>Must_API_Sandstone</li>
 			</structureLayoutDefs>
 			<preventBridgeable>true</preventBridgeable>
 		</genStep>
