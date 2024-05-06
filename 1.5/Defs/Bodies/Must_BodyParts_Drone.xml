@@ -120,9 +120,27 @@
 		<hitPoints>25</hitPoints>
 		<tags>
 			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Must_PC_Arm</defName>
+		<label>arm</label>
+		<hitPoints>15</hitPoints>
+		<tags>
 			<li>ManipulationLimbCore</li>
 		</tags>
 	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Must_PC_Hand</defName>
+		<label>clamp</label>
+		<hitPoints>10</hitPoints>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+	
 
 	<!--Badger Parts-->
 

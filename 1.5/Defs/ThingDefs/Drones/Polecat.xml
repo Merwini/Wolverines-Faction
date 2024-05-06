@@ -14,26 +14,24 @@
 		</statBases>
 		<tools>
 			<li>
-				<label>left leg</label>
-				<labelNoLocation>leg</labelNoLocation>
+				<label>left clamp</label>
 				<capacities>
 					<li>Blunt</li>
 					<li>Poke</li>
 				</capacities>
 				<power>10</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 			</li>
 			<li>
-				<label>right leg</label>
-				<labelNoLocation>leg</labelNoLocation>
+				<label>right clamp</label>
 				<capacities>
 					<li>Blunt</li>
 					<li>Poke</li>
 				</capacities>
 				<power>10</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 			</li>
 		</tools>
 		<race>

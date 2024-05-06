@@ -209,6 +209,45 @@
 					<coverage>0.11</coverage>
 					<height>Bottom</height>
 				</li>
+				<!--Arms Section-->
+				<li>
+					<def>Must_PC_Arm</def>
+					<customLabel>left manipulator arm</customLabel>
+					<coverage>0.08</coverage>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Must_PC_Hand</def>
+							<customLabel>left manipulator clamp</customLabel>
+							<coverage>0.25</coverage>
+							<groups>
+								<li>Hands</li>
+								<li>LeftHand</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Must_PC_Arm</def>
+					<customLabel>right manipulator arm</customLabel>
+					<coverage>0.08</coverage>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Must_PC_Hand</def>
+							<customLabel>right manipulator clamp</customLabel>
+							<coverage>0.25</coverage>
+							<groups>
+								<li>Hands</li>
+								<li>RightHand</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
 			</parts>
 		</corePart>
 	</BodyDef>
