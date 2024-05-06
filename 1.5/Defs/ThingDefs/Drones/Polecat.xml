@@ -80,14 +80,14 @@
 	</PawnKindDef>
 
 	<ThingDef ParentName="Must_PolecatBase">
-		<defName>Must_PolecatLMG</defName>
+		<defName>Must_Polecat_LMG</defName>
 		<label>LMG polecat</label>
 	</ThingDef>
 
 	<PawnKindDef ParentName="Must_PolecatBaseKind">
-		<defName>Must_PolecatLMG</defName>
+		<defName>Must_Polecat_LMG</defName>
 		<label>LMG polecat</label>
-		<race>Must_PolecatLMG</race>
+		<race>Must_Polecat_LMG</race>
 		<weaponTags>
 			<li>Must_PC_LMG</li>
 		</weaponTags>

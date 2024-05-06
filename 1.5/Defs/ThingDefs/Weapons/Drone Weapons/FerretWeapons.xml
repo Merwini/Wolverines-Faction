@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="BaseGun">
-		<defName>Must_FSMG</defName>
+		<defName>Must_F_SMG</defName>
 		<label>mounted SMG</label>
 		<description>A drone-mounted submachine gun chambered for 5.7x28mm pistol cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
 		<graphicData>

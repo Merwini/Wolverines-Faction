@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="BaseGun">
-		<defName>Must_SDMG</defName>
-		<label>.338 SDMG</label>
+		<defName>Must_B_HMG</defName>
+		<label>.338 HMG</label>
 		<description>A late-industrial drone-mounted machinegun chambered in .338 Norma Magnum.</description>
 		<graphicData>
-			<texPath>Wolverines/Weapons/UGBadgerTurretSDMG</texPath>
+			<texPath>Wolverines/Weapons/UGBadgerTurretHMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>4</drawSize>
 		</graphicData>
@@ -46,7 +46,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>200</magazineSize>
-				<reloadTime>7.8</reloadTime>
+				<reloadTime>17.8</reloadTime>
 				<ammoSet>AmmoSet_338Norma</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
@@ -56,7 +56,7 @@
 			</li>
 		</comps>
 		<weaponTags>
-			<li>Must_SDMG</li>
+			<li>Must_Badger_HMG</li>
 			<li>CE_AI_Suppressive</li>
 			<li>CE_MachineGun</li>
 			<li>NoSwitch</li>

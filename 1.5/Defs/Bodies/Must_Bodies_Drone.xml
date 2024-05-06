@@ -323,49 +323,49 @@
 				<li>
 					<def>Must_Badger_Leg</def>
 					<customLabel>left tank tread</customLabel>
-					<coverage>16.6</coverage>
+					<coverage>0.16</coverage>
 					<height>Bottom</height>
 					<parts>
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>left first road wheel</customLabel>
-							<coverage>14.28</coverage>
+							<coverage>0.14</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>left second road wheel</customLabel>
-							<coverage>14.28</coverage>
+							<coverage>0.14</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>left third road wheel</customLabel>
-							<coverage>14.28</coverage>
+							<coverage>0.14</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>left fourth road wheel</customLabel>
-							<coverage>14.28</coverage>
+							<coverage>0.14</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>left fifth road wheel</customLabel>
-							<coverage>14.28</coverage>
+							<coverage>0.14</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>left front tensioner wheel</customLabel>
-							<coverage>14.28</coverage>
+							<coverage>0.14</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>left rear tensioner wheel</customLabel>
-							<coverage>14.28</coverage>
+							<coverage>0.14</coverage>
 							<depth>Inside</depth>
 						</li>
 					</parts>
@@ -373,49 +373,49 @@
 				<li>
 					<def>Must_Badger_Leg</def>
 					<customLabel>right tank tread</customLabel>
-					<coverage>16.65</coverage>
+					<coverage>0.16</coverage>
 					<height>Bottom</height>
 					<parts>
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>right first road wheel</customLabel>
-							<coverage>14.28</coverage>
+							<coverage>0.14</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>right second road wheel</customLabel>
-							<coverage>14.28</coverage>
+							<coverage>.14</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>right third road wheel</customLabel>
-							<coverage>14.28</coverage>
+							<coverage>0.14</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>right fourth road wheel</customLabel>
-							<coverage>14.28</coverage>
+							<coverage>0.14</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>right fifth road wheel</customLabel>
-							<coverage>14.28</coverage>
+							<coverage>0.14</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>right front tensioner wheel</customLabel>
-							<coverage>14.28</coverage>
+							<coverage>0.14</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>right rear tensioner wheel</customLabel>
-							<coverage>14.28</coverage>
+							<coverage>0.14</coverage>
 							<depth>Inside</depth>
 						</li>
 					</parts>
