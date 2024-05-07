@@ -54,10 +54,9 @@
 				<aiUseBurstMode>False</aiUseBurstMode>
 			</li>
 		</comps>
-		<weaponTags>
+		<weaponTags Inherit="False">>
 			<li>Must_FerretSMG</li>
 			<li>CE_AI_Suppressive</li>
-			<li>CE_MachineGun</li>
 			<li>NoSwitch</li>
 		</weaponTags>
 		<tools>

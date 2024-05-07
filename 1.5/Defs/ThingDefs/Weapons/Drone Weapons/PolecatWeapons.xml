@@ -18,20 +18,21 @@
 		</weaponClasses>
 		<statBases>
 			<MarketValue>1000</MarketValue>
-			<Bulk>12.13</Bulk>
-			<Mass>7.8</Mass>
+			<Bulk>11.63</Bulk>
+			<Mass>8.7</Mass>
 			<ShotSpread>0.08</ShotSpread>
-			<SwayFactor>1.21</SwayFactor>
+			<SwayFactor>1.80</SwayFactor>
 			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+			<SightsEfficiency>1.1</SightsEfficiency>
 		</statBases>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.22</recoilAmount>
+				<recoilAmount>1.52</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
 				<warmupTime>1.0</warmupTime>
-				<range>65</range>
+				<range>72</range>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
 				<soundCast>Shot_CE_BattleRifle</soundCast>
@@ -46,7 +47,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>300</magazineSize>
-				<reloadTime>17.8</reloadTime>
+				<reloadTime>14.9</reloadTime>
 				<ammoSet>AmmoSet_277Fury</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
@@ -58,8 +59,10 @@
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
-		<weaponTags>
+		<weaponTags Inherit="False">
 			<li>Must_PC_LMG</li>
+			<li>CE_AI_Suppressive</li>
+			<li>NoSwitch</li>
 		</weaponTags>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -74,4 +77,73 @@
 			</li>
 		</tools>
 	</ThingDef>
+
+	<ThingDefs>
+		<defName>Must_PC_AMR</defName>
+		<label>mounted AMR</label>
+		<description>A drone-mounted light machine gun chambered for .277 cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
+		<graphicData>
+			<texPath>Wolverines/Weapons/TurretLight_AMRgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5,1.5</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<Bulk>14.48</Bulk>
+			<Mass>17.39</Mass>
+			<ShotSpread>0.02</ShotSpread>
+			<SwayFactor>3.19</SwayFactor>
+			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+			<SightsEfficiency>2.00</SightsEfficiency>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>2.16</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+				<warmupTime>2.6</warmupTime>
+				<range>135</range>
+				<soundCast>Shot_SniperRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>60</magazineSize>
+				<reloadTime>14.9</reloadTime>
+				<ammoSet>AmmoSet_50BMG</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+				<noSnapshot>TRUE</noSnapshot>
+			</li>
+		</comps>
+		<weaponTags Inherit="False">
+			<li>Must_PC_AMR</li>
+			<li>NoSwitch</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.25</cooldownTime>
+				<armorPenetrationBlunt>1.730</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDefs>
 </Defs>
