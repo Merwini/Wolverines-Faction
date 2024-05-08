@@ -3,7 +3,13 @@ Rename Texture folder from UGxxx to something else, fix reference
 
 GenStep to adjust ammo stockpiles and survival meals
 Recalc Ferret and Badger weapon stats using spreadsheet
+Ferret Weapons
+	Grenade Launcher
 Polecat weapons
 	Flamer
+	Grenade Launcher
 	Self-Destruct
 Badger weapons
+	Minigun
+	Anti-tank guided missile
+	Multi Grenade Launcher

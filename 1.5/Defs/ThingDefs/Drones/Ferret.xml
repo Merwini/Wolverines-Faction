@@ -61,7 +61,7 @@
 	</PawnKindDef>
 
 	<ThingDef ParentName="Must_Ferret_Base">
-		<defName>Must_Ferret_SMG</defName>
+		<defName>Must_Ferret_Gun</defName>
 		<label>ferret drone</label>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -85,8 +85,8 @@
 
 	<PawnKindDef ParentName="Must_Ferret_BaseKind">
 		<defName>Must_Ferret_SMG</defName>
-		<label>ferret drone</label>
-		<race>Must_Ferret_SMG</race>
+		<label>SMG ferret drone</label>
+		<race>Must_Ferret_Gun</race>
 		<weaponTags>
 			<li>Must_FerretSMG</li>
 		</weaponTags>
@@ -98,6 +98,25 @@
 					<max>0</max>
 				</primaryMagazineCount>
 				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Must_Ferret_BaseKind">
+		<defName>Must_Ferret_GL</defName>
+		<label>GL ferret drone</label>
+		<race>Must_Ferret_Gun</race>
+		<weaponTags>
+			<li>Must_FerretGL</li>
+		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>0</min>
+					<max>0</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>GrenadeHE</forcedAmmoCategory>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

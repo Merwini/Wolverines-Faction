@@ -27,11 +27,11 @@
 		</statBases>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.52</recoilAmount>
+				<recoilAmount>1.47</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
-				<warmupTime>1.0</warmupTime>
+				<warmupTime>1.2</warmupTime>
 				<range>72</range>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
@@ -106,11 +106,11 @@
 		</statBases>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>2.16</recoilAmount>
+				<recoilAmount>2.13</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-				<warmupTime>2.6</warmupTime>
+				<warmupTime>2.8</warmupTime>
 				<range>135</range>
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
