@@ -19,7 +19,6 @@
 				</capacities>
 				<power>17</power>
 				<cooldownTime>2.6</cooldownTime>
-				<!--TODO correct after creating bodyparts-->
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
@@ -27,7 +26,6 @@
 		<race>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
-			<!--TODO correct after creating bodyparts-->
 			<body>Must_Badger_Body</body>
 			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>4</baseHealthScale>
@@ -57,6 +55,7 @@
 	</ThingDef>
 
 	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_BadgerBaseKind" Abstract="True">
+		<defaultFactionType>Must_FactionHostile</defaultFactionType>
 		<weaponMoney>9999~9999</weaponMoney>
 		<forceNormalGearQuality>True</forceNormalGearQuality>
 		<lifeStages>

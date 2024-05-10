@@ -49,6 +49,7 @@
 	</ThingDef>
 
 	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_Ferret_BaseKind" Abstract="True">
+		<defaultFactionType>Must_FactionHostile</defaultFactionType>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

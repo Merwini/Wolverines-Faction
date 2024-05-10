@@ -66,6 +66,7 @@
 	</ThingDef>
 
 	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_PolecatBaseKind" Abstract="True">
+		<defaultFactionType>Must_FactionHostile</defaultFactionType>
 		<weaponMoney>9999~9999</weaponMoney>
 		<forceNormalGearQuality>True</forceNormalGearQuality>
 		<lifeStages>
