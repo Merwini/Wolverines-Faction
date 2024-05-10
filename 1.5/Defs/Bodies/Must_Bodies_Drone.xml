@@ -431,4 +431,149 @@
 			</parts>
 		</corePart>
 	</BodyDef>
+
+	<!--Warren-->
+	<BodyDef>
+		<defName>Must_Warren_Body</defName>
+		<label>warren</label>
+		<corePart>
+			<def>Must_DroneBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<!--Head Section-->
+				<li>
+					<def>Must_DroneNeck</def>
+					<coverage>0.20</coverage>
+					<height>Top</height>
+					<depth>Inside</depth>
+					<parts>
+						<li>
+							<def>Must_DroneHead</def>
+							<coverage>0.5</coverage>
+							<parts>
+								<li>
+									<def>Must_DroneBrain</def>
+									<coverage>0.25</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<!--Face Section-->
+				<li>
+					<def>Must_DroneFace</def>
+					<coverage>0.05</coverage>
+					<parts>
+						<li>
+							<def>Must_DroneEye</def>
+							<coverage>0.25</coverage>
+						</li>
+						<li>
+							<def>Must_DroneEar</def>
+							<coverage>0.25</coverage>
+						</li>
+					</parts>
+				</li>
+				<!--Internals Section-->
+				<li>
+					<def>Must_DroneHeart</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Must_DroneLiver</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<!--Wheels Section-->
+				<li>
+					<def>Must_Ferret_Leg</def>
+					<customLabel>left front wheel</customLabel>
+					<coverage>0.055</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>Must_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>left front tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Must_Ferret_Leg</def>
+					<customLabel>right front wheel</customLabel>
+					<coverage>0.055</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>Must_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>right front tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Must_Ferret_Leg</def>
+					<customLabel>left middle wheel</customLabel>
+					<coverage>0.055</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>Must_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>left middle tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Must_Ferret_Leg</def>
+					<customLabel>right middle wheel</customLabel>
+					<coverage>0.055</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>Must_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>right middle tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Must_Ferret_Leg</def>
+					<customLabel>left rear wheel</customLabel>
+					<coverage>0.055</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>Must_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>left rear tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Must_Ferret_Leg</def>
+					<customLabel>right rear wheel</customLabel>
+					<coverage>0.055</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>Must_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>right rear tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<!--Weapon Section-->
+				<li>
+					<def>Must_Ferret_Tool</def>
+					<coverage>0.1</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
 </Defs>

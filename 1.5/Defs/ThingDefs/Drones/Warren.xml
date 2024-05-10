@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="Must_DroneBase" Name="Must_WarrenBase" Abstract="True">
+		<description>The Warren is an armored vehicle platform designed with modularity in mind. To free up space for mission payloads, they are fitted with remote drone control systems instead of a traditional cockpit.</description>
+		<statBases>
+			<MarketValue>2700</MarketValue>
+			<MoveSpeed>2.3</MoveSpeed>
+			<ArmorRating_Sharp>16</ArmorRating_Sharp>
+			<ArmorRating_Blunt>37</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<CarryWeight>40</CarryWeight>
+			<CarryBulk>15</CarryBulk>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>ram</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>26</power>
+				<cooldownTime>3.2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>Must_Warren_Body</body>
+			<baseBodySize>5</baseBodySize>
+			<baseHealthScale>4</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>Must_DroneCompleted</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+					<soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<Steel>60</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_WarrenBaseKind" Abstract="True">
+		<defaultFactionType>Must_FactionHostile</defaultFactionType>
+		<weaponMoney>9999~9999</weaponMoney>
+		<forceNormalGearQuality>True</forceNormalGearQuality>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Wolverines/Drones/UGBadger/UGBadger</texPath>
+					<drawSize>4.5</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<combatPower>4000</combatPower>
+	</PawnKindDef>
+
+	<ThingDef ParentName="Must_WarrenBase">
+		<defName>Must_Warren_APC</defName>
+		<label>Warren APC</label>
+		<comps>
+			<li Class="rep.heframework.CompProperties_PawnCarrier">
+				<releaseAllOnKilled>True</releaseAllOnKilled>
+				<releaseAllOnDowned>True</releaseAllOnDowned>
+				<maxCapacity>8</maxCapacity>
+				<spawnZOffsetFacingNorth>-1</spawnZOffsetFacingNorth>
+				<ticksBetweenPawnRelease>180</ticksBetweenPawnRelease>
+				<pawnKindsCarried>
+					<li>Must_LightInfantry_FMJ</li>
+					<li>Must_LightInfantry_FMJ</li>
+					<li>Must_HeavyInfantry_FMJ</li>
+				</pawnKindsCarried>
+				<lordJob>LordJob_AssaultColony</lordJob>
+				<useAvoidGridSmart>True</useAvoidGridSmart>
+				<breachers>True</breachers>
+				<canTimeOutOrFlee>True</canTimeOutOrFlee>
+			</li>
+			<li>
+				<compClass>rep.heframework.CompCarrierActivator_Combat</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="Must_WarrenBaseKind">
+		<defName>Must_Warren_APC</defName>
+		<label>Warren APC</label>
+		<race>Must_Warren_APC</race>
+		<weaponTags>
+			<li>HEF_RF_50C</li>
+		</weaponTags>
+	</PawnKindDef>
+</Defs>
