@@ -3,26 +3,26 @@
 	<DamageDef>
 		<defName>Must_Ferret_BombSelfDestruct</defName>
 		<label>bomb self-destruct</label>
-		<workerClass>rep.factions.wolverines.DamageWorker_SelfDestruct</workerClass>
+		<workerClass>rep.heframework.DamageWorker_SelfDestruct</workerClass>
 		<externalViolence>true</externalViolence>
 		<canInterruptJobs>false</canInterruptJobs>
 		<makesBlood>false</makesBlood>
 		<defaultDamage>0</defaultDamage>
 		<harmsHealth>true</harmsHealth>
-		<explosionCellMote>Bullet_81mmMortarShell_HE</explosionCellMote>
+		<explosionCellMote>Bullet_Shell_HighExplosive</explosionCellMote>
 		<combatLogRules>Damage_Bomb</combatLogRules>
 	</DamageDef>
 
 	<DamageDef>
 		<defName>Must_Ferret_IncendiarySelfDestruct</defName>
 		<label>incendiary self-destruct</label>
-		<workerClass>rep.factions.wolverines.DamageWorker_SelfDestruct</workerClass>
+		<workerClass>rep.heframework.DamageWorker_SelfDestruct</workerClass>
 		<externalViolence>true</externalViolence>
 		<canInterruptJobs>false</canInterruptJobs>
 		<makesBlood>false</makesBlood>
 		<defaultDamage>0</defaultDamage>
 		<harmsHealth>true</harmsHealth>
-		<explosionCellMote>Bullet_81mmMortarShell_Incendiary</explosionCellMote>
+		<explosionCellMote>Bullet_Shell_Incendiary</explosionCellMote>
 		<combatLogRules>Damage_Bomb</combatLogRules>
 	</DamageDef>
 

@@ -58,7 +58,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompProperties_SmokeScreen.cs" />
+    <Compile Include="CompSmokeScreen.cs" />
     <Compile Include="DamageWorker_SelfDestruct.cs" />
+    <Compile Include="ProjectileCE_ArbitraryDistance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

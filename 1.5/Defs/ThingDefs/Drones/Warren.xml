@@ -71,6 +71,7 @@
 				<releaseAllOnKilled>True</releaseAllOnKilled>
 				<releaseAllOnDowned>True</releaseAllOnDowned>
 				<maxCapacity>8</maxCapacity>
+				<joinParentLord>true</joinParentLord>
 				<spawnZOffsetFacingNorth>-1</spawnZOffsetFacingNorth>
 				<ticksBetweenPawnRelease>180</ticksBetweenPawnRelease>
 				<pawnKindsCarried>
@@ -78,13 +79,19 @@
 					<li>Must_LightInfantry_FMJ</li>
 					<li>Must_HeavyInfantry_FMJ</li>
 				</pawnKindsCarried>
-				<lordJob>LordJob_AssaultColony</lordJob>
+				<lordJobType>LordJob_AssaultColony</lordJobType>
 				<useAvoidGridSmart>True</useAvoidGridSmart>
 				<breachers>True</breachers>
 				<canTimeOutOrFlee>True</canTimeOutOrFlee>
 			</li>
 			<li>
 				<compClass>rep.heframework.CompCarrierActivator_Combat</compClass>
+			</li>
+			<li Class="rep.heframework.CompProperties_Smokescreen">
+				<smokeProjectile>Bullet_SmokeLauncher</smokeProjectile>
+				<range>7</range>
+				<projectileCount>6</projectileCount>
+				<projectileSpreadDegrees>30</projectileSpreadDegrees>
 			</li>
 		</comps>
 	</ThingDef>
