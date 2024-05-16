@@ -8,6 +8,12 @@
 			<success>Normal</success>
 			<operations>
 				<li Class="PatchOperationReplace">
+					<xpath>Defs/DamageDef[defName="Must_Ferret_BombSelfDestruct" or defName="Must_Ferret_IncendiarySelfDestruct"]/workerClass</xpath>
+					<value>
+						<workerClass>rep.heframework.cecompat.DamageWorker_SelfDestructCE</workerClass>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
 					<xpath>Defs/DamageDef[defName="Must_Ferret_BombSelfDestruct"]/explosionCellMote</xpath>
 					<value>
 						<explosionCellMote>Bullet_81mmMortarShell_HE</explosionCellMote>
