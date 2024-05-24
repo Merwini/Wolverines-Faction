@@ -72,6 +72,14 @@
 	<ThingDef ParentName="Must_BadgerBase">
 		<defName>Must_Badger_HMG</defName>
 		<label>HMG badger</label>
+		<comps>
+			<li Class="rep.heframework.CompProperties_Smokescreen">
+				<smokeProjectile>Bullet_SmokeLauncher</smokeProjectile>
+				<range>7</range>
+				<projectileCount>5</projectileCount>
+				<projectileSpreadDegrees>30</projectileSpreadDegrees>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<PawnKindDef ParentName="Must_BadgerBaseKind">
@@ -80,6 +88,37 @@
 		<race>Must_Badger_HMG</race>
 		<weaponTags>
 			<li>Must_Badger_HMG</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>0</min>
+					<max>0</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<ThingDef ParentName="Must_BadgerBase">
+		<defName>Must_Badger_Minigun</defName>
+		<label>Minigun badger</label>
+		<comps>
+			<li Class="rep.heframework.CompProperties_Smokescreen">
+				<smokeProjectile>Bullet_SmokeLauncher</smokeProjectile>
+				<range>7</range>
+				<projectileCount>5</projectileCount>
+				<projectileSpreadDegrees>30</projectileSpreadDegrees>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="Must_BadgerBaseKind">
+		<defName>Must_Badger_Minigun</defName>
+		<label>Minigun badger</label>
+		<race>Must_Badger_Minigun</race>
+		<weaponTags>
+			<li>Must_Badger_Minigun</li>
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">

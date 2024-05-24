@@ -3,11 +3,11 @@
 	<ThingDef ParentName="BaseGun">
 		<defName>Must_B_HMG</defName>
 		<label>.338 HMG</label>
-		<description>A late-industrial drone-mounted machinegun chambered in .338 Norma Magnum.</description>
+		<description>A drone-mounted heavy machinegun chambered in .338 Norma Magnum. The high-powered rounds easily penetrate light infantry armor, and outrange most light arms. Attached smoke grenade dischargers create an instant smoke screen when needed.</description>
 		<graphicData>
 			<texPath>Wolverines/Weapons/UGBadgerTurretHMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>4</drawSize>
+			<drawSize>3</drawSize>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<tradeability>None</tradeability>
@@ -17,22 +17,22 @@
 		</weaponClasses>
 		<statBases>
 			<MarketValue>1400</MarketValue>
-			<Mass>35</Mass>
-			<Bulk>13</Bulk>
+			<Mass>32.94</Mass>
+			<Bulk>14.36</Bulk>
 			<SightsEfficiency>1</SightsEfficiency>
 			<ShotSpread>0.04</ShotSpread>
-			<SwayFactor>0.96</SwayFactor>
+			<SwayFactor>1.27</SwayFactor>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.24</recoilAmount>
+				<recoilAmount>0.95</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
 				<warmupTime>1.3</warmupTime>
-				<range>75</range>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<range>121</range>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
 				<soundCast>Shot_Minigun</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
@@ -72,23 +72,79 @@
 				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<!--<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
-				<weaponCarryDrawOffsets>
-					<north>
-						<drawOffset>(0,0,0.5)</drawOffset>
-					</north>
-					<east>
-						<drawOffset>(-0.23,0,0.22)</drawOffset>
-					</east>
-					<south>
-						<drawOffset>(0.02,0,0.2)</drawOffset>
-					</south>
-					<west>
-						<drawOffset>(0.23,0,0.22)</drawOffset>
-					</west>
-				</weaponCarryDrawOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>Must_B_Minigun</defName>
+		<label>7.62x51mm NATO minigun</label>
+		<description>A drone-mounted minigun chambered in 7.62x51mm NATO. While the cartridge is not as powerful as other drone-mounted weapon variants, the sheer volume of fire is sufficient to shred most targets. Attached smoke grenade dischargers create an instant smoke screen when needed.</description>
+		<graphicData>
+			<texPath>Wolverines/Weapons/UGBadgerTurretMinigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>42.00</Mass>
+			<Bulk>9.02</Bulk>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.06</ShotSpread>
+			<SwayFactor>1.32</SwayFactor>
+			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.52</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+				<warmupTime>2.3</warmupTime>
+				<range>86</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>50</burstShotCount>
+				<soundCast>Shot_Minigun</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
 			</li>
-		</modExtensions>-->
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>600</magazineSize>
+				<reloadTime>17.8</reloadTime>
+				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>25</aimedBurstShotCount>
+				<aiAimMode>SuppressFire</aiAimMode>
+				<aiUseBurstMode>False</aiUseBurstMode>
+			</li>
+		</comps>
+		<weaponTags Inherit="False">
+			<li>Must_Badger_Minigun</li>
+			<li>CE_AI_Suppressive</li>
+			<li>NoSwitch</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.44</cooldownTime>
+				<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+		</tools>
 	</ThingDef>
 </Defs>

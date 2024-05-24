@@ -21,7 +21,7 @@
 			<Bulk>11.63</Bulk>
 			<Mass>8.7</Mass>
 			<ShotSpread>0.08</ShotSpread>
-			<SwayFactor>1.80</SwayFactor>
+			<SwayFactor>0.82</SwayFactor>
 			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.1</SightsEfficiency>
 		</statBases>
@@ -56,9 +56,6 @@
 				<aimedBurstShotCount>5</aimedBurstShotCount>
 			</li>
 		</comps>
-		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
-		</thingSetMakerTags>
 		<weaponTags Inherit="False">
 			<li>Must_PC_LMG</li>
 			<li>CE_AI_Suppressive</li>
@@ -97,10 +94,10 @@
 		</weaponClasses>
 		<statBases>
 			<MarketValue>1200</MarketValue>
-			<Bulk>14.48</Bulk>
+			<Bulk>15.48</Bulk>
 			<Mass>17.39</Mass>
 			<ShotSpread>0.02</ShotSpread>
-			<SwayFactor>3.19</SwayFactor>
+			<SwayFactor>1.09</SwayFactor>
 			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
 			<SightsEfficiency>2.00</SightsEfficiency>
 		</statBases>
