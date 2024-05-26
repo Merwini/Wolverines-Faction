@@ -78,7 +78,7 @@
 	<ThingDefs>
 		<defName>Must_PC_AMR</defName>
 		<label>mounted AMR</label>
-		<description>A drone-mounted light machine gun chambered for .277 cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
+		<description>A drone-mounted anti-materiel rifle chambered for .50 BMG cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
 		<graphicData>
 			<texPath>Wolverines/Weapons/TurretLight_AMRgun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

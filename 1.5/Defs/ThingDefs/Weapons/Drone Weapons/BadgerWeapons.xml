@@ -77,7 +77,7 @@
 	<ThingDef ParentName="BaseGun">
 		<defName>Must_B_Minigun</defName>
 		<label>7.62x51mm NATO minigun</label>
-		<description>A drone-mounted minigun chambered in 7.62x51mm NATO. While the cartridge is not as powerful as other drone-mounted weapon variants, the sheer volume of fire is sufficient to shred most targets. Attached smoke grenade dischargers create an instant smoke screen when needed.</description>
+		<description>A drone-mounted minigun chambered in 7.62x51mm NATO. While the cartridge is not as powerful as other drone-mounted weapon variants, the sheer volume of fire is sufficient to shred most targets. Integrated smoke grenade dischargers create an instant smoke screen when needed.</description>
 		<graphicData>
 			<texPath>Wolverines/Weapons/UGBadgerTurretMinigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -131,6 +131,80 @@
 		</comps>
 		<weaponTags Inherit="False">
 			<li>Must_Badger_Minigun</li>
+			<li>CE_AI_Suppressive</li>
+			<li>NoSwitch</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.44</cooldownTime>
+				<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseGun">
+		<defName>Must_B_MMG</defName>
+		<label>.277 MMG with MLRS</label>
+		<description>A combined weapon featuring a medium machinegun for anti-infantry, along with a small number of anti-armor rocket tubes. Integrated smoke grenade dischargers create an instant smoke screen when needed.</description>
+		<graphicData>
+			<texPath>Wolverines/Weapons/UGBadgerTurretATGM</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>45.00</Mass>
+			<Bulk>18.00</Bulk>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.06</ShotSpread>
+			<SwayFactor>1.44</SwayFactor>
+			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.48</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
+				<warmupTime>1.3</warmupTime>
+				<range>86</range>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<burstShotCount>20</burstShotCount>
+				<soundCast>Shot_Minigun</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>450</magazineSize>
+				<reloadTime>17.8</reloadTime>
+				<ammoSet>AmmoSet_277Fury</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>10</aimedBurstShotCount>
+				<aiAimMode>SuppressFire</aiAimMode>
+				<aiUseBurstMode>False</aiUseBurstMode>
+			</li>
+		</comps>
+		<weaponTags Inherit="False">
+			<li>Must_Badger_MMG</li>
 			<li>CE_AI_Suppressive</li>
 			<li>NoSwitch</li>
 		</weaponTags>

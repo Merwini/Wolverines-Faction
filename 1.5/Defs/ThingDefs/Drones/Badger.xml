@@ -130,4 +130,41 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+
+	<ThingDef ParentName="Must_BadgerBase">
+		<defName>Must_Badger_MMG</defName>
+		<label>anti-armor badger</label>
+		<comps>
+			<li Class="rep.heframework.CompProperties_Smokescreen">
+				<smokeProjectile>Bullet_SmokeLauncher</smokeProjectile>
+				<range>7</range>
+				<projectileCount>5</projectileCount>
+				<projectileSpreadDegrees>30</projectileSpreadDegrees>
+			</li>
+			<li Class="rep.heframework.cecompat.CompProperties_AntiarmorCE">
+				<ability>Must_B_Antiarmor</ability>
+				<magazineSize>5</magazineSize>
+				<ticksBetweenShots>180</ticksBetweenShots>
+				<armorSharpThreshold>10</armorSharpThreshold>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="Must_BadgerBaseKind">
+		<defName>Must_Badger_MMG</defName>
+		<label>anti-armor badger</label>
+		<race>Must_Badger_MMG</race>
+		<weaponTags>
+			<li>Must_Badger_MMG</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>0</min>
+					<max>0</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 </Defs>
