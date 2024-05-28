@@ -75,7 +75,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDefs>
+	<ThingDef ParentName="BaseGun">
 		<defName>Must_PC_AMR</defName>
 		<label>mounted AMR</label>
 		<description>A drone-mounted anti-materiel rifle chambered for .50 BMG cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
@@ -142,5 +142,80 @@
 				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
 			</li>
 		</tools>
-	</ThingDefs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>Must_PC_Flamer</defName>
+		<label>mounted flamethrower</label>
+		<description>A drone-mounted flamethrower. Sprays a stream of flammable liquid, effective at denying enemies the use of fortified positions.</description>
+		<graphicData>
+			<texPath>Wolverines/Weapons/TurretLight_Flamergun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5,1.5</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>5.0</ShotSpread>
+			<SwayFactor>0.95</SwayFactor>
+			<Bulk>6</Bulk>
+			<Mass>9.5</Mass>
+			<RangedWeapon_Cooldown>0.69</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.35</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Flamethrower_Prometheum</defaultProjectile>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<warmupTime>1.3</warmupTime>
+				<range>20</range>
+				<minRange>3</minRange>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>40</burstShotCount>
+				<soundCast>HissFlamethrower</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>400</magazineSize>
+				<reloadTime>15</reloadTime>
+				<ammoSet>AmmoSet_Flamethrower</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>true</aiUseBurstMode>
+				<aimedBurstShotCount>20</aimedBurstShotCount>
+				<aiAimMode>SuppressFire</aiAimMode>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>Must_PC_Flamer</li>
+			<li>GunHeavy</li>
+			<li>CE_AI_AOE</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.25</cooldownTime>
+				<armorPenetrationBlunt>1.730</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
 </Defs>

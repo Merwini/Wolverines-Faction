@@ -12,7 +12,7 @@
 			<CarryWeight>30</CarryWeight>
 			<CarryBulk>30</CarryBulk>
 		</statBases>
-		<tools>
+		<tools Class="CombatExtended.ToolCE">
 			<li>
 				<label>left clamp</label>
 				<capacities>
@@ -23,7 +23,7 @@
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 			</li>
-			<li>
+			<li Class="CombatExtended.ToolCE">
 				<label>right clamp</label>
 				<capacities>
 					<li>Blunt</li>
@@ -99,6 +99,37 @@
 					<max>0</max>
 				</primaryMagazineCount>
 				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<ThingDef ParentName="Must_PolecatBase">
+		<defName>Must_Polecat_Flamer</defName>
+		<label>flamethrower polecat</label>
+	</ThingDef>
+
+	<PawnKindDef ParentName="Must_PolecatBaseKind">
+		<defName>Must_Polecat_Flamer</defName>
+		<label>flamethrower polecat</label>
+		<race>Must_Polecat_Flamer</race>
+		<weaponTags>
+			<li>Must_PC_Flamer</li>
+		</weaponTags>
+		<lifeStages Inherit="false">
+			<li>
+				<bodyGraphicData>
+					<texPath>Wolverines/Drones/UGPolecat/UGPolecatFlamer</texPath>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>0</min>
+					<max>0</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>NapalmFuel</forcedAmmoCategory>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
