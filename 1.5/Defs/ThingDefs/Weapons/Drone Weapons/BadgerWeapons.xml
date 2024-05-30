@@ -153,7 +153,7 @@
 		<label>.277 MMG with MLRS</label>
 		<description>A combined weapon featuring a medium machinegun for anti-infantry, along with a small number of anti-armor rocket tubes. Integrated smoke grenade dischargers create an instant smoke screen when needed.</description>
 		<graphicData>
-			<texPath>Wolverines/Weapons/UGBadgerTurretATGM</texPath>
+			<texPath>Wolverines/Weapons/UGBadgerTurretMMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>3</drawSize>
 		</graphicData>
