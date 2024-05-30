@@ -83,7 +83,7 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="Must_BadgerBaseKind">
-		<defName>Must_Badger_HMG</defName>
+		<defName>Must_Badger_HMGKind</defName>
 		<label>HMG badger</label>
 		<race>Must_Badger_HMG</race>
 		<weaponTags>
@@ -114,7 +114,7 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="Must_BadgerBaseKind">
-		<defName>Must_Badger_Minigun</defName>
+		<defName>Must_Badger_MinigunKind</defName>
 		<label>Minigun badger</label>
 		<race>Must_Badger_Minigun</race>
 		<weaponTags>
@@ -143,7 +143,7 @@
 			</li>
 			<li Class="rep.heframework.cecompat.CompProperties_AntiarmorCE">
 				<ability>Must_B_Antiarmor</ability>
-				<magazineSize>5</magazineSize>
+				<magazineSize>6</magazineSize>
 				<ticksBetweenShots>180</ticksBetweenShots>
 				<armorSharpThreshold>10</armorSharpThreshold>
 			</li>
@@ -151,7 +151,7 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="Must_BadgerBaseKind">
-		<defName>Must_Badger_MMG</defName>
+		<defName>Must_Badger_MMGKind</defName>
 		<label>anti-armor badger</label>
 		<race>Must_Badger_MMG</race>
 		<weaponTags>

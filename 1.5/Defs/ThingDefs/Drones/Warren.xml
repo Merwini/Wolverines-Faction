@@ -104,4 +104,37 @@
 			<li>HEF_RF_50C</li>
 		</weaponTags>
 	</PawnKindDef>
+
+	<ThingDef ParentName="Must_WarrenBase">
+		<defName>Must_Warren_IFV</defName>
+		<label>Warren IFV</label>
+		<comps>
+			<li Class="DroneTank.CompProperties_VehicleWeapon">
+				<turretRotationFollowPawn>true</turretRotationFollowPawn>
+				<layerOverrideNorth>true</layerOverrideNorth>
+				<northDrawOffset>(.3,0,.6)</northDrawOffset>
+				<southDrawOffset>(-.3,0,-.6)</southDrawOffset>
+				<eastDrawOffset>(.5,0,-.35)</eastDrawOffset>
+				<westDrawOffset>(-.5,0,.35)</westDrawOffset>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="Must_WarrenBaseKind">
+		<defName>Must_Warren_IFV</defName>
+		<label>Warren IFV</label>
+		<race>Must_Warren_IFV</race>
+		<weaponTags>
+			<li>Must_Badger_HMG</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>0</min>
+					<max>0</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 </Defs>

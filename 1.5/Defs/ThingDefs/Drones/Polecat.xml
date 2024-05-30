@@ -12,8 +12,8 @@
 			<CarryWeight>30</CarryWeight>
 			<CarryBulk>30</CarryBulk>
 		</statBases>
-		<tools Class="CombatExtended.ToolCE">
-			<li>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
 				<label>left clamp</label>
 				<capacities>
 					<li>Blunt</li>
@@ -81,16 +81,34 @@
 	</PawnKindDef>
 
 	<ThingDef ParentName="Must_PolecatBase">
-		<defName>Must_Polecat_LMG</defName>
-		<label>LMG polecat</label>
+		<defName>Must_Polecat_Gun</defName>
+		<label>gun polecat</label>
 	</ThingDef>
 
 	<PawnKindDef ParentName="Must_PolecatBaseKind">
-		<defName>Must_Polecat_LMG</defName>
+		<defName>Must_Polecat_LMGKind</defName>
 		<label>LMG polecat</label>
-		<race>Must_Polecat_LMG</race>
+		<race>Must_Polecat_Gun</race>
 		<weaponTags>
 			<li>Must_PC_LMG</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>0</min>
+					<max>0</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Must_PolecatBaseKind">
+		<defName>Must_Polecat_AMRKind</defName>
+		<label>AMR polecat</label>
+		<race>Must_Polecat_Gun</race>
+		<weaponTags>
+			<li>Must_PC_AMR</li>
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -109,7 +127,7 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="Must_PolecatBaseKind">
-		<defName>Must_Polecat_Flamer</defName>
+		<defName>Must_Polecat_FlamerKind</defName>
 		<label>flamethrower polecat</label>
 		<race>Must_Polecat_Flamer</race>
 		<weaponTags>
@@ -132,5 +150,52 @@
 				<forcedAmmoCategory>NapalmFuel</forcedAmmoCategory>
 			</li>
 		</modExtensions>
+	</PawnKindDef>
+
+	<ThingDef ParentName="Must_PolecatBase">
+		<defName>Must_Polecat_Explosive</defName>
+		<label>explosive polecat</label>
+		<statBases>
+			<MeleeHitChance>10</MeleeHitChance>
+		</statBases>
+		<race>
+			<body>Must_Polecat_ArmlessBody</body>
+		</race>
+		<tools Inherit="False">
+			<li Class="CombatExtended.ToolCE">
+				<label>self-destruct</label>
+				<capacities>
+					<li>Must_SelfDestruct</li>
+				</capacities>
+				<power>1</power>
+				<extraMeleeDamages>
+					<li>
+						<def>Must_Polecat_BombSelfDestruct</def>
+						<amount>1</amount>
+						<chance>1</chance>
+					</li>
+				</extraMeleeDamages>
+				<cooldownTime>0.1</cooldownTime>
+				<armorPenetrationBlunt>1000</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>1</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="Must_PolecatBaseKind">
+		<defName>Must_Polecat_ExplosiveKind</defName>
+		<label>explosive polecat</label>
+		<race>Must_Polecat_Explosive</race>
+		<weaponMoney>0~0</weaponMoney>
+		<lifeStages Inherit="False">
+			<li>
+				<bodyGraphicData>
+					<texPath>Wolverines/Drones/UGPolecat/UGPolecatBomb</texPath>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
 	</PawnKindDef>
 </Defs>

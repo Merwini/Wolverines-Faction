@@ -8,7 +8,7 @@
 			<success>Normal</success>
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/DamageDef[defName="Must_Ferret_BombSelfDestruct" or defName="Must_Ferret_IncendiarySelfDestruct"]/workerClass</xpath>
+					<xpath>Defs/DamageDef[defName="Must_Ferret_BombSelfDestruct" or defName="Must_Ferret_IncendiarySelfDestruct" or defName="Must_Polecat_BombSelfDestruct"]/workerClass</xpath>
 					<value>
 						<workerClass>rep.heframework.cecompat.DamageWorker_SelfDestructCE</workerClass>
 					</value>
@@ -16,13 +16,19 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/DamageDef[defName="Must_Ferret_BombSelfDestruct"]/explosionCellMote</xpath>
 					<value>
-						<explosionCellMote>Bullet_81mmMortarShell_HE</explosionCellMote>
+						<explosionCellMote>Bullet_60mmMortarShell_HE</explosionCellMote>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/DamageDef[defName="Must_Ferret_IncendiarySelfDestruct"]/explosionCellMote</xpath>
 					<value>
-						<explosionCellMote>Bullet_81mmMortarShell_Incendiary</explosionCellMote>
+						<explosionCellMote>Bullet_60mmMortarShell_Incendiary</explosionCellMote>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/DamageDef[defName="Must_Polecat_BombSelfDestruct"]/explosionCellMote</xpath>
+					<value>
+						<explosionCellMote>Bullet_81mmMortarShell_HE</explosionCellMote>
 					</value>
 				</li>
 			</operations>

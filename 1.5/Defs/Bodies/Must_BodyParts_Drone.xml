@@ -123,6 +123,16 @@
 		</tags>
 	</BodyPartDef>
 
+	<BodyPartDef ParentName="Must_DroneBodyPartBase">
+		<defName>Must_PC_LegArm</defName>
+		<label>leg</label>
+		<hitPoints>25</hitPoints>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
 	<BodyPartDef>
 		<defName>Must_PC_Arm</defName>
 		<label>arm</label>

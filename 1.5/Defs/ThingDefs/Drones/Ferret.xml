@@ -85,7 +85,7 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="Must_Ferret_BaseKind">
-		<defName>Must_Ferret_SMG</defName>
+		<defName>Must_Ferret_SMGKind</defName>
 		<label>SMG ferret drone</label>
 		<race>Must_Ferret_Gun</race>
 		<weaponTags>
@@ -104,7 +104,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Must_Ferret_BaseKind">
-		<defName>Must_Ferret_GL</defName>
+		<defName>Must_Ferret_GLKind</defName>
 		<label>GL ferret drone</label>
 		<race>Must_Ferret_Gun</race>
 		<weaponTags>
@@ -152,7 +152,7 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="Must_Ferret_BaseKind">
-		<defName>Must_Ferret_Explosive</defName>
+		<defName>Must_Ferret_ExplosiveKind</defName>
 		<label>explosive ferret drone</label>
 		<race>Must_Ferret_Explosive</race>
 		<lifeStages Inherit="False">
@@ -195,7 +195,7 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="Must_Ferret_BaseKind">
-		<defName>Must_Ferret_Incendiary</defName>
+		<defName>Must_Ferret_IncendiaryKind</defName>
 		<label>incendiary ferret drone</label>
 		<race>Must_Ferret_Incendiary</race>
 		<lifeStages Inherit="False">
