@@ -16,6 +16,12 @@
 			<li>Must_LightArmor</li>
 		</apparelTags>
 		<apparelMoney>1200~1800</apparelMoney>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~8</range>
+			</li>
+		</skills>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Must_LightInfantryBase">
@@ -71,4 +77,58 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+	<PawnKindDef ParentName="Must_LightInfantryBase">
+		<defName>Must_LightInfantry_APHE</defName>
+		<label>light infantry (AP-HE)</label>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>5</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>ExplosiveAP</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>100</min>
+						<max>250</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>1</min>
+						<max>1</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Must_LightInfantryBase">
+		<defName>Must_LightInfantry_Sabot</defName>
+		<label>light infantry (Sabot)</label>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>5</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>Sabot</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>100</min>
+						<max>250</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>1</min>
+						<max>1</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+
 </Defs>

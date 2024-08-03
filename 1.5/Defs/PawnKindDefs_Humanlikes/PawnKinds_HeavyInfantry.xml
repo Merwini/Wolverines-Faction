@@ -17,6 +17,34 @@
 			<li>Must_HeavyArmor</li>
 		</apparelTags>
 		<apparelMoney>1300~1900</apparelMoney>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~10</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Must_HumanCombatantBase" Abstract="True" Name ="Must_DemoInfantryBase">
+		<combatPower>240</combatPower>
+		<weaponTags Inherit="false" />
+		<weaponMoney>800~1700</weaponMoney>
+		<apparelRequired>
+			<li>Must_BattleDress</li>
+			<li>Must_HeavyArmor</li>
+			<li>Must_HeavyHelmet</li>
+			<li>Must_LargeBackpack</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>Must_HeavyArmor</li>
+		</apparelTags>
+		<apparelMoney>1300~1900</apparelMoney>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>7~11</range>
+			</li>
+		</skills>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Must_HeavyInfantryBase">
@@ -72,33 +100,177 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
+
 	<PawnKindDef ParentName="Must_HeavyInfantryBase">
-		<defName>Must_HeavyInfantry_LAW</defName>
-		<label>LAW heavy infantry</label>
-		<combatPower>360</combatPower>
-		<weaponTags>
-			<li>Must_LAW</li>
-		</weaponTags>
-		<weaponMoney>9999~9999</weaponMoney>
+		<defName>Must_HeavyInfantry_APHE</defName>
+		<label>heavy infantry (AP-HE)</label>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
-					<min>0</min>
-					<max>2</max>
+					<min>5</min>
+					<max>7</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>ExplosiveAP</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>100</min>
+						<max>250</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>1</min>
+						<max>1</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	
+
+	<PawnKindDef ParentName="Must_HeavyInfantryBase">
+		<defName>Must_HeavyInfantry_Sabot</defName>
+		<label>heavy infantry (Sabot)</label>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>5</min>
+					<max>7</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>Sabot</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>100</min>
+						<max>250</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>1</min>
+						<max>1</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Must_DemoInfantryBase">
+		<defName>Must_DemoInfantry_FMJ</defName>
+		<label>demolition infantry (FMJ)</label>
+		<weaponTags Inherit="False">
+			<li>Must_BasicLAW</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>3</max>
 				</primaryMagazineCount>
 				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
 				<forcedSidearm>
 					<sidearmMoney>
-						<min>600</min>
-						<max>1400</max>
+						<min>800</min>
+						<max>1200</max>
 					</sidearmMoney>
 					<weaponTags>
 						<li>Must_BR</li>
 					</weaponTags>
 					<magazineCount>
-						<min>3</min>
-						<max>5</max>
+						<min>2</min>
+						<max>4</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Must_DemoInfantryBase">
+		<defName>Must_DemoInfantry_API</defName>
+		<label>demolition infantry (AP-I)</label>
+		<weaponTags Inherit="False">
+			<li>Must_IncendiaryLAW</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>3</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>IncendiaryAP</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>800</min>
+						<max>1200</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>Must_BR</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>4</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Must_DemoInfantryBase">
+		<defName>Must_DemoInfantry_APHE</defName>
+		<label>demolition infantry (AP-HE)</label>
+		<weaponTags Inherit="False">
+			<li>Must_ASM</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>3</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>ExplosiveAP</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>800</min>
+						<max>1200</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>Must_BR</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>4</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Must_DemoInfantryBase">
+		<defName>Must_DemoInfantry_Sabot</defName>
+		<label>demolition infantry (Sabot)</label>
+		<weaponTags Inherit="False">
+			<li>Must_ASM</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>3</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>Sabot</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>800</min>
+						<max>1200</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>Must_BR</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>4</max>
 					</magazineCount>
 				</forcedSidearm>
 			</li>

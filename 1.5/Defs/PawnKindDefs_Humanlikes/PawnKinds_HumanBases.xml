@@ -9,7 +9,7 @@
 
 	<PawnKindDef ParentName="Must_HumanBase" Abstract="True" Name="Must_HumanCombatantBase" >
 		<isFighter>true</isFighter>
-		<invNutrition>2</invNutrition>
+		<invNutrition>4</invNutrition>
 		<invFoodDef>MealSurvivalPack</invFoodDef>
 		<gearHealthRange>1~1</gearHealthRange>
 		<apparelTags/>
