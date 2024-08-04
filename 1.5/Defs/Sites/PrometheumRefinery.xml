@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SitePartDef ParentName="Must_Site_Base">
+		<defName>Must_Site_Prom</defName>
+		<label>prometheum refinery</label>
+		<description>A military expansion mass-producing prometheum.</description>
+		<arrivedLetter>There is an enemy prometheum refinery in this area.</arrivedLetter>
+		<selectionWeight>1</selectionWeight>
+		<tags>
+			<li>Must_PGM_Prometheum</li>
+		</tags>
+		<modExtensions>
+			<li Class="rep.heframework.SiteDefendersExtension">
+				<factionsToPawnGroups>
+					<li>
+						<faction>Must_FactionHostile</faction>
+						<pawnGroups>
+							<li>PrometheumInfantry</li>
+						</pawnGroups>
+					</li>
+				</factionsToPawnGroups>
+			</li>
+		</modExtensions>
+	</SitePartDef>
+
+	<GenStepDef>
+		<defName>Must_Site_Prom_Struct</defName>
+		<linkWithSite>Must_Site_Prom</linkWithSite>
+		<order>450</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+			<structureLayoutDefs>
+				<li>Must_Prom_Three</li>
+			</structureLayoutDefs>
+			<preventBridgeable>true</preventBridgeable>
+		</genStep>
+	</GenStepDef>
+	<GenStepDef>
+		<defName>Must_Site_Prom_Enemies</defName>
+		<linkWithSite>Must_Site_Prom</linkWithSite>
+		<order>451</order>
+		<genStep Class="rep.heframework.GenStep_TaggedPawnGroup">
+			<threatPointsRange>200~10000</threatPointsRange>
+			<pawnGroupMakerName>PrometheumInfantry</pawnGroupMakerName>
+		</genStep>
+	</GenStepDef>
+</Defs>

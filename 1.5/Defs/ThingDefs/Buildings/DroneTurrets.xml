@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="TurretBase" Abstract="True" Name="Must_TurretDrone">
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Stunnable">
+				<affectedDamageDefs>
+					<li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+		</comps>
+		<designationCategory Inherit="False">Misc</designationCategory> <!--Todo remove this after making maps-->
+		<thingCategories Inherit="False"/>
+	</ThingDef>
+
+	<ThingDef ParentName="Must_TurretDrone">
+		<defName>Must_PolecatFlameTurret</defName>
+		<label>immobile flamethrower polecat</label>
+		<description>A polecat drone that does not yet have its movement systems installed, but has its weapon system active.</description>
+		<graphicData>
+			<texPath>Wolverines/Drones/UGPolecat/UGPolecatFlamer</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>0.4</Flammability>
+			<AimingAccuracy>0.5</AimingAccuracy>
+			<ShootingAccuracyTurret>0.75</ShootingAccuracyTurret>
+			<NightVisionEfficiency>0.5</NightVisionEfficiency>
+		</statBases>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Must_PC_Flamer</turretGunDef>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="Must_TurretDrone">
+		<defName>Must_PolecatBombTurret</defName>
+		<label>immobile grenade launcher polecat</label>
+		<description>A polecat drone that does not yet have its movement systems installed, but has its weapon system active.</description>
+		<graphicData>
+			<texPath>Wolverines/Drones/UGPolecat/UGPolecatBomb</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<Flammability>0.4</Flammability>
+			<AimingAccuracy>0.5</AimingAccuracy>
+			<ShootingAccuracyTurret>0.75</ShootingAccuracyTurret>
+			<NightVisionEfficiency>0.5</NightVisionEfficiency>
+		</statBases>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Must_PC_AGL</turretGunDef>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+	</ThingDef>
+	
+	
+</Defs>

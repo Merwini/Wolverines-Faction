@@ -12,7 +12,7 @@
 		<cooldownTicksRange>300~300</cooldownTicksRange>
 		<charges>5</charges>
 		<verbProperties Class="CombatExtended.VerbPropertiesCE">
-			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<verbClass>CombatExtended.Verb_AbilityShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Bullet_M72LAW</defaultProjectile>
 			<warmupTime>0.5</warmupTime>
@@ -26,8 +26,8 @@
 			<ejectsCasings>false</ejectsCasings>
 		</verbProperties>
 		<statBases>
-			<SwayFactor>1.0</SwayFactor>
-			<ShotSpread>0.5</ShotSpread>
+			<SwayFactor>0.0</SwayFactor>
+			<ShotSpread>100.0</ShotSpread>
 			<SightsEfficiency>1</SightsEfficiency>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>

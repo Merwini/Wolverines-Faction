@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="NonDeconstructibleAncientBuildingBase" Abstract="True" Name="Must_DronePropBase">
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<fillPercent>0.5</fillPercent>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<rotatable>true</rotatable>
+		<statBases>
+			<WorkToBuild>30</WorkToBuild>
+		</statBases>
+		<designationCategory Inherit="False">Misc</designationCategory> <!--Todo remove this after making maps-->
+	</ThingDef>
+
+	<ThingDef ParentName="Must_DronePropBase" Abstract="True" Name="Must_FerretPropBase">
+		<graphicData>
+			<texPath>Wolverines/Drones/UGFerret/UGFerret</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="Must_FerretPropBase">
+		<defName>Must_FerretGunProp</defName>
+		<label>inactive ferret drone</label>
+		<description>A ferret drone that hasn't been armed and deployed yet.</description>
+	</ThingDef>
+	
+	<ThingDef ParentName="Must_FerretPropBase">
+		<defName>Must_FerretIncProp</defName>
+		<label>inactive incendiary ferret drone</label>
+		<description>An incendiary ferret drone that hasn't been armed and deployed yet.</description>
+		<graphicData>
+			<texPath>Wolverines/Drones/UGFerret/UGFerretBomb</texPath>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<damageAmountBase>15</damageAmountBase>
+				<explosiveDamageType>PrometheumFlame</explosiveDamageType>
+				<explosiveRadius>5</explosiveRadius>
+				<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>0.75</preExplosionSpawnChance>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
+				<wickTicks>
+					<min>5</min>
+					<max>20</max>
+				</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Must_FerretPropBase">
+		<defName>Must_FerretBombProp</defName>
+		<label>inactive explosive ferret drone</label>
+		<description>An explosive ferret drone that hasn't been armed and deployed yet.</description>
+		<graphicData>
+			<texPath>Wolverines/Drones/UGFerret/UGFerretBomb</texPath>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<damageAmountBase>156</damageAmountBase>
+				<explosiveRadius>2.5</explosiveRadius>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
+				<wickTicks>
+					<min>5</min>
+					<max>30</max>
+				</wickTicks>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>16</Fragment_Large>
+					<Fragment_Small>25</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Must_DronePropBase" Abstract="True" Name="Must_PolecatPropBase">
+		<graphicData>
+			<texPath>Wolverines/Drones/UGPolecat/UGPolecat</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="Must_PolecatPropBase">
+		<defName>Must_PolecatGunProp</defName>
+		<label>inactive polecat drone</label>
+		<description>A polecat drone that hasn't been armed and deployed yet.</description>
+	</ThingDef>
+
+	<ThingDef ParentName="Must_PolecatPropBase">
+		<defName>Must_PolecatIncProp</defName>
+		<label>inactive polecat drone</label>
+		<description>An incendiary polecat drone that hasn't been armed and deployed yet.</description>
+		<graphicData>
+			<texPath>Wolverines/Drones/UGPolecat/UGPolecatFlamer</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Must_PolecatPropBase">
+		<defName>Must_PolecatBombProp</defName>
+		<label>inactive polecat drone</label>
+		<description>An explosive polecat drone that hasn't been armed and deployed yet.</description>
+		<graphicData>
+			<texPath>Wolverines/Drones/UGPolecat/UGPolecatBomb</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Must_DronePropBase" Abstract="True" Name="Must_BadgerPropBase">
+		<graphicData>
+			<texPath>Wolverines/Drones/UGBadger/UGBadger</texPath>
+			<drawSize>(2.7,2.7)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="Must_BadgerPropBase">
+		<defName>Must_BadgerGunProp</defName>
+		<label>inactive badger drone</label>
+		<description>A badger drone that hasn't been armed and deployed yet.</description>
+	</ThingDef>
+</Defs>

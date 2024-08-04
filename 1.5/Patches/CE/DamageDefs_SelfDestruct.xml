@@ -16,21 +16,21 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/DamageDef[defName="Must_Ferret_BombSelfDestruct"]/explosionCellMote</xpath>
 					<value>
-						<explosionCellMote>Bullet_60mmMortarShell_HE</explosionCellMote>
+						<explosionCellMote>Bullet_81mmMortarShell_HE</explosionCellMote>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/DamageDef[defName="Must_Ferret_IncendiarySelfDestruct"]/explosionCellMote</xpath>
 					<value>
-						<explosionCellMote>Bullet_60mmMortarShell_Incendiary</explosionCellMote>
+						<explosionCellMote>Bullet_81mmMortarShell_Incendiary</explosionCellMote>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<!--<li Class="PatchOperationReplace">
 					<xpath>Defs/DamageDef[defName="Must_Polecat_BombSelfDestruct"]/explosionCellMote</xpath>
 					<value>
 						<explosionCellMote>Bullet_81mmMortarShell_HE</explosionCellMote>
 					</value>
-				</li>
+				</li>-->
 			</operations>
 		</match>
 	</Operation>

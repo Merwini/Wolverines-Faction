@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<KCSG.SymbolDef>
+		<defName>Must_M7rifle</defName>
+		<thing>Must_M7rifle</thing>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
 		<defName>Must_Ammo_277Fury_Incendiary_Single</defName>
 		<thing>Ammo_277Fury_Incendiary</thing>
 		<maxStackSize>1</maxStackSize>

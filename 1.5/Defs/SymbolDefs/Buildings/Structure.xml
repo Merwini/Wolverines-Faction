@@ -1,9 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<KCSG.SymbolDef>
-		<defName>Must_DoorNoNPC</defName>
-		<thing>REP_DoorNoNPC</thing>
+		<defName>Must_DoorNoNPC_Steel</defName>
+		<thing>HEF_DoorNoNPC</thing>
 		<stuff>Steel</stuff>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_DoorNoNPC_WoodLog</defName>
+		<thing>HEF_DoorNoNPC</thing>
+		<stuff>WoodLog</stuff>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_Embrasure_BlocksGranite</defName>
+		<thing>CE_Embrasure</thing>
+		<stuff>BlocksGranite</stuff>
 	</KCSG.SymbolDef>
 
 	<KCSG.SymbolDef>
@@ -16,5 +28,31 @@
 		<defName>Must_Embrasure_BlocksSlate</defName>
 		<thing>CE_Embrasure</thing>
 		<stuff>BlocksSlate</stuff>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_Embrasure_WoodLog</defName>
+		<thing>CE_Embrasure</thing>
+		<stuff>WoodLog</stuff>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>HEF_SpawnPoint</defName>
+		<thing>HEF_SpawnPoint</thing>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>HEF_SpawnPointSingle</defName>
+		<thing>HEF_SpawnPointSingle</thing>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>HEF_SpawnPointRandom</defName>
+		<thing>HEF_SpawnPointRandom</thing>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>HEF_SpawnPointSingleRandom</defName>
+		<thing>HEF_SpawnPointSingleRandom</thing>
 	</KCSG.SymbolDef>
 </Defs>

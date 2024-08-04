@@ -12,6 +12,7 @@
 		<xpath>Defs/ThingDef[defName="CE_DisposableRocketLauncher"]/weaponTags</xpath>
 		<value>
 			<li>Must_LAW</li>
+			<li>Must_BasicLAW</li>
 		</value>
 	</Operation>
 </Patch>
