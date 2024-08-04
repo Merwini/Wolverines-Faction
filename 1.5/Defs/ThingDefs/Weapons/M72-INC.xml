@@ -3,105 +3,105 @@
 
   <!-- ==================== M72-74 ==================== -->
 
-  <ThingDef ParentName="BaseEquipment">
-    <defName>Must_M72-INC</defName>
-    <label>M72-74 incendiary munition</label>
-    <description>M72 variant refitted to shoot M74 incendiary rockets.</description>
-    <graphicData>
-      <texPath>Wolverines/Weapons/M72-INC</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <weaponClasses>
-      <li>RangedHeavy</li>
-    </weaponClasses>
-    <thingClass>ThingWithComps</thingClass>
-    <tickerType>Normal</tickerType>
-    <resourceReadoutPriority>First</resourceReadoutPriority>
-    <techLevel>Industrial</techLevel>
-    <stackLimit>25</stackLimit>
-    <statBases>
-      <MarketValue>80</MarketValue>
-      <SightsEfficiency>1.0</SightsEfficiency>
-      <ShotSpread>0.2</ShotSpread>
-      <SwayFactor>1.24</SwayFactor>
-      <Bulk>6.30</Bulk>
-      <Mass>2.5</Mass>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-    </statBases>
-    <weaponTags>
-      <li>GunHeavy</li>
+    <ThingDef ParentName="BaseEquipment">
+        <defName>Must_M72-INC</defName>
+        <label>M72-74 incendiary munition</label>
+        <description>M72 variant refitted to shoot M74 incendiary rockets.</description>
+        <graphicData>
+            <texPath>Wolverines/Weapons/M72-INC</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <thingClass>ThingWithComps</thingClass>
+        <tickerType>Normal</tickerType>
+        <resourceReadoutPriority>First</resourceReadoutPriority>
+        <techLevel>Industrial</techLevel>
+        <stackLimit>25</stackLimit>
+        <statBases>
+            <MarketValue>80</MarketValue>
+            <SightsEfficiency>1.0</SightsEfficiency>
+            <ShotSpread>0.2</ShotSpread>
+            <SwayFactor>1.24</SwayFactor>
+            <Bulk>6.30</Bulk>
+            <Mass>2.5</Mass>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>GunHeavy</li>
 			<li>Must_LAW</li>
-			<li>Must_Incendiary</li>
-    </weaponTags>
-    <thingCategories>
-      <li>WeaponsRanged</li>
-    </thingCategories>
-    <verbs>
-      <li Class="CombatExtended.VerbPropertiesCE">
-        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_M72-INC</defaultProjectile>
-        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
-        <warmupTime>1.7</warmupTime>
-        <range>40</range>
-        <minRange>5</minRange>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-        <soundCast>InfernoCannon_Fire</soundCast>
-        <muzzleFlashScale>14</muzzleFlashScale>
-      </li>
-    </verbs>
-    <comps>
-      <li Class="CombatExtended.CompProperties_FireModes">
-        <aiUseBurstMode>FALSE</aiUseBurstMode>
-        <aiAimMode>AimedShot</aiAimMode>
-      </li>
-    </comps>
-    <tools>
-      <li Class="CombatExtended.ToolCE">
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>8</power>
-        <cooldownTime>1.55</cooldownTime>
-        <chanceFactor>1.5</chanceFactor>
-        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
-      </li>
-      <li Class="CombatExtended.ToolCE">
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>5</power>
-        <cooldownTime>2.02</cooldownTime>
-        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
-        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
-      </li>
-      <li Class="CombatExtended.ToolCE">
-        <label>muzzle</label>
-        <capacities>
-          <li>Poke</li>
-        </capacities>
-        <power>8</power>
-        <cooldownTime>1.55</cooldownTime>
-        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
-      </li>
-    </tools>
-    <modExtensions>
-      <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.0,1.0</DrawSize>
-        <DrawOffset>-0.3,0.0</DrawOffset>
-      </li>
-    </modExtensions>
-    <tradeTags Inherit="False">
-      <li>CE_HeavyAmmo</li>
-    </tradeTags>
-  </ThingDef>
+	        <li>Must_IncendiaryLAW</li>
+        </weaponTags>
+        <thingCategories>
+            <li>WeaponsRanged</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_M72-INC</defaultProjectile>
+                <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+                <warmupTime>1.7</warmupTime>
+                <range>40</range>
+                <minRange>5</minRange>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>InfernoCannon_Fire</soundCast>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+        </comps>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.55</cooldownTime>
+                <chanceFactor>1.5</chanceFactor>
+                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>2.02</cooldownTime>
+                <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>muzzle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.55</cooldownTime>
+                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <modExtensions>
+            <li Class="CombatExtended.GunDrawExtension">
+                <DrawSize>1.0,1.0</DrawSize>
+                <DrawOffset>-0.3,0.0</DrawOffset>
+            </li>
+        </modExtensions>
+        <tradeTags Inherit="False">
+            <li>CE_HeavyAmmo</li>
+        </tradeTags>
+    </ThingDef>
 	
   <!-- ================== Projectile ================== -->
 

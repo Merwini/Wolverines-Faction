@@ -200,8 +200,85 @@
 				<aiAimMode>SuppressFire</aiAimMode>
 			</li>
 		</comps>
-		<weaponTags>
+		<weaponTags Inherit="False">
 			<li>Must_PC_Flamer</li>
+			<li>GunHeavy</li>
+			<li>CE_AI_AOE</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.25</cooldownTime>
+				<armorPenetrationBlunt>1.730</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>Must_PC_AGL</defName>
+		<label>mounted automatic grenade launcher</label>
+		<description>A drone-mounted 30mm automatic grenade launcher. Belt fed from a box of miniature grenades.</description>
+		<graphicData>
+			<texPath>Wolverines/Weapons/UGPolecatTurretMGL</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5,1.5</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>5.0</ShotSpread>
+			<SwayFactor>0.95</SwayFactor>
+			<Bulk>6</Bulk>
+			<Mass>9.5</Mass>
+			<RangedWeapon_Cooldown>0.69</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>2.38</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_30x29mmGrenade_HE</defaultProjectile>
+				<warmupTime>1.435</warmupTime>
+				<minRange>3</minRange>
+				<range>62</range>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>AGS</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>30</magazineSize>
+				<reloadTime>15</reloadTime>
+				<ammoSet>AmmoSet_30x29mmGrenade</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+				<noSnapshot>TRUE</noSnapshot>
+			</li>
+		</comps>
+		<weaponTags Inherit="False">
+			<li>Must_PC_AGL</li>
 			<li>GunHeavy</li>
 			<li>CE_AI_AOE</li>
 		</weaponTags>

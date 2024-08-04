@@ -131,6 +131,24 @@
 		</modExtensions>
 	</PawnKindDef>
 
+	<PawnKindDef ParentName="Must_BadgerBaseKind">
+		<defName>Must_Badger_MinigunAPIKind</defName>
+		<label>Minigun badger</label>
+		<race>Must_Badger_Minigun</race>
+		<weaponTags>
+			<li>Must_Badger_Minigun</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>0</min>
+					<max>0</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>IncendiaryAP</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
 	<ThingDef ParentName="Must_BadgerBase">
 		<defName>Must_Badger_MMG</defName>
 		<label>anti-armor badger</label>

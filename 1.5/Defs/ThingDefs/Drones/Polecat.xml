@@ -67,7 +67,6 @@
 
 	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_PolecatBaseKind" Abstract="True">
 		<defaultFactionType>Must_FactionHostile</defaultFactionType>
-		<weaponMoney>9999~9999</weaponMoney>
 		<forceNormalGearQuality>True</forceNormalGearQuality>
 		<lifeStages>
 			<li>
@@ -92,13 +91,71 @@
 		<weaponTags>
 			<li>Must_PC_LMG</li>
 		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
-					<min>0</min>
-					<max>0</max>
+					<min>1</min>
+					<max>1</max>
 				</primaryMagazineCount>
 				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Must_PolecatBaseKind">
+		<defName>Must_Polecat_LMGAPIKind</defName>
+		<label>LMG polecat</label>
+		<race>Must_Polecat_Gun</race>
+		<weaponTags>
+			<li>Must_PC_LMG</li>
+		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>1</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>IncendiaryAP</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Must_PolecatBaseKind">
+		<defName>Must_Polecat_LMGAPHEKind</defName>
+		<label>LMG polecat</label>
+		<race>Must_Polecat_Gun</race>
+		<weaponTags>
+			<li>Must_PC_LMG</li>
+		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>1</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>ExplosiveAP</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Must_PolecatBaseKind">
+		<defName>Must_Polecat_LMGSabotKind</defName>
+		<label>LMG polecat</label>
+		<race>Must_Polecat_Gun</race>
+		<weaponTags>
+			<li>Must_PC_LMG</li>
+		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>1</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>Sabot</forcedAmmoCategory>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -110,13 +167,14 @@
 		<weaponTags>
 			<li>Must_PC_AMR</li>
 		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
 					<min>0</min>
 					<max>0</max>
 				</primaryMagazineCount>
-				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+				<forcedAmmoCategory>ArmorPiercing</forcedAmmoCategory>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -133,6 +191,7 @@
 		<weaponTags>
 			<li>Must_PC_Flamer</li>
 		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
 		<lifeStages Inherit="false">
 			<li>
 				<bodyGraphicData>
@@ -151,8 +210,41 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
+	
 	<ThingDef ParentName="Must_PolecatBase">
+		<defName>Must_Polecat_AGL</defName>
+		<label>AGL polecat</label>
+	</ThingDef>
+
+	<PawnKindDef ParentName="Must_PolecatBaseKind">
+		<defName>Must_Polecat_AGLKind</defName>
+		<label>AGL polecat</label>
+		<race>Must_Polecat_AGL</race>
+		<weaponTags>
+			<li>Must_PC_AGL</li>
+		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
+		<lifeStages Inherit="false">
+			<li>
+				<bodyGraphicData>
+					<texPath>Wolverines/Drones/UGPolecat/UGPolecatBomb</texPath>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>0</min>
+					<max>0</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>GrenadeHE</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+
+	<!--<ThingDef ParentName="Must_PolecatBase">
 		<defName>Must_Polecat_Explosive</defName>
 		<label>explosive polecat</label>
 		<statBases>
@@ -188,7 +280,6 @@
 		<defName>Must_Polecat_ExplosiveKind</defName>
 		<label>explosive polecat</label>
 		<race>Must_Polecat_Explosive</race>
-		<weaponMoney>0~0</weaponMoney>
 		<lifeStages Inherit="False">
 			<li>
 				<bodyGraphicData>
@@ -197,5 +288,5 @@
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
-	</PawnKindDef>
+	</PawnKindDef>-->
 </Defs>

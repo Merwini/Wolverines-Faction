@@ -60,7 +60,7 @@
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
-		<combatPower>4000</combatPower>
+		<combatPower>2000</combatPower>
 	</PawnKindDef>
 
 	<ThingDef ParentName="Must_WarrenBase">
