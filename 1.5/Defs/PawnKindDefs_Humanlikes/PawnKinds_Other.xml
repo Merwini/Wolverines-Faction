@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="Must_HeavyInfantryBase">
+		<defName>Must_FieldMarshall</defName>
+		<label>field marshall</label>
+		<combatPower>360</combatPower>
+		<weaponMoney>2400~2400</weaponMoney>
+		<apparelMoney>2400~3600</apparelMoney>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>15~18</range>
+			</li>
+		</skills>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>5</min>
+					<max>7</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>IncendiaryAP</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>100</min>
+						<max>250</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>1</min>
+						<max>1</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+</Defs>

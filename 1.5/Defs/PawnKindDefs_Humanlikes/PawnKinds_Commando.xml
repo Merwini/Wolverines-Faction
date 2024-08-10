@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="Must_HumanEliteCombatantBase" Abstract="True" Name="Must_CommandoBase">
+		<apparelRequired>
+			<li>Must_BattleDress</li>
+			<li>Must_ArmorVest</li>
+			<li>Must_CommandoHelmet</li>
+			<li>Must_LargeBackpack</li>
+		</apparelRequired>
+
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Must_CommandoBase">
+		<defName>Must_Commando_PDW</defName>
+		<label>commando</label>
+		<combatPower>185</combatPower>
+		<weaponTags>
+			<li>Must_PDW</li>
+		</weaponTags>
+		<weaponMoney>800~1400</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>3</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>ArmorPiercing</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>600</min>
+						<max>1400</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>5</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Must_CommandoBase">
+		<defName>Must_Commando_SG</defName>
+		<label>shotgun commando</label>
+		<combatPower>185</combatPower>
+		<weaponTags>
+			<li>Must_SG</li>
+		</weaponTags>
+		<weaponMoney>800~1400</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>3</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>Slug</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>600</min>
+						<max>1400</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>5</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+		
+	<PawnKindDef ParentName="Must_CommandoBase">
+		<defName>Must_Commando_Flashbang</defName>
+		<label>flashbang commando</label>
+		<combatPower>195</combatPower>
+		<weaponTags>
+			<li>CE_GrenadeFlashbang</li>
+		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>3</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>ArmorPiercing</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>600</min>
+						<max>1400</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>Must_PDW</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>5</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Must_CommandoBase">
+		<defName>Must_Commando_Satchel</defName>
+		<label>satchel commando</label>
+		<combatPower>195</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		<weaponTags>
+			<li>Must_Satchel</li>
+		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>3</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>ArmorPiercing</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>600</min>
+						<max>1400</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>Must_PDW</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>5</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Must_CommandoBase">
+		<defName>Must_Commando_Marksman</defName>
+		<label>marksman commando</label>
+		<combatPower>205</combatPower>
+		<weaponTags>
+			<li>Must_DMR</li>
+		</weaponTags>
+		<weaponMoney>1200~1400</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>3</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>ArmorPiercing</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>800</min>
+						<max>1400</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>Must_PDW</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>5</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+</Defs>

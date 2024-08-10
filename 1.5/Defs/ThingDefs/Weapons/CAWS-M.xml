@@ -29,7 +29,6 @@
     <weaponTags Inherit="False">
         <li>CE_AI_BROOM</li>
         <li>Must_SG</li>
-		<li>Must_PDW</li>
     </weaponTags>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">

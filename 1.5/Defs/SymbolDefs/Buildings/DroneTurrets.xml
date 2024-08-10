@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<KCSG.SymbolDef>
+		<defName>Must_PolecatFlameTurret_North</defName>
+		<thing>Must_PolecatFlameTurret</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_PolecatFlameTurret_East</defName>
+		<thing>Must_PolecatFlameTurret</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_PolecatFlameTurret_South</defName>
+		<thing>Must_PolecatFlameTurret</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_PolecatFlameTurret_West</defName>
+		<thing>Must_PolecatFlameTurret</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_PolecatBombTurret_North</defName>
+		<thing>Must_PolecatBombTurret</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_PolecatBombTurret_East</defName>
+		<thing>Must_PolecatBombTurret</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_PolecatBombTurret_South</defName>
+		<thing>Must_PolecatBombTurret</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_PolecatBombTurret_West</defName>
+		<thing>Must_PolecatBombTurret</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_BadgerGunTurret_North</defName>
+		<thing>Must_BadgerGunTurret</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_BadgerGunTurret_East</defName>
+		<thing>Must_BadgerGunTurret</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_BadgerGunTurret_South</defName>
+		<thing>Must_BadgerGunTurret</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_BadgerGunTurret_West</defName>
+		<thing>Must_BadgerGunTurret</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+</Defs>

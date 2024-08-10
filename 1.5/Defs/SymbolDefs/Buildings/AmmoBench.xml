@@ -27,4 +27,17 @@
 		<stuff>WoodLog</stuff>
 		<rotation>West</rotation>
 	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_AmmoBench_Steel_North</defName>
+		<thing>AmmoBench</thing>
+		<stuff>Steel</stuff>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_AmmoBench_Steel_South</defName>
+		<thing>AmmoBench</thing>
+		<stuff>Steel</stuff>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
 </Defs>

@@ -67,6 +67,31 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
 	</ThingDef>
-	
+
+	<ThingDef ParentName="Must_TurretDrone">
+		<defName>Must_BadgerGunTurret</defName>
+		<label>immobile MMG badger</label>
+		<description>A badger drone that does not yet have its movement systems installed, but has its weapon system active.</description>
+		<graphicData>
+			<texPath>Wolverines/Drones/UGBadger/UGBadger</texPath>
+			<drawSize>(2.7,2.7)</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>320</MaxHitPoints>
+			<Flammability>0.4</Flammability>
+			<AimingAccuracy>0.5</AimingAccuracy>
+			<ShootingAccuracyTurret>0.75</ShootingAccuracyTurret>
+			<NightVisionEfficiency>0.5</NightVisionEfficiency>
+		</statBases>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Must_B_MMG</turretGunDef>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+	</ThingDef>
 	
 </Defs>

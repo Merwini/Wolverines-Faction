@@ -77,8 +77,8 @@
 				<li>(100000, 10000)</li>
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
-		<!--token group to prevent errors-->
 		<pawnGroupMakers>
+			<!--token Combat group to prevent errors-->
 			<li>
 				<commonality>100</commonality>
 				<kindDef>Combat</kindDef>
@@ -86,32 +86,22 @@
 					<Must_LightInfantry_FMJ>1</Must_LightInfantry_FMJ>
 				</options>
 			</li>
+			<li>
+				<commonality>100</commonality>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Must_FieldMarshall>1</Must_FieldMarshall>
+					<Must_Commando_Marksman>5</Must_Commando_Marksman>
+					<Must_HeavyInfantry_API>20</Must_HeavyInfantry_API>
+					<Must_HeavyInfantry_APHE>20</Must_HeavyInfantry_APHE>
+					<Must_LightInfantry_API>20</Must_LightInfantry_API>
+					<Must_LightInfantry_APHE>20</Must_LightInfantry_APHE>
+					<Must_Polecat_AMRKind>5</Must_Polecat_AMRKind>
+					<Must_Badger_MMGKind>5</Must_Badger_MMGKind>
+				</options>
+			</li>
 		</pawnGroupMakers>
-		
-	</FactionDef>
 
-	<FactionDef ParentName="Must_FactionBase">
-		<defName>Must_FactionHostile</defName>
-		<label>hostile mercenary company</label>
-		<description>An industrial-tech mercenary company hired by offworlders to eliminate inhabitants of this RimWorld in preparation of future mining operations. Despite their limited technology, they will use more advanced military tactics than other factions.</description>
-		<configurationListOrderPriority>22</configurationListOrderPriority>
-		<requiredCountAtGameStart>1</requiredCountAtGameStart>
-		<permanentEnemy>true</permanentEnemy>
-		<!--Placeholder-->
-		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
-		<!--Placeholder-->
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<!--Placeholder-->
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-		<!--Placeholder-->
-		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-		<!--Placeholder-->
-		<allowedCultures>
-			<li>Rustican</li>
-		</allowedCultures>
-		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
-		</requiredMemes>
 		<modExtensions>
 			<li Class="rep.heframework.PawnGroupMakerExtension">
 				<alwaysUseHighestTier>true</alwaysUseHighestTier>
@@ -391,9 +381,107 @@
 							<Must_Badger_MMGKind>5</Must_Badger_MMGKind>
 						</options>
 					</li>
+					<!--Commandos-->
+					<li>
+						<kindDef>Combat</kindDef>
+						<groupName>CommandoBlend</groupName>
+						<commonality>5</commonality>
+						<groupTier>2</groupTier>
+						<requiredSiteTags>
+							<li>Must_PGM_Commando</li>
+						</requiredSiteTags>
+						<allowedRaidStrategies>
+							<li>ImmediateAttackBreachingSmart</li>
+						</allowedRaidStrategies>
+						<allowedArrivalModes>
+							<li>CenterDrop</li>
+							<li>RandomDrop</li>
+						</allowedArrivalModes>
+						<options>
+							<Must_Commando_PDW>20</Must_Commando_PDW>
+							<Must_Commando_SG>10</Must_Commando_SG>
+							<Must_Commando_Satchel>5</Must_Commando_Satchel>
+							<Must_Commando_Marksman>10</Must_Commando_Marksman>
+						</options>
+					</li>
+					<li>
+						<kindDef>Combat</kindDef>
+						<groupName>CommandoCloseCombat</groupName>
+						<commonality>5</commonality>
+						<groupTier>2</groupTier>
+						<requiredSiteTags>
+							<li>Must_PGM_Commando</li>
+						</requiredSiteTags>
+						<allowedRaidStrategies>
+							<li>ImmediateAttackBreachingSmart</li>
+						</allowedRaidStrategies>
+						<allowedArrivalModes>
+							<li>CenterDrop</li>
+						</allowedArrivalModes>
+						<options>
+							<Must_Commando_PDW>20</Must_Commando_PDW>
+							<Must_Commando_SG>10</Must_Commando_SG>
+							<Must_Commando_Flashbang>10</Must_Commando_Flashbang>
+							<Must_Commando_Satchel>5</Must_Commando_Satchel>
+						</options>
+					</li>
+					<li>
+						<kindDef>Combat</kindDef>
+						<groupName>CommandoRanged</groupName>
+						<commonality>5</commonality>
+						<groupTier>2</groupTier>
+						<requiredSiteTags>
+							<li>Must_PGM_Commando</li>
+						</requiredSiteTags>
+						<allowedRaidStrategies>
+							<li>ImmediateAttackBreachingSmart</li>
+						</allowedRaidStrategies>
+						<allowedArrivalModes>
+							<li>EdgeDrop</li>
+						</allowedArrivalModes>
+						<options>
+							<Must_Commando_PDW>20</Must_Commando_PDW>
+							<Must_Commando_Marksman>20</Must_Commando_Marksman>
+							<Must_Commando_Satchel>5</Must_Commando_Satchel>
+						</options>
+					</li>
 				</taggedPawnGroupMakers>
 			</li>
+			<li Class="KCSG.CustomGenOption">
+				<!-- The following option will prevent lake/marsh and
+         patches in general to generate. Use this if you 
+         don't want your settlement to have to use bridges -->
+				<preventBridgeable>true</preventBridgeable>
+				<chooseFromlayouts>
+					<li>Must_Fortress_One</li>
+				</chooseFromlayouts>
+			</li>
 		</modExtensions>
+		
+	</FactionDef>
+
+	<FactionDef ParentName="Must_FactionBase">
+		<defName>Must_FactionHostile</defName>
+		<label>hostile mercenary company</label>
+		<description>An industrial-tech mercenary company hired by offworlders to eliminate inhabitants of this RimWorld in preparation of future mining operations. Despite their limited technology, they will use more advanced military tactics than other factions.</description>
+		<configurationListOrderPriority>22</configurationListOrderPriority>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<permanentEnemy>true</permanentEnemy>
+		<!--Placeholder-->
+		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+		<!--Placeholder-->
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<!--Placeholder-->
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<!--Placeholder-->
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<!--Placeholder-->
+		<allowedCultures>
+			<li>Rustican</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</requiredMemes>
 	</FactionDef>
 
 	<FactionDef ParentName="Must_FactionBase">

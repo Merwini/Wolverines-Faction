@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<SitePartDef ParentName="Must_Site_Base">
-		<defName>Must_Site_Muni</defName>
-		<label>heavy munitions factory</label>
-		<description>A military expansion producing heavier munitions.</description>
-		<arrivedLetter>There is an enemy munitions factory in this area.</arrivedLetter>
+		<defName>Must_Site_FSX</defName>
+		<label>FSX refinery</label>
+		<description>A military expansion mass-producing FSX.</description>
+		<arrivedLetter>There is an enemy FSX refinery in this area.</arrivedLetter>
 		<selectionWeight>1</selectionWeight>
 		<tags>
-			<li>Must_PGM_Munitions</li>
+			<li>Must_PGM_Explosive</li>
 		</tags>
 		<modExtensions>
 			<li Class="rep.heframework.SiteDefendersExtension">
@@ -15,35 +15,34 @@
 					<li>
 						<faction>Must_FactionHostile</faction>
 						<pawnGroups>
-							<li>MunitionsInfantry</li>
+							<li>ExplosiveInfantry</li>
 						</pawnGroups>
 					</li>
 				</factionsToPawnGroups>
 			</li>
 		</modExtensions>
 	</SitePartDef>
-	
+
 	<GenStepDef>
-		<defName>Must_Site_Muni_Struct</defName>
-		<linkWithSite>Must_Site_Muni</linkWithSite>
+		<defName>Must_Site_FSX_Struct</defName>
+		<linkWithSite>Must_Site_FSX</linkWithSite>
 		<order>450</order>
 		<genStep Class="KCSG.GenStep_CustomStructureGen">
 			<structureLayoutDefs>
-				<li>Must_Muni_One</li>
-				<li>Must_Muni_Two</li>
-				<li>Must_Muni_Three</li>
-				<li>Must_Muni_Four</li>
+				<li>Must_FSX_One</li>
+				<li>Must_FSX_Two</li>
+				<li>Must_FSX_Three</li>
 			</structureLayoutDefs>
 			<preventBridgeable>true</preventBridgeable>
 		</genStep>
 	</GenStepDef>
 	<GenStepDef>
-		<defName>Must_Site_Muni_Enemies</defName>
-		<linkWithSite>Must_Site_Muni</linkWithSite>
+		<defName>Must_Site_FSX_Enemies</defName>
+		<linkWithSite>Must_Site_FSX</linkWithSite>
 		<order>451</order>
 		<genStep Class="rep.heframework.GenStep_TaggedPawnGroup">
 			<threatPointsRange>200~10000</threatPointsRange>
-			<pawnGroupMakerName>MunitionsInfantry</pawnGroupMakerName>
+			<pawnGroupMakerName>ExplosiveInfantry</pawnGroupMakerName>
 		</genStep>
 	</GenStepDef>
 </Defs>

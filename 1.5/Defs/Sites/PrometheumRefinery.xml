@@ -29,6 +29,8 @@
 		<order>450</order>
 		<genStep Class="KCSG.GenStep_CustomStructureGen">
 			<structureLayoutDefs>
+				<li>Must_Prom_One</li>
+				<li>Must_Prom_Two</li>
 				<li>Must_Prom_Three</li>
 			</structureLayoutDefs>
 			<preventBridgeable>true</preventBridgeable>

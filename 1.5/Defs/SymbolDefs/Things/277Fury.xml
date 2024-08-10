@@ -6,8 +6,46 @@
 	</KCSG.SymbolDef>
 
 	<KCSG.SymbolDef>
-		<defName>Must_Ammo_277Fury_Incendiary_Single</defName>
+		<defName>Must_M250lmg</defName>
+		<thing>Must_M250lmg</thing>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_M7dmr</defName>
+		<thing>Must_M7dmr</thing>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_MCX300BLcarbine</defName>
+		<thing>Must_MCX300BLcarbine</thing>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_Ammo_277Fury_AP</defName>
+		<thing>Ammo_277Fury_AP</thing>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_Ammo_277Fury_Incendiary</defName>
 		<thing>Ammo_277Fury_Incendiary</thing>
 		<maxStackSize>1</maxStackSize>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_Ammo_277Fury_APHE</defName>
+		<thing>Ammo_277Fury_HE</thing>
+		<maxStackSize>1</maxStackSize>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>Must_Ammo_277Fury_Sabot</defName>
+		<thing>Ammo_277Fury_Sabot</thing>
+		<maxStackSize>1</maxStackSize>
+	</KCSG.SymbolDef>
+
+
+	<KCSG.SymbolDef>
+		<defName>Must_Ammo_20x102mmNATO_AP</defName>
+		<thing>Ammo_20x102mmNATO_AP</thing>
 	</KCSG.SymbolDef>
 </Defs>
