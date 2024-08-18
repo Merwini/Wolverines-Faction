@@ -10,7 +10,8 @@
 			<li>Must_PGM_Explosive</li>
 		</tags>
 		<modExtensions>
-			<li Class="rep.heframework.SiteDefendersExtension">
+			<li Class="rep.heframework.RepWorldObjectExtension">
+                <mapGenerator>HEFMapGeneratorSite</mapGenerator>
 				<factionsToPawnGroups>
 					<li>
 						<faction>Must_FactionHostile</faction>
