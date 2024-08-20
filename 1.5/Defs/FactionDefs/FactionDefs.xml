@@ -447,13 +447,13 @@
 					</li>
 				</taggedPawnGroupMakers>
 			</li>
+            <li Class="rep.heframework.RepWorldObjectExtension">
+                <mapGenerator>HEFMapGeneratorSettlement</mapGenerator>
+            </li>
 			<li Class="KCSG.CustomGenOption">
-				<!-- The following option will prevent lake/marsh and
-         patches in general to generate. Use this if you 
-         don't want your settlement to have to use bridges -->
 				<preventBridgeable>true</preventBridgeable>
 				<chooseFromlayouts>
-					<li>Must_Fortress_One</li>
+					<li>Must_Fortress_Two</li>
 				</chooseFromlayouts>
 			</li>
 		</modExtensions>
