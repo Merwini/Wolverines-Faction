@@ -30,7 +30,10 @@
 		<order>450</order>
 		<genStep Class="KCSG.GenStep_CustomStructureGen">
 			<structureLayoutDefs>
-				<li>Must_Muni_Five</li>
+				<li>Must_Muni_One</li>
+                <li>Must_Muni_Two</li>
+                <li>Must_Muni_Three</li>
+                <li>Must_Muni_Four</li>
 			</structureLayoutDefs>
 			<preventBridgeable>true</preventBridgeable>
 		</genStep>

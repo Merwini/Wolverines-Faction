@@ -453,7 +453,7 @@
 			<li Class="KCSG.CustomGenOption">
 				<preventBridgeable>true</preventBridgeable>
 				<chooseFromlayouts>
-					<li>Must_Fortress_Two</li>
+					<li>Must_Fortress_One</li>
 				</chooseFromlayouts>
 			</li>
 		</modExtensions>
