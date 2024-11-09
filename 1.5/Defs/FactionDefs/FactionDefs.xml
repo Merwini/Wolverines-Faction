@@ -10,7 +10,6 @@
 		<pawnSingular>mercenary</pawnSingular>
 		<pawnsPlural>mercenaries</pawnsPlural>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
 		<displayInFactionSelection>true</displayInFactionSelection>
 		<raidLootValueFromPointsCurve>
 			<points>
@@ -28,6 +27,9 @@
 				<li>Cloth</li>
 			</thingDefs>
 		</apparelStuffFilter>
+        <fixedLeaderKinds>
+            <li>Must_FieldMarshal</li>
+        </fixedLeaderKinds>
 		<leaderTitle>field marshal</leaderTitle>
 		<techLevel>Industrial</techLevel>
 		<backstoryFilters>
@@ -59,10 +61,22 @@
 		<baseTraderKinds>
 			<li>Base_Outlander_Standard</li>
 		</baseTraderKinds>
+        <allowedCultures>
+            <li>Must_Mercanarism</li>
+        </allowedCultures>
+        <structureMemeWeights>
+            <Structure_Ideological>1</Structure_Ideological>
+        </structureMemeWeights>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		</requiredMemes>
-		
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+        </disallowedMemes>
 		<allowedArrivalTemperatureRange>
 			<min>-50</min>
 			<max>50</max>
@@ -70,8 +84,8 @@
 
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
-				<li>(300,100)</li> <!--No raids unless it can send at least a few soldiers-->
-				<li>(1000, 180)</li> <!--Polecats become possible-->
+				<li>(300, 100)</li> <!--No raids unless it can send at least a few soldiers-->
+				<li>(1000, 200)</li> <!--Polecats become possible-->
 				<li>(2500, 400)</li> <!--Badgers become possible-->
 				<li>(4500, 2000)</li> <!--Warrens become possible-->
 				<li>(100000, 10000)</li>
@@ -90,7 +104,7 @@
 				<commonality>100</commonality>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<Must_FieldMarshall>1</Must_FieldMarshall>
+					<Must_FieldMarshal>1</Must_FieldMarshal>
 					<Must_Commando_Marksman>5</Must_Commando_Marksman>
 					<Must_HeavyInfantry_API>20</Must_HeavyInfantry_API>
 					<Must_HeavyInfantry_APHE>20</Must_HeavyInfantry_APHE>
@@ -398,10 +412,10 @@
 							<li>RandomDrop</li>
 						</allowedArrivalModes>
 						<options>
-							<Must_Commando_PDW>20</Must_Commando_PDW>
-							<Must_Commando_SG>10</Must_Commando_SG>
-							<Must_Commando_Satchel>5</Must_Commando_Satchel>
-							<Must_Commando_Marksman>10</Must_Commando_Marksman>
+                            <Must_Commando_PDW>20</Must_Commando_PDW>
+                            <Must_Commando_SG>10</Must_Commando_SG>
+                            <Must_Commando_Satchel>5</Must_Commando_Satchel>
+                            <Must_Commando_Marksman>10</Must_Commando_Marksman>
 						</options>
 					</li>
 					<li>
@@ -447,8 +461,9 @@
 					</li>
 				</taggedPawnGroupMakers>
 			</li>
-            <li Class="rep.heframework.RepWorldObjectExtension">
+            <li Class="rep.heframework.WorldObjectExtension">
                 <mapGenerator>HEFMapGeneratorSettlement</mapGenerator>
+                <threatPointsRange>3500~4000</threatPointsRange>
             </li>
 			<li Class="KCSG.CustomGenOption">
 				<preventBridgeable>true</preventBridgeable>
@@ -457,15 +472,16 @@
 				</chooseFromlayouts>
 			</li>
 		</modExtensions>
-		
 	</FactionDef>
 
 	<FactionDef ParentName="Must_FactionBase">
 		<defName>Must_FactionHostile</defName>
 		<label>hostile mercenary company</label>
 		<description>An industrial-tech mercenary company hired by offworlders to eliminate inhabitants of this RimWorld in preparation of future mining operations. Despite their limited technology, they will use more advanced military tactics than other factions.</description>
-		<configurationListOrderPriority>22</configurationListOrderPriority>
+        <listOrderPriority>22</listOrderPriority>
+        <configurationListOrderPriority>22</configurationListOrderPriority>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
 		<permanentEnemy>true</permanentEnemy>
 		<!--Placeholder-->
 		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
@@ -479,28 +495,5 @@
 		<allowedCultures>
 			<li>Rustican</li>
 		</allowedCultures>
-		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
-		</requiredMemes>
 	</FactionDef>
-
-	<FactionDef ParentName="Must_FactionBase">
-		<defName>Must_FactionFriendly</defName>
-		<label>neutral mercenary company</label>
-		<description>A late-industrial mercenary company hired by offworlders to eliminate threats in preparation of future mining operations on this RimWorld. If provoked, they will use more advanced military tactics than other factions.</description>
-		<configurationListOrderPriority>21</configurationListOrderPriority>
-		<!--Placeholder-->
-		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
-		<!--Placeholder-->
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<!--Placeholder-->
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-		<!--Placeholder-->
-		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-		<!--Placeholder-->
-		<allowedCultures>
-			<li>Rustican</li>
-		</allowedCultures>
-	</FactionDef>
-	
 </Defs>

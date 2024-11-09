@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RulePackDef>
+        <defName>Must_NamerPerson_Male</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=6)->[Must_Names_Male] [Must_Surnames]</li>
+                <li>r_name(p=3)->[Must_Names_Male] '[Must_Nicknames]' [Must_Surnames]</li>
+            </rulesStrings>
+            <rulesRaw>
+                <li Class="Rule_File">
+                    <keyword>Must_Names_Male</keyword>
+                    <path>NameBanks/Must_Names_Male</path>
+                </li>
+                <li Class="Rule_File">
+                    <keyword>Must_Surnames</keyword>
+                    <path>NameBanks/Must_Surnames</path>
+                </li>
+                <li Class="Rule_File">
+                    <keyword>Must_Nicknames</keyword>
+                    <path>NameBanks/Must_Nicknames</path>
+                </li>
+            </rulesRaw>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>Must_NamerPerson_Female</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=3)->[Must_Names_Female] [Must_Surnames]</li>
+                <li>r_name(p=3)->[Must_Names_Female] '[Must_Nicknames]' [Must_Surnames]</li>
+                <li>r_name(p=3)->[Must_Names_Female] [Must_Surnames]</li>
+            </rulesStrings>
+            <rulesRaw>
+                <li Class="Rule_File">
+                    <keyword>Must_Names_Female</keyword>
+                    <path>NameBanks/Must_Names_Female</path>
+                </li>
+                <li Class="Rule_File">
+                    <keyword>Must_Surnames</keyword>
+                    <path>NameBanks/Must_Surnames</path>
+                </li>
+                <li Class="Rule_File">
+                    <keyword>Must_Nicknames</keyword>
+                    <path>NameBanks/Must_Nicknames</path>
+                </li>
+            </rulesRaw>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

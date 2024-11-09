@@ -2,11 +2,12 @@
 <Defs>
 
 	<PawnKindDef ParentName="Must_HeavyInfantryBase">
-		<defName>Must_FieldMarshall</defName>
-		<label>field marshall</label>
+		<defName>Must_FieldMarshal</defName>
+		<label>field marshal</label>
 		<combatPower>360</combatPower>
 		<weaponMoney>2400~2400</weaponMoney>
 		<apparelMoney>2400~3600</apparelMoney>
+        <factionLeader>true</factionLeader>
 		<skills>
 			<li>
 				<skill>Shooting</skill>
