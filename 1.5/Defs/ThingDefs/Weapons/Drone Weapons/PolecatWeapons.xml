@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="BaseGun">
+	<ThingDef ParentName="Must_DroneWeaponBase">
 		<defName>Must_PC_LMG</defName>
 		<label>mounted LMG</label>
 		<description>A drone-mounted light machine gun chambered for .277 cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
@@ -9,13 +9,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.5,1.5</drawSize>
 		</graphicData>
-		<techLevel>Industrial</techLevel>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
 		<soundInteract>Interact_Rifle</soundInteract>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-		</weaponClasses>
 		<statBases>
 			<MarketValue>1000</MarketValue>
 			<Bulk>11.63</Bulk>
@@ -75,7 +69,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseGun">
+	<ThingDef ParentName="Must_DroneWeaponBase">
 		<defName>Must_PC_AMR</defName>
 		<label>mounted AMR</label>
 		<description>A drone-mounted anti-materiel rifle chambered for .50 BMG cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
@@ -84,9 +78,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.5,1.5</drawSize>
 		</graphicData>
-		<techLevel>Industrial</techLevel>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>LongShots</li>
@@ -144,7 +135,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseGun">
+	<ThingDef ParentName="Must_DroneWeaponBase">
 		<defName>Must_PC_Flamer</defName>
 		<label>mounted flamethrower</label>
 		<description>A drone-mounted flamethrower. Sprays a stream of flammable liquid, effective at denying enemies the use of fortified positions.</description>
@@ -153,13 +144,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.5,1.5</drawSize>
 		</graphicData>
-		<techLevel>Industrial</techLevel>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
 		<soundInteract>Interact_Rifle</soundInteract>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-		</weaponClasses>
 		<statBases>
 			<MarketValue>1200</MarketValue>
 			<SightsEfficiency>1</SightsEfficiency>
@@ -219,7 +204,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseGun">
+	<ThingDef ParentName="Must_DroneWeaponBase">
 		<defName>Must_PC_AGL</defName>
 		<label>mounted automatic grenade launcher</label>
 		<description>A drone-mounted 30mm automatic grenade launcher. Belt fed from a box of miniature grenades.</description>
@@ -228,13 +213,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.5,1.5</drawSize>
 		</graphicData>
-		<techLevel>Industrial</techLevel>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
 		<soundInteract>Interact_Rifle</soundInteract>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-		</weaponClasses>
 		<statBases>
 			<MarketValue>1200</MarketValue>
 			<SightsEfficiency>1</SightsEfficiency>

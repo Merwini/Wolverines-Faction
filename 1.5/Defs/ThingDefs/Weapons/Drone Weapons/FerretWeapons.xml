@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="BaseGun">
+	<ThingDef ParentName="Must_DroneWeaponBase">
 		<defName>Must_F_SMG</defName>
 		<label>mounted SMG</label>
 		<description>A drone-mounted submachine gun chambered for 5.7x28mm pistol cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
@@ -8,13 +8,7 @@
 			<texPath>Wolverines/Weapons/UGFerretTurretSMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Industrial</techLevel>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
 		<soundInteract>Interact_SMG</soundInteract>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-		</weaponClasses>
 		<statBases>
 			<MarketValue>700</MarketValue>
 			<Mass>4</Mass>
@@ -91,7 +85,7 @@
 		</modExtensions>-->
 	</ThingDef>
 
-	<ThingDef ParentName="BaseGun">
+	<ThingDef ParentName="Must_DroneWeaponBase">
 		<defName>Must_F_GL</defName>
 		<label>mini-grenade launcher</label>
 		<description>A block of launch tubes pre-loaded with mini-grenades. Its lightweight construction means that fire rate must be capped to prevent heat buildup cooking off unfired grenades.</description>
@@ -99,13 +93,7 @@
 			<texPath>Wolverines/Weapons/UGFerretTurretGL</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Industrial</techLevel>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
 		<soundInteract>Interact_Rifle</soundInteract>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-		</weaponClasses>
 		<statBases>
 			<MarketValue>1100</MarketValue>
 			<Mass>8.5</Mass>

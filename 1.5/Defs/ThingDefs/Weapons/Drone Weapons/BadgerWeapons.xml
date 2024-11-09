@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="BaseGun">
+	<ThingDef ParentName="Must_DroneWeaponBase">
 		<defName>Must_B_HMG</defName>
 		<label>.338 HMG</label>
 		<description>A drone-mounted heavy machinegun chambered in .338 Norma Magnum. The high-powered rounds easily penetrate light infantry armor, and outrange most light arms. Attached smoke grenade dischargers create an instant smoke screen when needed.</description>
@@ -9,12 +9,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>3</drawSize>
 		</graphicData>
-		<techLevel>Industrial</techLevel>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-		</weaponClasses>
 		<statBases>
 			<MarketValue>1400</MarketValue>
 			<Mass>32.94</Mass>
@@ -74,7 +68,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseGun">
+	<ThingDef ParentName="Must_DroneWeaponBase">
 		<defName>Must_B_Minigun</defName>
 		<label>7.62x51mm NATO minigun</label>
 		<description>A drone-mounted minigun chambered in 7.62x51mm NATO. While the cartridge is not as powerful as other drone-mounted weapon variants, the sheer volume of fire is sufficient to shred most targets. Integrated smoke grenade dischargers create an instant smoke screen when needed.</description>
@@ -83,12 +77,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>3</drawSize>
 		</graphicData>
-		<techLevel>Industrial</techLevel>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-		</weaponClasses>
 		<statBases>
 			<MarketValue>1400</MarketValue>
 			<Mass>42.00</Mass>
@@ -148,7 +136,7 @@
 		</tools>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseGun">
+	<ThingDef ParentName="Must_DroneWeaponBase">
 		<defName>Must_B_MMG</defName>
 		<label>.277 MMG with MLRS</label>
 		<description>A combined weapon featuring a medium machinegun for anti-infantry, along with a small number of anti-armor rocket tubes. Integrated smoke grenade dischargers create an instant smoke screen when needed.</description>
@@ -157,12 +145,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>3</drawSize>
 		</graphicData>
-		<techLevel>Industrial</techLevel>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
-		<weaponClasses>
-			<li>RangedHeavy</li>
-		</weaponClasses>
 		<statBases>
 			<MarketValue>1400</MarketValue>
 			<Mass>45.00</Mass>
