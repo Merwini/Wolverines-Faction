@@ -18,5 +18,7 @@
 			<fleshType>Must_Drone</fleshType>
 			<trainability>None</trainability>
 		</race>
+        <modExtensions Inherit="False"/>
 	</ThingDef>
+
 </Defs>

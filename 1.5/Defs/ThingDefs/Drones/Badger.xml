@@ -51,7 +51,65 @@
 				<turretRotationFollowPawn>true</turretRotationFollowPawn>
 				<layerOverrideNorth>true</layerOverrideNorth>
 			</li>
+            <li Class="CombatExtended.CompProperties_ArmorDurability">
+                <Durability>2500</Durability>
+                <Regenerates>false</Regenerates>
+                <MinArmorPct>0.5</MinArmorPct>
+                <Repairable>true</Repairable>
+                <RepairIngredients>
+                    <Steel>5</Steel>
+                </RepairIngredients>
+                <RepairTime>200</RepairTime>
+                <RepairValue>250</RepairValue>
+                <MinArmorValueSharp>8</MinArmorValueSharp>
+                <MinArmorValueBlunt>8.5</MinArmorValueBlunt>
+            </li>
 		</comps>
+        <modExtensions>
+            <li Class="CombatExtended.RacePropertiesExtensionCE">
+                <bodyShape>Vehicle</bodyShape>
+            </li>
+            <li Class="CombatExtended.PartialArmorExt">
+                <stats>
+                    <li>
+                        <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+                        <parts>
+                            <li>Must_DroneEye</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+                        <parts>
+                            <li>Must_DroneEye</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+                        <parts>
+                            <li>Must_DroneEar</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+                        <parts>
+                            <li>Must_DroneEar</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+                        <parts>
+                            <li>Must_Badger_Leg</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+                        <parts>
+                            <li>Must_Badger_Leg</li>
+                        </parts>
+                    </li>
+                </stats>
+            </li>
+        </modExtensions>
 	</ThingDef>
 
 	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_BadgerBaseKind" Abstract="True">

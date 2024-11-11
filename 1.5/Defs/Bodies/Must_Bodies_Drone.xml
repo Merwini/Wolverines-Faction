@@ -9,6 +9,9 @@
 			<def>Must_DroneBody</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
+            <groups>
+                <li>CoveredByNaturalArmor</li>
+            </groups>
 			<parts>
 				<!--Head Section-->
 				<li>
@@ -128,6 +131,9 @@
 			<def>Must_DroneBody</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
+            <groups>
+                <li>CoveredByNaturalArmor</li>
+            </groups>
 			<parts>
 				<!--Head Section-->
 				<li>
@@ -265,6 +271,9 @@
 			<def>Must_DroneBody</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
+            <groups>
+                <li>CoveredByNaturalArmor</li>
+            </groups>
 			<parts>
 				<!--Head Section-->
 				<li>
@@ -371,6 +380,9 @@
 			<def>Must_DroneBody</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
+            <groups>
+                <li>CoveredByNaturalArmor</li>
+            </groups>
 			<parts>
 				<!--Head Section-->
 				<li>
@@ -491,7 +503,7 @@
 						<li>
 							<def>Must_Badger_Foot</def>
 							<customLabel>right second road wheel</customLabel>
-							<coverage>.14</coverage>
+							<coverage>0.14</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
@@ -546,6 +558,9 @@
 			<def>Must_DroneBody</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
+            <groups>
+                <li>CoveredByNaturalArmor</li>
+            </groups>
 			<parts>
 				<!--Head Section-->
 				<li>
