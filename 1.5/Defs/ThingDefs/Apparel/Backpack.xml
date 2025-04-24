@@ -25,6 +25,7 @@
 			<WorkToMake>12000</WorkToMake>
 			<Mass>1.7</Mass>
 			<Bulk>5</Bulk>
+            <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
 		</statBases>
 		<equippedStatOffsets>
 			<CarryBulk>50</CarryBulk>

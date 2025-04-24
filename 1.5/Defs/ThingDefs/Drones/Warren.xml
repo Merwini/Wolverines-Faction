@@ -46,6 +46,11 @@
 			<Steel>60</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</butcherProducts>
+        <modExtensions>
+            <li Class="CombatExtended.RacePropertiesExtensionCE">
+                <bodyShape>Vehicle</bodyShape>
+            </li>
+        </modExtensions>
 	</ThingDef>
 
 	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_WarrenBaseKind" Abstract="True">

@@ -15,7 +15,8 @@
 		<arrivedLetterDef>NegativeEvent</arrivedLetterDef>
 		<wantsThreatPoints>true</wantsThreatPoints>
 		<minThreatPoints>480</minThreatPoints>
-		<tags/>
+        <badEvenIfNoMap>true</badEvenIfNoMap>
+        <tags/>
 		<excludesTags>
 			<li>MechCluster</li>
 			<li>MechClusterForceNoConditionCauser</li>

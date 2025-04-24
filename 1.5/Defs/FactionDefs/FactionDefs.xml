@@ -117,7 +117,7 @@
 		</pawnGroupMakers>
 
 		<modExtensions>
-			<li Class="rep.heframework.PawnGroupMakerExtension">
+			<li Class="rep.heframework.PawnGroupMakerExtensionHEF">
 				<alwaysUseHighestTier>true</alwaysUseHighestTier>
 				<taggedPawnGroupMakers>
 					<!--Basic Groups-->
@@ -461,7 +461,7 @@
 					</li>
 				</taggedPawnGroupMakers>
 			</li>
-            <li Class="rep.heframework.WorldObjectExtension">
+            <li Class="rep.heframework.WorldObjectExtensionHEF">
                 <mapGenerator>HEFMapGeneratorSettlement</mapGenerator>
                 <threatPointsRange>3500~4000</threatPointsRange>
             </li>
