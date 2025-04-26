@@ -12,7 +12,8 @@
 		<modExtensions>
 			<li Class="rep.heframework.WorldObjectExtensionHEF">
                 <mapGenerator>HEFMapGeneratorSite</mapGenerator>
-                <threatPointsRange>370~10000</threatPointsRange>
+                <threatPointModifier>0.2</threatPointModifier>
+                <spawnThreatPointRange>2000~1000000</spawnThreatPointRange>
                 <threatPointCurve>
                     <points>
                         <li>(100,120)</li>
@@ -21,6 +22,7 @@
                         <li>(3000,1600)</li>
                         <li>(4000,1800)</li>
                         <li>(5000,2000)</li>
+                        <li>(10000,3000)</li>
                     </points>
                 </threatPointCurve>
 				<factionsToPawnGroups>
