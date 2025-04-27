@@ -54,6 +54,7 @@
 	<PawnKindDef ParentName="Must_LightInfantryBase">
 		<defName>Must_LightInfantry_API</defName>
 		<label>light infantry (AP-I)</label>
+        <combatPower>110</combatPower>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
@@ -80,6 +81,7 @@
 	<PawnKindDef ParentName="Must_LightInfantryBase">
 		<defName>Must_LightInfantry_APHE</defName>
 		<label>light infantry (AP-HE)</label>
+        <combatPower>110</combatPower>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
@@ -106,6 +108,7 @@
 	<PawnKindDef ParentName="Must_LightInfantryBase">
 		<defName>Must_LightInfantry_Sabot</defName>
 		<label>light infantry (Sabot)</label>
+        <combatPower>110</combatPower>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>

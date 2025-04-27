@@ -26,7 +26,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Must_HumanCombatantBase" Abstract="True" Name ="Must_DemoInfantryBase">
-		<combatPower>240</combatPower>
+		<combatPower>260</combatPower>
 		<weaponTags Inherit="false" />
 		<weaponMoney>800~1700</weaponMoney>
 		<apparelRequired>
@@ -77,6 +77,7 @@
 	<PawnKindDef ParentName="Must_HeavyInfantryBase">
 		<defName>Must_HeavyInfantry_API</defName>
 		<label>heavy infantry (AP-I)</label>
+        <combatPower>264</combatPower>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
@@ -104,6 +105,7 @@
 	<PawnKindDef ParentName="Must_HeavyInfantryBase">
 		<defName>Must_HeavyInfantry_APHE</defName>
 		<label>heavy infantry (AP-HE)</label>
+        <combatPower>264</combatPower>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
@@ -133,6 +135,7 @@
 	<PawnKindDef ParentName="Must_HeavyInfantryBase">
 		<defName>Must_HeavyInfantry_Sabot</defName>
 		<label>heavy infantry (Sabot)</label>
+        <combatPower>264</combatPower>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
@@ -190,6 +193,7 @@
 	<PawnKindDef ParentName="Must_DemoInfantryBase">
 		<defName>Must_DemoInfantry_API</defName>
 		<label>demolition infantry (AP-I)</label>
+        <combatPower>286</combatPower>
 		<weaponTags Inherit="False">
 			<li>Must_IncendiaryLAW</li>
 		</weaponTags>
@@ -220,6 +224,7 @@
 	<PawnKindDef ParentName="Must_DemoInfantryBase">
 		<defName>Must_DemoInfantry_APHE</defName>
 		<label>demolition infantry (AP-HE)</label>
+        <combatPower>286</combatPower>
 		<weaponTags Inherit="False">
 			<li>Must_ASM</li>
 		</weaponTags>
@@ -250,6 +255,7 @@
 	<PawnKindDef ParentName="Must_DemoInfantryBase">
 		<defName>Must_DemoInfantry_Sabot</defName>
 		<label>demolition infantry (Sabot)</label>
+        <combatPower>286</combatPower>
 		<weaponTags Inherit="False">
 			<li>Must_ASM</li>
 		</weaponTags>

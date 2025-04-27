@@ -8,7 +8,6 @@
 			<li>Must_CommandoHelmet</li>
 			<li>Must_LargeBackpack</li>
 		</apparelRequired>
-
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Must_CommandoBase">
