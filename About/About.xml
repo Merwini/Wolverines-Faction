@@ -5,7 +5,7 @@
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
-	<description>A late industrial faction that utilizes more advanced warfare tactics. If left unchecked, they will develop new and more powerful technologies and tactics to use against you.</description>
+	<description>A late industrial faction that utilizes advanced warfare tactics. If left unchecked, they will develop new and more powerful technologies and tactics to use against you.</description>
 	<packageId>rep.factions.wolverines</packageId>
 	<modDependencies>
 		<li>
@@ -16,7 +16,7 @@
 		</li>
 		<li>
 			<packageId>rep.framework</packageId>
-			<displayName>REP Framework</displayName>
+			<displayName>RimWorld Enhancement Project Framework</displayName>
 		</li>
 	</modDependencies>
 </ModMetaData>

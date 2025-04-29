@@ -6,7 +6,7 @@
 		<label>field marshal</label>
 		<combatPower>360</combatPower>
 		<weaponMoney>2400~2400</weaponMoney>
-		<apparelMoney>2400~3600</apparelMoney>
+		<apparelMoney>3600~4800</apparelMoney>
         <factionLeader>true</factionLeader>
 		<skills>
 			<li>

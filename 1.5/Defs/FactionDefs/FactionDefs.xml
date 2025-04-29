@@ -463,7 +463,7 @@
 			</li>
             <li Class="rep.heframework.WorldObjectExtensionHEF">
                 <mapGenerator>HEFMapGeneratorSettlement</mapGenerator>
-                <defenderThreatPointsRange>3500~4000</defenderThreatPointsRange>
+                <defenderThreatPointsRange>6000~12000</defenderThreatPointsRange>
             </li>
 			<li Class="KCSG.CustomGenOption">
 				<preventBridgeable>true</preventBridgeable>
