@@ -13,6 +13,7 @@
 			<li Class="rep.heframework.WorldObjectExtensionHEF">
                 <mapGenerator>HEFMapGeneratorSite</mapGenerator>
                 <threatPointModifier>0.1</threatPointModifier>
+                <maximumSiteCount>3</maximumSiteCount>
                 <spawnThreatPointRange>2000~1000000</spawnThreatPointRange>
                 <threatPointCurve>
                     <points>
