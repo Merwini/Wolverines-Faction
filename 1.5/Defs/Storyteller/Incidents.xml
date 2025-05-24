@@ -6,7 +6,7 @@
 		 <targetTags> 
 			 <li>Map_PlayerHome</li> 
 		 </targetTags> 
-		 <workerClass>rep.heframework.IncidentWorker_RaidHEF</workerClass>--> 
+		 <workerClass>rep.heframework.IncidentWorker_RaidHE</workerClass>--> 
 		 <!--TODO the chances on all incidents might be too high? -->
 		 <!--<baseChance>11.1</baseChance> 
 		 <category>ThreatBig</category> 
@@ -26,7 +26,7 @@
 	<IncidentDef ParentName="Must_ExpBase">
 		<defName>Must_Expansion</defName>
 		<label>enemy expansion</label>
-		<workerClass>rep.heframework.IncidentWorker_ExpansionHEF</workerClass>
+		<workerClass>rep.heframework.IncidentWorker_ExpansionHE</workerClass>
 		<letterLabel>Military expansion</letterLabel>
 		<baseChance>2.6</baseChance>
 		<earliestDay>15</earliestDay>

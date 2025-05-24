@@ -3,7 +3,7 @@
 	<SitePartDef Abstract="True" Name="Must_Site_Base">
 		<label>military expansion</label>
 		<description>A military expansion granting your enemies access to new threats.</description>
-		<workerClass>rep.heframework.HEF_SitePartWorker_Expansion</workerClass>
+		<workerClass>rep.heframework.HE_SitePartWorker_Expansion</workerClass>
 		<siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
 		<expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
 		<applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>

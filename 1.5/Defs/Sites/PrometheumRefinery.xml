@@ -10,8 +10,8 @@
 			<li>Must_PGM_Prometheum</li>
 		</tags>
 		<modExtensions>
-			<li Class="rep.heframework.WorldObjectExtensionHEF">
-                <mapGenerator>HEFMapGeneratorSite</mapGenerator>
+			<li Class="rep.heframework.WorldObjectExtensionHE">
+                <mapGenerator>HEMapGeneratorSite</mapGenerator>
                 <threatPointModifier>0.1</threatPointModifier>
                 <maximumSiteCount>3</maximumSiteCount>
                 <spawnThreatPointRange>2000~1000000</spawnThreatPointRange>

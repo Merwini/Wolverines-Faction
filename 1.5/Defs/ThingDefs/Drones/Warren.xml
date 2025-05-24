@@ -106,7 +106,7 @@
 		<label>Warren APC</label>
 		<race>Must_Warren_APC</race>
 		<weaponTags>
-			<li>HEF_RF_50C</li>
+			<li>HE_RF_50C</li>
 		</weaponTags>
 	</PawnKindDef>
 

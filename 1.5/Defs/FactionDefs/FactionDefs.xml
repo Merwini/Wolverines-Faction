@@ -117,7 +117,7 @@
 		</pawnGroupMakers>
 
 		<modExtensions>
-			<li Class="rep.heframework.PawnGroupMakerExtensionHEF">
+			<li Class="rep.heframework.PawnGroupMakerExtensionHE">
 				<alwaysUseHighestTier>true</alwaysUseHighestTier>
 				<taggedPawnGroupMakers>
 					<!--Basic Groups-->
@@ -461,8 +461,8 @@
 					</li>
 				</taggedPawnGroupMakers>
 			</li>
-            <li Class="rep.heframework.WorldObjectExtensionHEF">
-                <mapGenerator>HEFMapGeneratorSettlement</mapGenerator>
+            <li Class="rep.heframework.WorldObjectExtensionHE">
+                <mapGenerator>HEMapGeneratorSettlement</mapGenerator>
                 <defenderThreatPointsRange>6000~12000</defenderThreatPointsRange>
             </li>
 			<li Class="KCSG.CustomGenOption">
