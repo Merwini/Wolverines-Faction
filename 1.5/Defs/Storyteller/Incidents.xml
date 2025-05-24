@@ -1,18 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	 <!--<IncidentDef> 
-		 <defName>Must_TacRaid</defName> 
-		 <label>tactical raid</label> 
-		 <targetTags> 
-			 <li>Map_PlayerHome</li> 
-		 </targetTags> 
-		 <workerClass>rep.heframework.IncidentWorker_RaidHE</workerClass>--> 
-		 <!--TODO the chances on all incidents might be too high? -->
-		 <!--<baseChance>11.1</baseChance> 
-		 <category>ThreatBig</category> 
-		 <pointsScaleable>true</pointsScaleable> 
-		 <tale>Raid</tale> 
-	 </IncidentDef>--> 
 
 	<IncidentDef Abstract="True" Name="Must_ExpBase">
 		<category>Misc</category>
@@ -32,4 +19,5 @@
 		<earliestDay>15</earliestDay>
 		<minRefireDays>15</minRefireDays>
 	</IncidentDef>
+    
 </Defs>
