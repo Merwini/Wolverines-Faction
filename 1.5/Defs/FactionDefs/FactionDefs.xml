@@ -485,10 +485,8 @@
 		<permanentEnemy>true</permanentEnemy>
 		<!--Placeholder-->
 		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
-		<!--Placeholder-->
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<!--Placeholder-->
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <factionNameMaker>Must_FactionNamer</factionNameMaker>
+        <settlementNameMaker>Must_SettlementNamer</settlementNameMaker>
 		<!--Placeholder-->
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<!--Placeholder-->
