@@ -32,7 +32,15 @@
                 <lootLinks>
                     <MealSurvivalPack>4</MealSurvivalPack>
                 </lootLinks>
+                
                 <fireIncidentOnSpawn>HE_ArtilleryCamp</fireIncidentOnSpawn>
+                <artilleryProjectile>Bullet_Shell_HighExplosive</artilleryProjectile>
+                <ticksBetweenBarrages>15000</ticksBetweenBarrages>
+                <ticksUntilFirstBarrage>180000</ticksUntilFirstBarrage>
+                <doWaveRaids>true</doWaveRaids>
+                <waveRaidGroupName>BasicBlend</waveRaidGroupName>
+                <doFinalRaid>true</doFinalRaid>
+                <finalRaidGroupName>BasicBlend</finalRaidGroupName>
             </li>
         </modExtensions>
     </SitePartDef>
