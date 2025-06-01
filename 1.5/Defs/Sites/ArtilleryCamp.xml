@@ -61,7 +61,6 @@
         <linkWithSite>HE_Site_ArtilleryCamp</linkWithSite>
         <order>451</order>
         <genStep Class="rep.heframework.GenStep_TaggedPawnGroupSite">
-            <pawnGroupMakerName>CommandoBlend</pawnGroupMakerName>
         </genStep>
     </GenStepDef>
     <GenStepDef>

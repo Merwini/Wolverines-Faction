@@ -54,7 +54,6 @@
 		<linkWithSite>Must_Site_Commando</linkWithSite>
 		<order>451</order>
 		<genStep Class="rep.heframework.GenStep_TaggedPawnGroupSite">
-			<pawnGroupMakerName>CommandoBlend</pawnGroupMakerName>
 		</genStep>
 	</GenStepDef>
     <GenStepDef>

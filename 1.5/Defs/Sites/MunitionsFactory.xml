@@ -58,7 +58,6 @@
 		<linkWithSite>Must_Site_Muni</linkWithSite>
 		<order>451</order>
 		<genStep Class="rep.heframework.GenStep_TaggedPawnGroupSite">
-			<pawnGroupMakerName>MunitionsInfantry</pawnGroupMakerName>
 		</genStep>
 	</GenStepDef>
     <GenStepDef>
