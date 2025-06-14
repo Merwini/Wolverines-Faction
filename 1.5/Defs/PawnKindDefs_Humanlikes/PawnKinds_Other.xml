@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<PawnKindDef ParentName="Must_HeavyInfantryBase">
-		<defName>Must_FieldMarshal</defName>
+	<PawnKindDef ParentName="REP_BW_HeavyInfantryBase">
+		<defName>REP_BW_FieldMarshal</defName>
 		<label>field marshal</label>
 		<combatPower>360</combatPower>
 		<weaponMoney>2400~2400</weaponMoney>

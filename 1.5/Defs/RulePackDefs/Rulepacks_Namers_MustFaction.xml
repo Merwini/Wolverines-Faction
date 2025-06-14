@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <RulePackDef>
-        <defName>Must_FactionNamer</defName>
+        <defName>REP_BW_FactionNamer</defName>
         <rulePack>
             <rulesStrings>
                 <li>r_name->[prefix] [suffix]</li>
@@ -37,7 +37,7 @@
     </RulePackDef>
 
     <RulePackDef>
-        <defName>Must_SettlementNamer</defName>
+        <defName>REP_BW_SettlementNamer</defName>
         <rulePack>
             <rulesStrings>
                 <li>r_name->[prefix] [suffix]</li>
@@ -86,49 +86,49 @@
     
 
     <RulePackDef>
-        <defName>Must_NamerPerson_Male</defName>
+        <defName>REP_BW_NamerPerson_Male</defName>
         <rulePack>
             <rulesStrings>
-                <li>r_name(p=6)->[Must_Names_Male] [Must_Surnames]</li>
-                <li>r_name(p=3)->[Must_Names_Male] '[Must_Nicknames]' [Must_Surnames]</li>
+                <li>r_name(p=6)->[REP_BW_Names_Male] [REP_BW_Surnames]</li>
+                <li>r_name(p=3)->[REP_BW_Names_Male] '[REP_BW_Nicknames]' [REP_BW_Surnames]</li>
             </rulesStrings>
             <rulesRaw>
                 <li Class="Rule_File">
-                    <keyword>Must_Names_Male</keyword>
-                    <path>NameBanks/Must_Names_Male</path>
+                    <keyword>REP_BW_Names_Male</keyword>
+                    <path>NameBanks/REP_BW_Names_Male</path>
                 </li>
                 <li Class="Rule_File">
-                    <keyword>Must_Surnames</keyword>
-                    <path>NameBanks/Must_Surnames</path>
+                    <keyword>REP_BW_Surnames</keyword>
+                    <path>NameBanks/REP_BW_Surnames</path>
                 </li>
                 <li Class="Rule_File">
-                    <keyword>Must_Nicknames</keyword>
-                    <path>NameBanks/Must_Nicknames</path>
+                    <keyword>REP_BW_Nicknames</keyword>
+                    <path>NameBanks/REP_BW_Nicknames</path>
                 </li>
             </rulesRaw>
         </rulePack>
     </RulePackDef>
 
     <RulePackDef>
-        <defName>Must_NamerPerson_Female</defName>
+        <defName>REP_BW_NamerPerson_Female</defName>
         <rulePack>
             <rulesStrings>
-                <li>r_name(p=3)->[Must_Names_Female] [Must_Surnames]</li>
-                <li>r_name(p=3)->[Must_Names_Female] '[Must_Nicknames]' [Must_Surnames]</li>
-                <li>r_name(p=3)->[Must_Names_Female] [Must_Surnames]</li>
+                <li>r_name(p=3)->[REP_BW_Names_Female] [REP_BW_Surnames]</li>
+                <li>r_name(p=3)->[REP_BW_Names_Female] '[REP_BW_Nicknames]' [REP_BW_Surnames]</li>
+                <li>r_name(p=3)->[REP_BW_Names_Female] [REP_BW_Surnames]</li>
             </rulesStrings>
             <rulesRaw>
                 <li Class="Rule_File">
-                    <keyword>Must_Names_Female</keyword>
-                    <path>NameBanks/Must_Names_Female</path>
+                    <keyword>REP_BW_Names_Female</keyword>
+                    <path>NameBanks/REP_BW_Names_Female</path>
                 </li>
                 <li Class="Rule_File">
-                    <keyword>Must_Surnames</keyword>
-                    <path>NameBanks/Must_Surnames</path>
+                    <keyword>REP_BW_Surnames</keyword>
+                    <path>NameBanks/REP_BW_Surnames</path>
                 </li>
                 <li Class="Rule_File">
-                    <keyword>Must_Nicknames</keyword>
-                    <path>NameBanks/Must_Nicknames</path>
+                    <keyword>REP_BW_Nicknames</keyword>
+                    <path>NameBanks/REP_BW_Nicknames</path>
                 </li>
             </rulesRaw>
         </rulePack>

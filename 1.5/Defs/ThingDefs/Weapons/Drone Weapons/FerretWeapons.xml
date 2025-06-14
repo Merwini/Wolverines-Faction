@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="Must_DroneWeaponBase">
-		<defName>Must_F_SMG</defName>
+	<ThingDef ParentName="REP_BW_DroneWeaponBase">
+		<defName>REP_BW_F_SMG</defName>
 		<label>mounted SMG</label>
 		<description>A drone-mounted submachine gun chambered for 5.7x28mm pistol cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
 		<graphicData>
-			<texPath>Wolverines/Weapons/UGFerretTurretSMG</texPath>
+			<texPath>Blackwave/Weapons/UGFerretTurretSMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_SMG</soundInteract>
@@ -49,7 +49,7 @@
 			</li>
 		</comps>
 		<weaponTags Inherit="False">
-			<li>Must_FerretSMG</li>
+			<li>REP_BW_FerretSMG</li>
 			<li>CE_AI_Suppressive</li>
 			<li>NoSwitch</li>
 		</weaponTags>
@@ -85,12 +85,12 @@
 		</modExtensions>-->
 	</ThingDef>
 
-	<ThingDef ParentName="Must_DroneWeaponBase">
-		<defName>Must_F_GL</defName>
+	<ThingDef ParentName="REP_BW_DroneWeaponBase">
+		<defName>REP_BW_F_GL</defName>
 		<label>mini-grenade launcher</label>
 		<description>A block of launch tubes pre-loaded with mini-grenades. Its lightweight construction means that fire rate must be capped to prevent heat buildup cooking off unfired grenades.</description>
 		<graphicData>
-			<texPath>Wolverines/Weapons/UGFerretTurretGL</texPath>
+			<texPath>Blackwave/Weapons/UGFerretTurretGL</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
@@ -133,7 +133,7 @@
 			</li>
 		</comps>
 		<weaponTags Inherit="False">
-			<li>Must_FerretGL</li>
+			<li>REP_BW_FerretGL</li>
 			<li>NoSwitch</li>
 			<li>CE_AI_AOE</li>
 		</weaponTags>

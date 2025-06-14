@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<KCSG.SymbolDef>
+		<defName>REP_BW_AmmoBench_WoodLog_North</defName>
+		<thing>AmmoBench</thing>
+		<stuff>WoodLog</stuff>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_AmmoBench_WoodLog_East</defName>
+		<thing>AmmoBench</thing>
+		<stuff>WoodLog</stuff>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_AmmoBench_WoodLog_South</defName>
+		<thing>AmmoBench</thing>
+		<stuff>WoodLog</stuff>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_AmmoBench_WoodLog_West</defName>
+		<thing>AmmoBench</thing>
+		<stuff>WoodLog</stuff>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_AmmoBench_Steel_North</defName>
+		<thing>AmmoBench</thing>
+		<stuff>Steel</stuff>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_AmmoBench_Steel_South</defName>
+		<thing>AmmoBench</thing>
+		<stuff>Steel</stuff>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+</Defs>

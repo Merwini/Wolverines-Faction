@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<KCSG.SymbolDef>
+		<defName>REP_BW_Embrasure_BlocksGranite</defName>
+		<thing>CE_Embrasure</thing>
+		<stuff>BlocksGranite</stuff>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_Embrasure_BlocksLimestone</defName>
+		<thing>CE_Embrasure</thing>
+		<stuff>BlocksLimestone</stuff>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_Embrasure_BlocksSlate</defName>
+		<thing>CE_Embrasure</thing>
+		<stuff>BlocksSlate</stuff>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_Embrasure_WoodLog</defName>
+		<thing>CE_Embrasure</thing>
+		<stuff>WoodLog</stuff>
+	</KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+        <defName>SculptureLarge_Steel_Animalist</defName>
+        <thing>SculptureLarge</thing>
+        <stuff>Steel</stuff>
+        <styleCategory>Animalist</styleCategory>
+    </KCSG.SymbolDef>
+</Defs>

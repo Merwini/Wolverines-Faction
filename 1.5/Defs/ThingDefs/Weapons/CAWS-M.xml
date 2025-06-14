@@ -4,12 +4,12 @@
 	<!-- == CAWS-M === -->
 		
   <ThingDef ParentName="BaseMakeableGun">		
-	<defName>Must_CAWS-Mshotgun</defName>
+	<defName>REP_BW_CAWS-Mshotgun</defName>
 	<label>CAWS-M Tactical</label>
 	<description>A late-industrial bullpup automatic military shotgun, chambered for 12-gauge shells. Fitted with a holo sight and flashlight. Specialized belted ammo offers significantly higher performance.</description>
     <soundInteract>Interact_Shotgun</soundInteract>
     <graphicData>
-      <texPath>Wolverines/Weapons/CAWS-M</texPath>
+      <texPath>Blackwave/Weapons/CAWS-M</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -28,7 +28,7 @@
     </costList>
     <weaponTags Inherit="False">
         <li>CE_AI_BROOM</li>
-        <li>Must_SG</li>
+        <li>REP_BW_SG</li>
     </weaponTags>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">

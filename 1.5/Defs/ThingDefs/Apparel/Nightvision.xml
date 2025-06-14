@@ -2,11 +2,11 @@
 <Defs>
 
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>Must_NightVision</defName>
+		<defName>REP_BW_NightVision</defName>
 		<label>night vision goggles (helmet mount)</label>
 		<description>Night vision goggles and battery pack mounted on a helmet.</description>
 		<graphicData>
-			<texPath>Wolverines/Apparel/MountedNV/MountedNV</texPath>
+			<texPath>Blackwave/Apparel/MountedNV/MountedNV</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<possessionCount>1</possessionCount>
@@ -37,13 +37,13 @@
 			<bodyPartGroups>
 				<li>Eyes</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Wolverines/Apparel/MountedNV/MountedNV</wornGraphicPath>
+			<wornGraphicPath>Blackwave/Apparel/MountedNV/MountedNV</wornGraphicPath>
 			<layers>
 				<!--TODO<li>StrappedHead</li>-->
 				<li>EyeCover</li>
 			</layers>
 			<tags>
-				<li>Must_NV</li>
+				<li>REP_BW_NV</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

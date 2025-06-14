@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!--Gun Polecat Race-->
-	<ThingDef ParentName="Must_DroneBase" Name="Must_PolecatBase" Abstract="True">
+	<ThingDef ParentName="REP_BW_DroneBase" Name="REP_BW_PolecatBase" Abstract="True">
 		<statBases>
 			<MarketValue>900</MarketValue>
 			<MoveSpeed>4.6</MoveSpeed>
@@ -37,12 +37,12 @@
 		<race>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
-			<body>Must_Polecat_Body</body>
+			<body>REP_BW_Polecat_Body</body>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
 			<lifeStageAges>
 				<li>
-					<def>Must_DroneCompleted</def>
+					<def>REP_BW_DroneCompleted</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
@@ -72,49 +72,49 @@
                     <li>
                         <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
                         <parts>
-                            <li>Must_DroneEye</li>
+                            <li>REP_BW_DroneEye</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
                         <parts>
-                            <li>Must_DroneEye</li>
+                            <li>REP_BW_DroneEye</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
                         <parts>
-                            <li>Must_DroneEar</li>
+                            <li>REP_BW_DroneEar</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
                         <parts>
-                            <li>Must_DroneEar</li>
+                            <li>REP_BW_DroneEar</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
                         <parts>
-                            <li>Must_PC_Arm</li>
+                            <li>REP_BW_PC_Arm</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
                         <parts>
-                            <li>Must_PC_Arm</li>
+                            <li>REP_BW_PC_Arm</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
                         <parts>
-                            <li>Must_PC_LegArm</li>
+                            <li>REP_BW_PC_LegArm</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
                         <parts>
-                            <li>Must_PC_LegArm</li>
+                            <li>REP_BW_PC_LegArm</li>
                         </parts>
                     </li>
                 </stats>
@@ -122,13 +122,13 @@
         </modExtensions>
 	</ThingDef>
 
-	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_PolecatBaseKind" Abstract="True">
-		<defaultFactionType>Must_FactionHostile</defaultFactionType>
+	<PawnKindDef  ParentName="BaseMechanoidKind" Name="REP_BW_PolecatBaseKind" Abstract="True">
+		<defaultFactionType>REP_BW_FactionHostile</defaultFactionType>
 		<forceNormalGearQuality>True</forceNormalGearQuality>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Wolverines/Drones/UGPolecat/UGPolecat</texPath>
+					<texPath>Blackwave/Drones/UGPolecat/UGPolecat</texPath>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 			</li>
@@ -136,17 +136,17 @@
 		<combatPower>180</combatPower>
 	</PawnKindDef>
 
-	<ThingDef ParentName="Must_PolecatBase">
-		<defName>Must_Polecat_Gun</defName>
+	<ThingDef ParentName="REP_BW_PolecatBase">
+		<defName>REP_BW_Polecat_Gun</defName>
 		<label>gun polecat</label>
 	</ThingDef>
 
-	<PawnKindDef ParentName="Must_PolecatBaseKind">
-		<defName>Must_Polecat_LMGKind</defName>
+	<PawnKindDef ParentName="REP_BW_PolecatBaseKind">
+		<defName>REP_BW_Polecat_LMGKind</defName>
 		<label>LMG polecat</label>
-		<race>Must_Polecat_Gun</race>
+		<race>REP_BW_Polecat_Gun</race>
 		<weaponTags>
-			<li>Must_PC_LMG</li>
+			<li>REP_BW_PC_LMG</li>
 		</weaponTags>
 		<weaponMoney>9999~9999</weaponMoney>
 		<modExtensions>
@@ -160,12 +160,12 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_PolecatBaseKind">
-		<defName>Must_Polecat_LMGAPIKind</defName>
+	<PawnKindDef ParentName="REP_BW_PolecatBaseKind">
+		<defName>REP_BW_Polecat_LMGAPIKind</defName>
 		<label>LMG polecat</label>
-		<race>Must_Polecat_Gun</race>
+		<race>REP_BW_Polecat_Gun</race>
 		<weaponTags>
-			<li>Must_PC_LMG</li>
+			<li>REP_BW_PC_LMG</li>
 		</weaponTags>
 		<weaponMoney>9999~9999</weaponMoney>
 		<modExtensions>
@@ -179,12 +179,12 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_PolecatBaseKind">
-		<defName>Must_Polecat_LMGAPHEKind</defName>
+	<PawnKindDef ParentName="REP_BW_PolecatBaseKind">
+		<defName>REP_BW_Polecat_LMGAPHEKind</defName>
 		<label>LMG polecat</label>
-		<race>Must_Polecat_Gun</race>
+		<race>REP_BW_Polecat_Gun</race>
 		<weaponTags>
-			<li>Must_PC_LMG</li>
+			<li>REP_BW_PC_LMG</li>
 		</weaponTags>
 		<weaponMoney>9999~9999</weaponMoney>
 		<modExtensions>
@@ -198,12 +198,12 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_PolecatBaseKind">
-		<defName>Must_Polecat_LMGSabotKind</defName>
+	<PawnKindDef ParentName="REP_BW_PolecatBaseKind">
+		<defName>REP_BW_Polecat_LMGSabotKind</defName>
 		<label>LMG polecat</label>
-		<race>Must_Polecat_Gun</race>
+		<race>REP_BW_Polecat_Gun</race>
 		<weaponTags>
-			<li>Must_PC_LMG</li>
+			<li>REP_BW_PC_LMG</li>
 		</weaponTags>
 		<weaponMoney>9999~9999</weaponMoney>
 		<modExtensions>
@@ -217,12 +217,12 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_PolecatBaseKind">
-		<defName>Must_Polecat_AMRKind</defName>
+	<PawnKindDef ParentName="REP_BW_PolecatBaseKind">
+		<defName>REP_BW_Polecat_AMRKind</defName>
 		<label>AMR polecat</label>
-		<race>Must_Polecat_Gun</race>
+		<race>REP_BW_Polecat_Gun</race>
 		<weaponTags>
-			<li>Must_PC_AMR</li>
+			<li>REP_BW_PC_AMR</li>
 		</weaponTags>
 		<weaponMoney>9999~9999</weaponMoney>
 		<modExtensions>
@@ -236,23 +236,23 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<ThingDef ParentName="Must_PolecatBase">
-		<defName>Must_Polecat_Flamer</defName>
+	<ThingDef ParentName="REP_BW_PolecatBase">
+		<defName>REP_BW_Polecat_Flamer</defName>
 		<label>flamethrower polecat</label>
 	</ThingDef>
 
-	<PawnKindDef ParentName="Must_PolecatBaseKind">
-		<defName>Must_Polecat_FlamerKind</defName>
+	<PawnKindDef ParentName="REP_BW_PolecatBaseKind">
+		<defName>REP_BW_Polecat_FlamerKind</defName>
 		<label>flamethrower polecat</label>
-		<race>Must_Polecat_Flamer</race>
+		<race>REP_BW_Polecat_Flamer</race>
 		<weaponTags>
-			<li>Must_PC_Flamer</li>
+			<li>REP_BW_PC_Flamer</li>
 		</weaponTags>
 		<weaponMoney>9999~9999</weaponMoney>
 		<lifeStages Inherit="false">
 			<li>
 				<bodyGraphicData>
-					<texPath>Wolverines/Drones/UGPolecat/UGPolecatFlamer</texPath>
+					<texPath>Blackwave/Drones/UGPolecat/UGPolecatFlamer</texPath>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 			</li>
@@ -268,23 +268,23 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<ThingDef ParentName="Must_PolecatBase">
-		<defName>Must_Polecat_AGL</defName>
+	<ThingDef ParentName="REP_BW_PolecatBase">
+		<defName>REP_BW_Polecat_AGL</defName>
 		<label>AGL polecat</label>
 	</ThingDef>
 
-	<PawnKindDef ParentName="Must_PolecatBaseKind">
-		<defName>Must_Polecat_AGLKind</defName>
+	<PawnKindDef ParentName="REP_BW_PolecatBaseKind">
+		<defName>REP_BW_Polecat_AGLKind</defName>
 		<label>AGL polecat</label>
-		<race>Must_Polecat_AGL</race>
+		<race>REP_BW_Polecat_AGL</race>
 		<weaponTags>
-			<li>Must_PC_AGL</li>
+			<li>REP_BW_PC_AGL</li>
 		</weaponTags>
 		<weaponMoney>9999~9999</weaponMoney>
 		<lifeStages Inherit="false">
 			<li>
 				<bodyGraphicData>
-					<texPath>Wolverines/Drones/UGPolecat/UGPolecatBomb</texPath>
+					<texPath>Blackwave/Drones/UGPolecat/UGPolecatBomb</texPath>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 			</li>
@@ -301,25 +301,25 @@
 	</PawnKindDef>
 
 
-	<!--<ThingDef ParentName="Must_PolecatBase">
-		<defName>Must_Polecat_Explosive</defName>
+	<!--<ThingDef ParentName="REP_BW_PolecatBase">
+		<defName>REP_BW_Polecat_Explosive</defName>
 		<label>explosive polecat</label>
 		<statBases>
 			<MeleeHitChance>10</MeleeHitChance>
 		</statBases>
 		<race>
-			<body>Must_Polecat_ArmlessBody</body>
+			<body>REP_BW_Polecat_ArmlessBody</body>
 		</race>
 		<tools Inherit="False">
 			<li Class="CombatExtended.ToolCE">
 				<label>self-destruct</label>
 				<capacities>
-					<li>Must_SelfDestruct</li>
+					<li>REP_BW_SelfDestruct</li>
 				</capacities>
 				<power>1</power>
 				<extraMeleeDamages>
 					<li>
-						<def>Must_Polecat_BombSelfDestruct</def>
+						<def>REP_BW_Polecat_BombSelfDestruct</def>
 						<amount>1</amount>
 						<chance>1</chance>
 					</li>
@@ -333,14 +333,14 @@
 		</tools>
 	</ThingDef>
 
-	<PawnKindDef ParentName="Must_PolecatBaseKind">
-		<defName>Must_Polecat_ExplosiveKind</defName>
+	<PawnKindDef ParentName="REP_BW_PolecatBaseKind">
+		<defName>REP_BW_Polecat_ExplosiveKind</defName>
 		<label>explosive polecat</label>
-		<race>Must_Polecat_Explosive</race>
+		<race>REP_BW_Polecat_Explosive</race>
 		<lifeStages Inherit="False">
 			<li>
 				<bodyGraphicData>
-					<texPath>Wolverines/Drones/UGPolecat/UGPolecatBomb</texPath>
+					<texPath>Blackwave/Drones/UGPolecat/UGPolecatBomb</texPath>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 			</li>

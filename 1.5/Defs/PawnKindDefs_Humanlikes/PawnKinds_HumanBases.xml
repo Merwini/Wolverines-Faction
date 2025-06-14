@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<PawnKindDef Name="Must_HumanBase" Abstract="True">
+	<PawnKindDef Name="REP_BW_HumanBase" Abstract="True">
 		<race>Human</race>
-		<defaultFactionType>Must_FactionHostile</defaultFactionType>
+		<defaultFactionType>REP_BW_FactionHostile</defaultFactionType>
 		<minGenerationAge>18</minGenerationAge>
 		<maxGenerationAge>45</maxGenerationAge>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_HumanBase" Abstract="True" Name="Must_HumanCombatantBase" >
+	<PawnKindDef ParentName="REP_BW_HumanBase" Abstract="True" Name="REP_BW_HumanCombatantBase" >
 		<isFighter>true</isFighter>
 		<invNutrition>4</invNutrition>
 		<invFoodDef>MealSurvivalPack</invFoodDef>
@@ -22,7 +22,7 @@
 		</disallowedTraits>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_HumanCombatantBase" Abstract="True" Name="Must_HumanEliteCombatantBase">
+	<PawnKindDef ParentName="REP_BW_HumanCombatantBase" Abstract="True" Name="REP_BW_HumanEliteCombatantBase">
 		<initialWillRange>5~7</initialWillRange>
 		<initialResistanceRange>20~28</initialResistanceRange>
 		<skills>
@@ -37,7 +37,7 @@
 		</skills>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_HumanBase" Abstract="True" Name="Must_HumanNonComBase" >
+	<PawnKindDef ParentName="REP_BW_HumanBase" Abstract="True" Name="REP_BW_HumanNonComBase" >
 		<isFighter>false</isFighter>
 		<invNutrition>2</invNutrition>
 		<invFoodDef>MealSurvivalPack</invFoodDef>

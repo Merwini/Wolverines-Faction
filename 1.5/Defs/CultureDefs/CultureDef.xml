@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <CultureDef>
-        <defName>Must_Mercanarism</defName>
+        <defName>REP_BW_Mercanarism</defName>
         <label>mercanarism</label>
         <description>An austere culture shared by many who have chosen a life of war for pay.</description>
 
-        <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">Must_NamerIdeo</ideoNameMaker>
-        <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">Must_LeaderTitleMaker</leaderTitleMaker>
+        <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">REP_BW_NamerIdeo</ideoNameMaker>
+        <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">REP_BW_LeaderTitleMaker</leaderTitleMaker>
         <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
         <allowedPlaceTags>
             <li>OriginSpacer</li>
@@ -49,7 +49,7 @@
     </CultureDef>
 
     <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
-        <defName>Must_LeaderTitleMaker</defName>
+        <defName>REP_BW_LeaderTitleMaker</defName>
         <rulePack>
             <rulesStrings>
                 <li>r_leaderTitle->field marshal</li>
@@ -58,7 +58,7 @@
     </RulePackDef>
 
     <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
-        <defName>Must_NamerIdeo</defName>
+        <defName>REP_BW_NamerIdeo</defName>
         <include>
             <li>GlobalUtility</li>
         </include>

@@ -4,11 +4,11 @@
 	<!-- ==================== Heavy Composite Helmet ==================== -->
 
 	<ThingDef ParentName="ArmorMachineableBase">
-		<defName>Must_HeavyHelmet</defName>
+		<defName>REP_BW_HeavyHelmet</defName>
 		<label>heavy composite helmet</label>
 		<description>Rifle rated heavy helmet. Its face plate features a compact builtin nightvision device.</description>
 		<graphicData>
-			<texPath>Wolverines/Apparel/Digi-HeavyHelmetFull/Digi-HeavyHelmetFull</texPath>
+			<texPath>Blackwave/Apparel/Digi-HeavyHelmetFull/Digi-HeavyHelmetFull</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
@@ -44,7 +44,7 @@
 			<li>ArmorHeadgear</li>
 		</thingCategories>
 		<apparel>
-			<wornGraphicPath>Wolverines/Apparel/Digi-HeavyHelmetFull/Digi-HeavyHelmetFull</wornGraphicPath>
+			<wornGraphicPath>Blackwave/Apparel/Digi-HeavyHelmetFull/Digi-HeavyHelmetFull</wornGraphicPath>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
@@ -56,7 +56,7 @@
 				<li>StrappedHead</li>-->
 			</layers>
 			<tags>
-				<li>Must_HeavyArmor</li>
+				<li>REP_BW_HeavyArmor</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

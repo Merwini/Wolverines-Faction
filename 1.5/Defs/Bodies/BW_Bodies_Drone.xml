@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--Ferret-->
+	<BodyDef>
+		<defName>REP_BW_Ferret_Body</defName>
+		<label>ferret drone</label>
+		<corePart>
+			<def>REP_BW_DroneBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+            <groups>
+                <li>CoveredByNaturalArmor</li>
+            </groups>
+			<parts>
+				<!--Head Section-->
+				<li>
+					<def>REP_BW_DroneNeck</def>
+					<coverage>0.20</coverage>
+					<height>Top</height>
+					<depth>Inside</depth>
+					<parts>
+						<li>
+							<def>REP_BW_DroneHead</def>
+							<coverage>0.5</coverage>
+							<parts>
+								<li>
+									<def>REP_BW_DroneBrain</def>
+									<coverage>0.25</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<!--Face Section-->
+				<li>
+					<def>REP_BW_DroneFace</def>
+					<coverage>0.05</coverage>
+					<parts>
+						<li>
+							<def>REP_BW_DroneEye</def>
+							<coverage>0.25</coverage>
+						</li>
+						<li>
+							<def>REP_BW_DroneEar</def>
+							<coverage>0.25</coverage>
+						</li>
+					</parts>
+				</li>
+				<!--Internals Section-->
+				<li>
+					<def>REP_BW_DroneHeart</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>REP_BW_DroneLiver</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<!--Wheels Section-->
+				<li>
+					<def>REP_BW_Ferret_Leg</def>
+					<customLabel>left front wheel</customLabel>
+					<coverage>0.0825</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>REP_BW_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>left front tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>REP_BW_Ferret_Leg</def>
+					<customLabel>right front wheel</customLabel>
+					<coverage>0.0825</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>REP_BW_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>right front tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>REP_BW_Ferret_Leg</def>
+					<customLabel>left rear wheel</customLabel>
+					<coverage>0.0825</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>REP_BW_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>left rear tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>REP_BW_Ferret_Leg</def>
+					<customLabel>right rear wheel</customLabel>
+					<coverage>0.0825</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>REP_BW_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>right rear tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<!--Weapon Section-->
+				<li>
+					<def>REP_BW_Ferret_Tool</def>
+					<coverage>0.1</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+	<!--Polecat-->
+	<BodyDef>
+		<defName>REP_BW_Polecat_Body</defName>
+		<label>polecat drone</label>
+		<corePart>
+			<def>REP_BW_DroneBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+            <groups>
+                <li>CoveredByNaturalArmor</li>
+            </groups>
+			<parts>
+				<!--Head Section-->
+				<li>
+					<def>REP_BW_DroneNeck</def>
+					<coverage>0.1</coverage>
+					<height>Top</height>
+					<depth>Inside</depth>
+					<parts>
+						<li>
+							<def>REP_BW_DroneHead</def>
+							<coverage>0.5</coverage>
+							<parts>
+								<li>
+									<def>REP_BW_DroneBrain</def>
+									<coverage>0.25</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<!--Face Section-->
+				<li>
+					<def>REP_BW_DroneFace</def>
+					<coverage>0.05</coverage>
+					<parts>
+						<li>
+							<def>REP_BW_DroneEye</def>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>REP_BW_DroneEye</def>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>REP_BW_DroneEye</def>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>REP_BW_DroneEar</def>
+							<coverage>0.10</coverage>
+						</li>
+					</parts>
+				</li>
+				<!--Internals Section-->
+				<li>
+					<def>REP_BW_DroneHeart</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>REP_BW_DroneLiver</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<!--Legs Section-->
+				<li>
+					<def>REP_BW_PC_Leg</def>
+					<customLabel>left front leg</customLabel>
+					<coverage>0.11</coverage>
+					<height>Bottom</height>
+					<groups>
+						<!--might not need this now that I changed tools to the clamps-->
+						<li>FrontLeftLeg</li>
+					</groups>
+				</li>
+				<li>
+					<def>REP_BW_PC_Leg</def>
+					<customLabel>right front leg</customLabel>
+					<coverage>0.11</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>FrontRightLeg</li>
+					</groups>
+				</li>
+				<li>
+					<def>REP_BW_PC_Leg</def>
+					<customLabel>left rear leg</customLabel>
+					<coverage>0.11</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>REP_BW_PC_Leg</def>
+					<customLabel>right rear leg</customLabel>
+					<coverage>0.11</coverage>
+					<height>Bottom</height>
+				</li>
+				<!--Arms Section-->
+				<li>
+					<def>REP_BW_PC_Arm</def>
+					<customLabel>left manipulator arm</customLabel>
+					<coverage>0.08</coverage>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<parts>
+						<li>
+							<def>REP_BW_PC_Hand</def>
+							<customLabel>left manipulator clamp</customLabel>
+							<coverage>0.25</coverage>
+							<groups>
+								<li>Hands</li>
+								<li>LeftHand</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>REP_BW_PC_Arm</def>
+					<customLabel>right manipulator arm</customLabel>
+					<coverage>0.08</coverage>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<parts>
+						<li>
+							<def>REP_BW_PC_Hand</def>
+							<customLabel>right manipulator clamp</customLabel>
+							<coverage>0.25</coverage>
+							<groups>
+								<li>Hands</li>
+								<li>RightHand</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+	<!--Armless Polecat-->
+	<BodyDef>
+		<defName>REP_BW_Polecat_ArmlessBody</defName>
+		<label>polecat drone</label>
+		<corePart>
+			<def>REP_BW_DroneBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+            <groups>
+                <li>CoveredByNaturalArmor</li>
+            </groups>
+			<parts>
+				<!--Head Section-->
+				<li>
+					<def>REP_BW_DroneNeck</def>
+					<coverage>0.1</coverage>
+					<height>Top</height>
+					<depth>Inside</depth>
+					<parts>
+						<li>
+							<def>REP_BW_DroneHead</def>
+							<coverage>0.5</coverage>
+							<parts>
+								<li>
+									<def>REP_BW_DroneBrain</def>
+									<coverage>0.25</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<!--Face Section-->
+				<li>
+					<def>REP_BW_DroneFace</def>
+					<coverage>0.05</coverage>
+					<parts>
+						<li>
+							<def>REP_BW_DroneEye</def>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>REP_BW_DroneEye</def>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>REP_BW_DroneEye</def>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>REP_BW_DroneEar</def>
+							<coverage>0.10</coverage>
+						</li>
+					</parts>
+				</li>
+				<!--Internals Section-->
+				<li>
+					<def>REP_BW_DroneHeart</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>REP_BW_DroneLiver</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<!--Legs Section-->
+				<li>
+					<def>REP_BW_PC_LegArm</def>
+					<customLabel>left front leg</customLabel>
+					<coverage>0.11</coverage>
+					<height>Bottom</height>
+					<groups>
+						<!--might not need this now that I changed tools to the clamps-->
+						<li>FrontLeftLeg</li>
+					</groups>
+				</li>
+				<li>
+					<def>REP_BW_PC_LegArm</def>
+					<customLabel>right front leg</customLabel>
+					<coverage>0.11</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>FrontRightLeg</li>
+					</groups>
+				</li>
+				<li>
+					<def>REP_BW_PC_LegArm</def>
+					<customLabel>left rear leg</customLabel>
+					<coverage>0.11</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>REP_BW_PC_LegArm</def>
+					<customLabel>right rear leg</customLabel>
+					<coverage>0.11</coverage>
+					<height>Bottom</height>
+				</li>
+				<!--Weapon Section-->
+				<li>
+					<def>REP_BW_Ferret_Tool</def>
+					<coverage>0.1</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	
+	<!--Badger-->
+	<BodyDef>
+		<defName>REP_BW_Badger_Body</defName>
+		<label>badger drone</label>
+		<corePart>
+			<def>REP_BW_DroneBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+            <groups>
+                <li>CoveredByNaturalArmor</li>
+            </groups>
+			<parts>
+				<!--Head Section-->
+				<li>
+					<def>REP_BW_DroneNeck</def>
+					<coverage>0.15</coverage>
+					<height>Top</height>
+					<depth>Inside</depth>
+					<parts>
+						<li>
+							<def>REP_BW_DroneHead</def>
+							<coverage>0.5</coverage>
+							<parts>
+								<li>
+									<def>REP_BW_DroneBrain</def>
+									<coverage>0.25</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<!--Face Section-->
+				<li>
+					<def>REP_BW_DroneFace</def>
+					<coverage>0.05</coverage>
+					<parts>
+						<li>
+							<def>REP_BW_DroneEye</def>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>REP_BW_DroneEye</def>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>REP_BW_DroneEye</def>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>REP_BW_DroneEar</def>
+							<coverage>0.10</coverage>
+						</li>
+					</parts>
+				</li>
+				<!--Internals Section-->
+				<li>
+					<def>REP_BW_DroneHeart</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>REP_BW_DroneLiver</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<!--Legs Section-->
+				<li>
+					<def>REP_BW_Badger_Leg</def>
+					<customLabel>left tank tread</customLabel>
+					<coverage>0.16</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>REP_BW_Badger_Foot</def>
+							<customLabel>left first road wheel</customLabel>
+							<coverage>0.14</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>REP_BW_Badger_Foot</def>
+							<customLabel>left second road wheel</customLabel>
+							<coverage>0.14</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>REP_BW_Badger_Foot</def>
+							<customLabel>left third road wheel</customLabel>
+							<coverage>0.14</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>REP_BW_Badger_Foot</def>
+							<customLabel>left fourth road wheel</customLabel>
+							<coverage>0.14</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>REP_BW_Badger_Foot</def>
+							<customLabel>left fifth road wheel</customLabel>
+							<coverage>0.14</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>REP_BW_Badger_Foot</def>
+							<customLabel>left front tensioner wheel</customLabel>
+							<coverage>0.14</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>REP_BW_Badger_Foot</def>
+							<customLabel>left rear tensioner wheel</customLabel>
+							<coverage>0.14</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>REP_BW_Badger_Leg</def>
+					<customLabel>right tank tread</customLabel>
+					<coverage>0.16</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>REP_BW_Badger_Foot</def>
+							<customLabel>right first road wheel</customLabel>
+							<coverage>0.14</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>REP_BW_Badger_Foot</def>
+							<customLabel>right second road wheel</customLabel>
+							<coverage>0.14</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>REP_BW_Badger_Foot</def>
+							<customLabel>right third road wheel</customLabel>
+							<coverage>0.14</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>REP_BW_Badger_Foot</def>
+							<customLabel>right fourth road wheel</customLabel>
+							<coverage>0.14</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>REP_BW_Badger_Foot</def>
+							<customLabel>right fifth road wheel</customLabel>
+							<coverage>0.14</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>REP_BW_Badger_Foot</def>
+							<customLabel>right front tensioner wheel</customLabel>
+							<coverage>0.14</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>REP_BW_Badger_Foot</def>
+							<customLabel>right rear tensioner wheel</customLabel>
+							<coverage>0.14</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+				<!--Weapon Section-->
+				<li>
+					<def>REP_BW_Badger_Tool</def>
+					<coverage>0.1</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+	<!--Warren-->
+	<BodyDef>
+		<defName>REP_BW_Wolverine_Body</defName>
+		<label>wolverine</label>
+		<corePart>
+			<def>REP_BW_DroneBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+            <groups>
+                <li>CoveredByNaturalArmor</li>
+            </groups>
+			<parts>
+				<!--Head Section-->
+				<li>
+					<def>REP_BW_DroneNeck</def>
+					<coverage>0.20</coverage>
+					<height>Top</height>
+					<depth>Inside</depth>
+					<parts>
+						<li>
+							<def>REP_BW_DroneHead</def>
+							<coverage>0.5</coverage>
+							<parts>
+								<li>
+									<def>REP_BW_DroneBrain</def>
+									<coverage>0.25</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<!--Face Section-->
+				<li>
+					<def>REP_BW_DroneFace</def>
+					<coverage>0.05</coverage>
+					<parts>
+						<li>
+							<def>REP_BW_DroneEye</def>
+							<coverage>0.25</coverage>
+						</li>
+						<li>
+							<def>REP_BW_DroneEar</def>
+							<coverage>0.25</coverage>
+						</li>
+					</parts>
+				</li>
+				<!--Internals Section-->
+				<li>
+					<def>REP_BW_DroneHeart</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>REP_BW_DroneLiver</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<!--Wheels Section-->
+				<li>
+					<def>REP_BW_Ferret_Leg</def>
+					<customLabel>left front wheel</customLabel>
+					<coverage>0.055</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>REP_BW_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>left front tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>REP_BW_Ferret_Leg</def>
+					<customLabel>right front wheel</customLabel>
+					<coverage>0.055</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>REP_BW_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>right front tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>REP_BW_Ferret_Leg</def>
+					<customLabel>left middle wheel</customLabel>
+					<coverage>0.055</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>REP_BW_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>left middle tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>REP_BW_Ferret_Leg</def>
+					<customLabel>right middle wheel</customLabel>
+					<coverage>0.055</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>REP_BW_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>right middle tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>REP_BW_Ferret_Leg</def>
+					<customLabel>left rear wheel</customLabel>
+					<coverage>0.055</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>REP_BW_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>left rear tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>REP_BW_Ferret_Leg</def>
+					<customLabel>right rear wheel</customLabel>
+					<coverage>0.055</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>REP_BW_Ferret_Foot</def>
+							<coverage>0.5</coverage>
+							<customLabel>right rear tire</customLabel>
+						</li>
+					</parts>
+				</li>
+				<!--Weapon Section-->
+				<li>
+					<def>REP_BW_Ferret_Tool</def>
+					<coverage>0.1</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+</Defs>

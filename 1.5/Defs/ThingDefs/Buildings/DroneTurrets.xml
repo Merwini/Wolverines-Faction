@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="TurretBase" Abstract="True" Name="Must_TurretDrone">
+	<ThingDef ParentName="TurretBase" Abstract="True" Name="REP_BW_TurretDrone">
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 		</graphicData>
@@ -16,12 +16,12 @@
 		<thingCategories Inherit="False"/>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_TurretDrone">
-		<defName>Must_PolecatFlameTurret</defName>
+	<ThingDef ParentName="REP_BW_TurretDrone">
+		<defName>REP_BW_PolecatFlameTurret</defName>
 		<label>immobile flamethrower polecat</label>
 		<description>A polecat drone that does not yet have its movement systems installed, but has its weapon system active.</description>
 		<graphicData>
-			<texPath>Wolverines/Drones/UGPolecat/UGPolecatFlamer</texPath>
+			<texPath>Blackwave/Drones/UGPolecat/UGPolecatFlamer</texPath>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
@@ -34,7 +34,7 @@
 		</statBases>
 		<building>
 			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretGunDef>Must_PC_Flamer</turretGunDef>
+			<turretGunDef>REP_BW_PC_Flamer</turretGunDef>
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_TurretTop</li>
@@ -42,12 +42,12 @@
 		</placeWorkers>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_TurretDrone">
-		<defName>Must_PolecatBombTurret</defName>
+	<ThingDef ParentName="REP_BW_TurretDrone">
+		<defName>REP_BW_PolecatBombTurret</defName>
 		<label>immobile grenade launcher polecat</label>
 		<description>A polecat drone that does not yet have its movement systems installed, but has its weapon system active.</description>
 		<graphicData>
-			<texPath>Wolverines/Drones/UGPolecat/UGPolecatBomb</texPath>
+			<texPath>Blackwave/Drones/UGPolecat/UGPolecatBomb</texPath>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
@@ -60,7 +60,7 @@
 		</statBases>
 		<building>
 			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretGunDef>Must_PC_AGL</turretGunDef>
+			<turretGunDef>REP_BW_PC_AGL</turretGunDef>
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_TurretTop</li>
@@ -68,12 +68,12 @@
 		</placeWorkers>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_TurretDrone">
-		<defName>Must_BadgerGunTurret</defName>
+	<ThingDef ParentName="REP_BW_TurretDrone">
+		<defName>REP_BW_BadgerGunTurret</defName>
 		<label>immobile MMG badger</label>
 		<description>A badger drone that does not yet have its movement systems installed, but has its weapon system active.</description>
 		<graphicData>
-			<texPath>Wolverines/Drones/UGBadger/UGBadger</texPath>
+			<texPath>Blackwave/Drones/UGBadger/UGBadger</texPath>
 			<drawSize>(2.7,2.7)</drawSize>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
@@ -86,7 +86,7 @@
 		</statBases>
 		<building>
 			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretGunDef>Must_B_MMG</turretGunDef>
+			<turretGunDef>REP_BW_B_MMG</turretGunDef>
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_TurretTop</li>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FakePlantBlazebulb</defName>
+		<thing>REP_BW_FakePlantBlazebulb</thing>
+		<plantGrowth>1</plantGrowth>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FakePlantBlazebulb_Half</defName>
+		<thing>REP_BW_FakePlantBlazebulb</thing>
+		<plantGrowth>0.5</plantGrowth>
+	</KCSG.SymbolDef>
+</Defs>

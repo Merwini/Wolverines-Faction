@@ -4,12 +4,12 @@
 	<!-- ==================== M7 ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>Must_M7dmr</defName>
+		<defName>REP_BW_M7dmr</defName>
 		<label>M7 DMR</label>
 		<description>A late-industrial military designated marksman rifle using the high velocity .277 cartridge. Fitted with midrange scope and deployable bipod for a unit's marksmen.</description>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<graphicData>
-			<texPath>Wolverines/Weapons/M7-DMR</texPath>
+			<texPath>Blackwave/Weapons/M7-DMR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -29,7 +29,7 @@
 		<weaponTags>
 			<li>CE_AI_SR</li>
 			<li>Bipod_DMR</li>
-			<li>Must_DMR</li>
+			<li>REP_BW_DMR</li>
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">

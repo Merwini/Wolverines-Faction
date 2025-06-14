@@ -4,11 +4,11 @@
   <!-- ==================== M72-74 ==================== -->
 
     <ThingDef ParentName="BaseEquipment">
-        <defName>Must_M72-INC</defName>
+        <defName>REP_BW_M72-INC</defName>
         <label>M72-74 incendiary munition</label>
         <description>M72 variant refitted to shoot M74 incendiary rockets.</description>
         <graphicData>
-            <texPath>Wolverines/Weapons/M72-INC</texPath>
+            <texPath>Blackwave/Weapons/M72-INC</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -31,8 +31,8 @@
         </statBases>
         <weaponTags>
             <li>GunHeavy</li>
-			<li>Must_LAW</li>
-	        <li>Must_IncendiaryLAW</li>
+			<li>REP_BW_LAW</li>
+	        <li>REP_BW_IncendiaryLAW</li>
         </weaponTags>
         <thingCategories>
             <li>WeaponsRanged</li>
@@ -203,7 +203,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Must_M72-INC>5</Must_M72-INC>
+      <REP_BW_M72-INC>5</REP_BW_M72-INC>
     </products>
     <researchPrerequisite>CE_Launchers</researchPrerequisite>
   </RecipeDef>

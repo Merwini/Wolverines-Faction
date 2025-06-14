@@ -4,7 +4,7 @@
 	<!-- ==================== Plate carrier ==================== -->
 
    <ThingDef ParentName="ArmorMachineableBase">
-    <defName>Must_ArmorVest</defName>
+    <defName>REP_BW_ArmorVest</defName>
     <label>armor vest (digital camo)</label>
     <description>Improved plate carrier with lightened construction and minor protection improvement.</description>
     <techLevel>Industrial</techLevel>
@@ -16,7 +16,7 @@
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
     </recipeMaker>
     <graphicData>
-      <texPath>Wolverines/Apparel/Digi-Vest/Digi-Vest</texPath>
+      <texPath>Blackwave/Apparel/Digi-Vest/Digi-Vest</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -48,14 +48,14 @@
         <li>Shoulders</li>
         <li>Neck</li>
       </bodyPartGroups>
-      <wornGraphicPath>Wolverines/Apparel/Digi-Vest/Digi-Vest</wornGraphicPath>
+      <wornGraphicPath>Blackwave/Apparel/Digi-Vest/Digi-Vest</wornGraphicPath>
       <layers>
         <li>Middle</li>
         <li>Webbing</li>
       </layers>
       <tags>
-        <li>Must_MediumArmor</li>
-        <li>Must_LightArmor</li>
+        <li>REP_BW_MediumArmor</li>
+        <li>REP_BW_LightArmor</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>

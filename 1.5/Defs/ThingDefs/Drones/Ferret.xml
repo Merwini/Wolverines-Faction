@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!--Ferret Drone Race-->
-	<ThingDef ParentName="Must_DroneBase" Name="Must_Ferret_Base" Abstract="True">
+	<ThingDef ParentName="REP_BW_DroneBase" Name="REP_BW_Ferret_Base" Abstract="True">
 		<description>Ferret model wheeled combat drone, designed to be cheap and disposable. Their light armor gives them a low durability but high speed. It is recommended to try to destroy them at range, as they are still exceedingly deadly up close.</description>
 		<statBases>
 			<MarketValue>300</MarketValue>
@@ -27,12 +27,12 @@
 		<race>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
-			<body>Must_Ferret_Body</body>
+			<body>REP_BW_Ferret_Body</body>
 			<baseBodySize>0.2</baseBodySize>
 			<baseHealthScale>0.4</baseHealthScale>
 			<lifeStageAges>
 				<li>
-					<def>Must_DroneCompleted</def>
+					<def>REP_BW_DroneCompleted</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
@@ -55,37 +55,37 @@
                     <li>
                         <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
                         <parts>
-                            <li>Must_DroneEye</li>
+                            <li>REP_BW_DroneEye</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
                         <parts>
-                            <li>Must_DroneEye</li>
+                            <li>REP_BW_DroneEye</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
                         <parts>
-                            <li>Must_DroneEar</li>
+                            <li>REP_BW_DroneEar</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
                         <parts>
-                            <li>Must_DroneEar</li>
+                            <li>REP_BW_DroneEar</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
                         <parts>
-                            <li>Must_Ferret_Leg</li>
+                            <li>REP_BW_Ferret_Leg</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
                         <parts>
-                            <li>Must_Ferret_Leg</li>
+                            <li>REP_BW_Ferret_Leg</li>
                         </parts>
                     </li>
                 </stats>
@@ -93,12 +93,12 @@
         </modExtensions>
 	</ThingDef>
 
-	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_Ferret_BaseKind" Abstract="True">
-		<defaultFactionType>Must_FactionHostile</defaultFactionType>
+	<PawnKindDef  ParentName="BaseMechanoidKind" Name="REP_BW_Ferret_BaseKind" Abstract="True">
+		<defaultFactionType>REP_BW_FactionHostile</defaultFactionType>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Wolverines/Drones/UGFerret/UGFerret</texPath>
+					<texPath>Blackwave/Drones/UGFerret/UGFerret</texPath>
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
 			</li>
@@ -106,8 +106,8 @@
 		<combatPower>50</combatPower>
 	</PawnKindDef>
 
-	<ThingDef ParentName="Must_Ferret_Base">
-		<defName>Must_Ferret_Gun</defName>
+	<ThingDef ParentName="REP_BW_Ferret_Base">
+		<defName>REP_BW_Ferret_Gun</defName>
 		<label>ferret drone</label>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -129,12 +129,12 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="Must_Ferret_BaseKind">
-		<defName>Must_Ferret_SMGKind</defName>
+	<PawnKindDef ParentName="REP_BW_Ferret_BaseKind">
+		<defName>REP_BW_Ferret_SMGKind</defName>
 		<label>SMG ferret drone</label>
-		<race>Must_Ferret_Gun</race>
+		<race>REP_BW_Ferret_Gun</race>
 		<weaponTags>
-			<li>Must_FerretSMG</li>
+			<li>REP_BW_FerretSMG</li>
 		</weaponTags>
 		<weaponMoney>9999~9999</weaponMoney>
 		<modExtensions>
@@ -148,12 +148,12 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_Ferret_BaseKind">
-		<defName>Must_Ferret_GLKind</defName>
+	<PawnKindDef ParentName="REP_BW_Ferret_BaseKind">
+		<defName>REP_BW_Ferret_GLKind</defName>
 		<label>GL ferret drone</label>
-		<race>Must_Ferret_Gun</race>
+		<race>REP_BW_Ferret_Gun</race>
 		<weaponTags>
-			<li>Must_FerretGL</li>
+			<li>REP_BW_FerretGL</li>
 		</weaponTags>
 		<weaponMoney>9999~9999</weaponMoney>
 		<modExtensions>
@@ -167,8 +167,8 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<ThingDef ParentName="Must_Ferret_Base">
-		<defName>Must_Ferret_Explosive</defName>
+	<ThingDef ParentName="REP_BW_Ferret_Base">
+		<defName>REP_BW_Ferret_Explosive</defName>
 		<label>explosive ferret drone</label>
 		<statBases>
 			<MeleeHitChance>10</MeleeHitChance>
@@ -177,12 +177,12 @@
 			<li Class="CombatExtended.ToolCE">
 				<label>self-destruct</label>
 				<capacities>
-					<li>Must_SelfDestruct</li>
+					<li>REP_BW_SelfDestruct</li>
 				</capacities>
 				<power>1</power>
 				<extraMeleeDamages>
 					<li>
-						<def>Must_Ferret_BombSelfDestruct</def>
+						<def>REP_BW_Ferret_BombSelfDestruct</def>
 						<amount>1</amount>
 						<chance>1</chance>
 					</li>
@@ -196,22 +196,22 @@
 		</tools>
 	</ThingDef>
 
-	<PawnKindDef ParentName="Must_Ferret_BaseKind">
-		<defName>Must_Ferret_ExplosiveKind</defName>
+	<PawnKindDef ParentName="REP_BW_Ferret_BaseKind">
+		<defName>REP_BW_Ferret_ExplosiveKind</defName>
 		<label>explosive ferret drone</label>
-		<race>Must_Ferret_Explosive</race>
+		<race>REP_BW_Ferret_Explosive</race>
 		<lifeStages Inherit="False">
 			<li>
 				<bodyGraphicData>
-					<texPath>Wolverines/Drones/UGFerret/UGFerretBomb</texPath>
+					<texPath>Blackwave/Drones/UGFerret/UGFerretBomb</texPath>
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="Must_Ferret_Base">
-		<defName>Must_Ferret_Incendiary</defName>
+	<ThingDef ParentName="REP_BW_Ferret_Base">
+		<defName>REP_BW_Ferret_Incendiary</defName>
 		<label>incendiary ferret drone</label>
 		<statBases>
 			<MeleeHitChance>10</MeleeHitChance>
@@ -220,12 +220,12 @@
 			<li Class="CombatExtended.ToolCE">
 				<label>self-destruct</label>
 				<capacities>
-					<li>Must_SelfDestruct</li>
+					<li>REP_BW_SelfDestruct</li>
 				</capacities>
 				<power>1</power>
 				<extraMeleeDamages>
 					<li>
-						<def>Must_Ferret_IncendiarySelfDestruct</def>
+						<def>REP_BW_Ferret_IncendiarySelfDestruct</def>
 						<amount>1</amount>
 						<chance>1</chance>
 					</li>
@@ -239,14 +239,14 @@
 		</tools>
 	</ThingDef>
 
-	<PawnKindDef ParentName="Must_Ferret_BaseKind">
-		<defName>Must_Ferret_IncendiaryKind</defName>
+	<PawnKindDef ParentName="REP_BW_Ferret_BaseKind">
+		<defName>REP_BW_Ferret_IncendiaryKind</defName>
 		<label>incendiary ferret drone</label>
-		<race>Must_Ferret_Incendiary</race>
+		<race>REP_BW_Ferret_Incendiary</race>
 		<lifeStages Inherit="False">
 			<li>
 				<bodyGraphicData>
-					<texPath>Wolverines/Drones/UGFerret/UGFerretBomb</texPath>
+					<texPath>Blackwave/Drones/UGFerret/UGFerretBomb</texPath>
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
 			</li>

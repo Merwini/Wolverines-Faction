@@ -4,11 +4,11 @@
 	<!-- ==================== Composite Armor ==================== -->
 
 	<ThingDef ParentName="ArmorMachineableBase">
-		<defName>Must_HeavyArmor</defName>
+		<defName>REP_BW_HeavyArmor</defName>
 		<label>heavy armor (digital camo)</label>
 		<description>Ceramic armor vest with all the available coverage extension addon parts, covering the user from neck to toe. It is rather heavy and impractical for prolonged use, intended mainly for turret gunners and entrance teams.</description>
 		<graphicData>
-			<texPath>Wolverines/Apparel/Digi-HeavyArmor/Digi-HeavyArmor</texPath>
+			<texPath>Blackwave/Apparel/Digi-HeavyArmor/Digi-HeavyArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
@@ -53,13 +53,13 @@
 				<li>Hands</li>
 				<li>Feet</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Wolverines/Apparel/Digi-HeavyArmor/Digi-HeavyArmor</wornGraphicPath>
+			<wornGraphicPath>Blackwave/Apparel/Digi-HeavyArmor/Digi-HeavyArmor</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Webbing</li>
 			</layers>
 			<tags>
-				<li>Must_HeavyArmor</li>
+				<li>REP_BW_HeavyArmor</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

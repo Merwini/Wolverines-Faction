@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FieldMarshal</defName>
+		<pawnKindDef>REP_BW_FieldMarshal</pawnKindDef>
+	</KCSG.SymbolDef>
+</Defs>

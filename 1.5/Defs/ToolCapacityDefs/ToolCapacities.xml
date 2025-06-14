@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ToolCapacityDef>
-		<defName>Must_SelfDestruct</defName>
+		<defName>REP_BW_SelfDestruct</defName>
 		<label>self-destruct</label>
 	</ToolCapacityDef>
 
-	<ManeuverDef Name="Must_SelfDestruct">
-		<defName>Must_SelfDestruct</defName>
-		<requiredCapacity>Must_SelfDestruct</requiredCapacity>
+	<ManeuverDef Name="REP_BW_SelfDestruct">
+		<defName>REP_BW_SelfDestruct</defName>
+		<requiredCapacity>REP_BW_SelfDestruct</requiredCapacity>
 		<verb>
 			<verbClass>Verb_MeleeAttackDamage</verbClass>
 			<meleeDamageDef>Demolish</meleeDamageDef>

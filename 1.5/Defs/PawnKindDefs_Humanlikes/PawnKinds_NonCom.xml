@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<PawnKindDef ParentName="Must_HumanNonComBase" Abstract="True" Name="Must_NonCom_Armorer_Base">
+	<PawnKindDef ParentName="REP_BW_HumanNonComBase" Abstract="True" Name="REP_BW_NonCom_Armorer_Base">
 		<apparelRequired>
-			<li>Must_BattleDress</li>
+			<li>REP_BW_BattleDress</li>
 		</apparelRequired>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_NonCom_Armorer_Base">
-		<defName>Must_NonCom_Armorer_API</defName>
+	<PawnKindDef ParentName="REP_BW_NonCom_Armorer_Base">
+		<defName>REP_BW_NonCom_Armorer_API</defName>
 		<label>armorer</label>
 		<combatPower>25</combatPower>
 		<weaponMoney>150~200</weaponMoney>
@@ -31,8 +31,8 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_NonCom_Armorer_Base">
-		<defName>Must_NonCom_Armorer_Normal</defName>
+	<PawnKindDef ParentName="REP_BW_NonCom_Armorer_Base">
+		<defName>REP_BW_NonCom_Armorer_Normal</defName>
 		<label>armorer (normal)</label>
 		<combatPower>50</combatPower>
 		<weaponMoney>150~200</weaponMoney>

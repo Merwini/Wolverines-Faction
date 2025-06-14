@@ -2,7 +2,7 @@
 <Defs>
 	<FleshTypeDef>
 		<!--Functionally identical to mechanoid, but prevents spawning in ancient dangers-->
-		<defName>Must_Drone</defName>
+		<defName>REP_BW_Drone</defName>
 		<corpseCategory>CorpsesMechanoid</corpseCategory>
 		<damageEffecter>Damage_HitMechanoid</damageEffecter>
 		<isOrganic>false</isOrganic>

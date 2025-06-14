@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatFlameTurret_North</defName>
+		<thing>REP_BW_PolecatFlameTurret</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatFlameTurret_East</defName>
+		<thing>REP_BW_PolecatFlameTurret</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatFlameTurret_South</defName>
+		<thing>REP_BW_PolecatFlameTurret</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatFlameTurret_West</defName>
+		<thing>REP_BW_PolecatFlameTurret</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatBombTurret_North</defName>
+		<thing>REP_BW_PolecatBombTurret</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatBombTurret_East</defName>
+		<thing>REP_BW_PolecatBombTurret</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatBombTurret_South</defName>
+		<thing>REP_BW_PolecatBombTurret</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatBombTurret_West</defName>
+		<thing>REP_BW_PolecatBombTurret</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_BadgerGunTurret_North</defName>
+		<thing>REP_BW_BadgerGunTurret</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_BadgerGunTurret_East</defName>
+		<thing>REP_BW_BadgerGunTurret</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_BadgerGunTurret_South</defName>
+		<thing>REP_BW_BadgerGunTurret</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_BadgerGunTurret_West</defName>
+		<thing>REP_BW_BadgerGunTurret</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+</Defs>

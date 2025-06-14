@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="NonDeconstructibleAncientBuildingBase" Abstract="True" Name="Must_DronePropBase">
+	<ThingDef ParentName="NonDeconstructibleAncientBuildingBase" Abstract="True" Name="REP_BW_DronePropBase">
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,1)</drawSize>
@@ -16,27 +16,27 @@
 		<designationCategory Inherit="False">Misc</designationCategory> <!--Todo remove this after making maps-->
 	</ThingDef>
 
-	<ThingDef ParentName="Must_DronePropBase" Abstract="True" Name="Must_FerretPropBase">
+	<ThingDef ParentName="REP_BW_DronePropBase" Abstract="True" Name="REP_BW_FerretPropBase">
 		<graphicData>
-			<texPath>Wolverines/Drones/UGFerret/UGFerret</texPath>
+			<texPath>Blackwave/Drones/UGFerret/UGFerret</texPath>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>30</MaxHitPoints>
 		</statBases>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_FerretPropBase">
-		<defName>Must_FerretGunProp</defName>
+	<ThingDef ParentName="REP_BW_FerretPropBase">
+		<defName>REP_BW_FerretGunProp</defName>
 		<label>inactive ferret drone</label>
 		<description>A ferret drone that hasn't been armed and deployed yet.</description>
 	</ThingDef>
 	
-	<ThingDef ParentName="Must_FerretPropBase">
-		<defName>Must_FerretIncProp</defName>
+	<ThingDef ParentName="REP_BW_FerretPropBase">
+		<defName>REP_BW_FerretIncProp</defName>
 		<label>inactive incendiary ferret drone</label>
 		<description>An incendiary ferret drone that hasn't been armed and deployed yet.</description>
 		<graphicData>
-			<texPath>Wolverines/Drones/UGFerret/UGFerretBomb</texPath>
+			<texPath>Blackwave/Drones/UGFerret/UGFerretBomb</texPath>
 		</graphicData>
 		<tickerType>Normal</tickerType>
 		<comps>
@@ -59,12 +59,12 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_FerretPropBase">
-		<defName>Must_FerretBombProp</defName>
+	<ThingDef ParentName="REP_BW_FerretPropBase">
+		<defName>REP_BW_FerretBombProp</defName>
 		<label>inactive explosive ferret drone</label>
 		<description>An explosive ferret drone that hasn't been armed and deployed yet.</description>
 		<graphicData>
-			<texPath>Wolverines/Drones/UGFerret/UGFerretBomb</texPath>
+			<texPath>Blackwave/Drones/UGFerret/UGFerretBomb</texPath>
 		</graphicData>
 		<tickerType>Normal</tickerType>
 		<comps>
@@ -91,9 +91,9 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_DronePropBase" Abstract="True" Name="Must_PolecatPropBase">
+	<ThingDef ParentName="REP_BW_DronePropBase" Abstract="True" Name="REP_BW_PolecatPropBase">
 		<graphicData>
-			<texPath>Wolverines/Drones/UGPolecat/UGPolecat</texPath>
+			<texPath>Blackwave/Drones/UGPolecat/UGPolecat</texPath>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<statBases>
@@ -101,33 +101,33 @@
 		</statBases>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_PolecatPropBase">
-		<defName>Must_PolecatGunProp</defName>
+	<ThingDef ParentName="REP_BW_PolecatPropBase">
+		<defName>REP_BW_PolecatGunProp</defName>
 		<label>inactive polecat drone</label>
 		<description>A polecat drone that hasn't been armed and deployed yet.</description>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_PolecatPropBase">
-		<defName>Must_PolecatIncProp</defName>
+	<ThingDef ParentName="REP_BW_PolecatPropBase">
+		<defName>REP_BW_PolecatIncProp</defName>
 		<label>inactive polecat drone</label>
 		<description>An incendiary polecat drone that hasn't been armed and deployed yet.</description>
 		<graphicData>
-			<texPath>Wolverines/Drones/UGPolecat/UGPolecatFlamer</texPath>
+			<texPath>Blackwave/Drones/UGPolecat/UGPolecatFlamer</texPath>
 		</graphicData>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_PolecatPropBase">
-		<defName>Must_PolecatBombProp</defName>
+	<ThingDef ParentName="REP_BW_PolecatPropBase">
+		<defName>REP_BW_PolecatBombProp</defName>
 		<label>inactive polecat drone</label>
 		<description>An explosive polecat drone that hasn't been armed and deployed yet.</description>
 		<graphicData>
-			<texPath>Wolverines/Drones/UGPolecat/UGPolecatBomb</texPath>
+			<texPath>Blackwave/Drones/UGPolecat/UGPolecatBomb</texPath>
 		</graphicData>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_DronePropBase" Abstract="True" Name="Must_BadgerPropBase">
+	<ThingDef ParentName="REP_BW_DronePropBase" Abstract="True" Name="REP_BW_BadgerPropBase">
 		<graphicData>
-			<texPath>Wolverines/Drones/UGBadger/UGBadger</texPath>
+			<texPath>Blackwave/Drones/UGBadger/UGBadger</texPath>
 			<drawSize>(2.7,2.7)</drawSize>
 		</graphicData>
 		<statBases>
@@ -135,8 +135,8 @@
 		</statBases>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_BadgerPropBase">
-		<defName>Must_BadgerGunProp</defName>
+	<ThingDef ParentName="REP_BW_BadgerPropBase">
+		<defName>REP_BW_BadgerGunProp</defName>
 		<label>inactive badger drone</label>
 		<description>A badger drone that hasn't been armed and deployed yet.</description>
 	</ThingDef>

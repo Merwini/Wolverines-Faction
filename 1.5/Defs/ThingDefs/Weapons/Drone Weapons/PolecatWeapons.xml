@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="Must_DroneWeaponBase">
-		<defName>Must_PC_LMG</defName>
+	<ThingDef ParentName="REP_BW_DroneWeaponBase">
+		<defName>REP_BW_PC_LMG</defName>
 		<label>mounted LMG</label>
 		<description>A drone-mounted light machine gun chambered for .277 cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
 		<graphicData>
-			<texPath>Wolverines/Weapons/TurretLight_MGgun</texPath>
+			<texPath>Blackwave/Weapons/TurretLight_MGgun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.5,1.5</drawSize>
 		</graphicData>
@@ -51,7 +51,7 @@
 			</li>
 		</comps>
 		<weaponTags Inherit="False">
-			<li>Must_PC_LMG</li>
+			<li>REP_BW_PC_LMG</li>
 			<li>CE_AI_Suppressive</li>
 			<li>NoSwitch</li>
 		</weaponTags>
@@ -69,12 +69,12 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_DroneWeaponBase">
-		<defName>Must_PC_AMR</defName>
+	<ThingDef ParentName="REP_BW_DroneWeaponBase">
+		<defName>REP_BW_PC_AMR</defName>
 		<label>mounted AMR</label>
 		<description>A drone-mounted anti-materiel rifle chambered for .50 BMG cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
 		<graphicData>
-			<texPath>Wolverines/Weapons/TurretLight_AMRgun</texPath>
+			<texPath>Blackwave/Weapons/TurretLight_AMRgun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.5,1.5</drawSize>
 		</graphicData>
@@ -118,7 +118,7 @@
 			</li>
 		</comps>
 		<weaponTags Inherit="False">
-			<li>Must_PC_AMR</li>
+			<li>REP_BW_PC_AMR</li>
 			<li>NoSwitch</li>
 		</weaponTags>
 		<tools>
@@ -135,12 +135,12 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_DroneWeaponBase">
-		<defName>Must_PC_Flamer</defName>
+	<ThingDef ParentName="REP_BW_DroneWeaponBase">
+		<defName>REP_BW_PC_Flamer</defName>
 		<label>mounted flamethrower</label>
 		<description>A drone-mounted flamethrower. Sprays a stream of flammable liquid, effective at denying enemies the use of fortified positions.</description>
 		<graphicData>
-			<texPath>Wolverines/Weapons/TurretLight_Flamergun</texPath>
+			<texPath>Blackwave/Weapons/TurretLight_Flamergun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.5,1.5</drawSize>
 		</graphicData>
@@ -186,7 +186,7 @@
 			</li>
 		</comps>
 		<weaponTags Inherit="False">
-			<li>Must_PC_Flamer</li>
+			<li>REP_BW_PC_Flamer</li>
 			<li>GunHeavy</li>
 			<li>CE_AI_AOE</li>
 		</weaponTags>
@@ -204,12 +204,12 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_DroneWeaponBase">
-		<defName>Must_PC_AGL</defName>
+	<ThingDef ParentName="REP_BW_DroneWeaponBase">
+		<defName>REP_BW_PC_AGL</defName>
 		<label>mounted automatic grenade launcher</label>
 		<description>A drone-mounted 30mm automatic grenade launcher. Belt fed from a box of miniature grenades.</description>
 		<graphicData>
-			<texPath>Wolverines/Weapons/UGPolecatTurretMGL</texPath>
+			<texPath>Blackwave/Weapons/UGPolecatTurretMGL</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.5,1.5</drawSize>
 		</graphicData>
@@ -257,7 +257,7 @@
 			</li>
 		</comps>
 		<weaponTags Inherit="False">
-			<li>Must_PC_AGL</li>
+			<li>REP_BW_PC_AGL</li>
 			<li>GunHeavy</li>
 			<li>CE_AI_AOE</li>
 		</weaponTags>

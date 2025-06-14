@@ -4,11 +4,11 @@
 	<!-- ==================== Ballistic Goggles ==================== -->
 
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>Must_BallisticGoggles</defName>
+		<defName>REP_BW_BallisticGoggles</defName>
 		<label>fragmentation goggles</label>
 		<description>A pair of reinforced goggles capable of stopping shrapnel.</description>
 		<graphicData>
-			<texPath>Wolverines/Apparel/BallisticGoggles/BallisticGoggles</texPath>
+			<texPath>Blackwave/Apparel/BallisticGoggles/BallisticGoggles</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<possessionCount>1</possessionCount>
@@ -33,7 +33,7 @@
 			<bodyPartGroups>
 				<li>Eyes</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Wolverines/Apparel/BallisticGoggles/BallisticGoggles</wornGraphicPath>
+			<wornGraphicPath>Blackwave/Apparel/BallisticGoggles/BallisticGoggles</wornGraphicPath>
 			<layers>
 				<!--TODO<li>StrappedHead</li>-->
 				<li>EyeCover</li>

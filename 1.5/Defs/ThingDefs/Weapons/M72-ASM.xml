@@ -4,11 +4,11 @@
   <!-- ==================== M72 ASM ==================== -->
 
   <ThingDef ParentName="BaseEquipment">
-    <defName>Must_M72-ASM</defName>
+    <defName>REP_BW_M72-ASM</defName>
     <label>M72 anti-structure munition</label>
     <description>Modernized high-explosive variant of the M72, compact light anti-structure and anti-personnel rocket launcher. Has higher effective range than the antitank warhead.</description>
     <graphicData>
-      <texPath>Wolverines/Weapons/M72-ASM</texPath>
+      <texPath>Blackwave/Weapons/M72-ASM</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -31,9 +31,9 @@
     </statBases>
     <weaponTags>
         <li>GunHeavy</li>
-		<li>Must_LAW</li>
-		<li>Must_ASM</li>
-		<li>Must_Demolition</li>
+		<li>REP_BW_LAW</li>
+		<li>REP_BW_ASM</li>
+		<li>REP_BW_Demolition</li>
     </weaponTags>
     <thingCategories>
       <li>WeaponsRanged</li>
@@ -204,7 +204,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Must_M72-ASM>5</Must_M72-ASM>
+      <REP_BW_M72-ASM>5</REP_BW_M72-ASM>
     </products>
     <researchPrerequisite>CE_Launchers</researchPrerequisite>
   </RecipeDef>

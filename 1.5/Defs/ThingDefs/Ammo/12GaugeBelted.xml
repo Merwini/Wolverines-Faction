@@ -45,7 +45,7 @@
 		<defName>Ammo_12GaugeBelted_TungstenBuck</defName>
 		<label>12 gauge belted (Tungsten Buck)</label>
 		<graphicData>
-			<texPath>Wolverines/Weapons/12gaBelted/TungstenBuck</texPath>
+			<texPath>Blackwave/Weapons/12gaBelted/TungstenBuck</texPath>
 			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
 		</graphicData>
 		<statBases>
@@ -60,7 +60,7 @@
 		<defName>Ammo_12GaugeBelted_Flechette</defName>
 		<label>12 gauge belted (Flechette)</label>
 		<graphicData>
-			<texPath>Wolverines/Weapons/12gaBelted/Flechette</texPath>
+			<texPath>Blackwave/Weapons/12gaBelted/Flechette</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -76,7 +76,7 @@
 		<defName>Ammo_12GaugeBelted_Sabot</defName>
 		<label>12 gauge belted (Sabot)</label>
 		<graphicData>
-			<texPath>Wolverines/Weapons/12gaBelted/Sabot</texPath>
+			<texPath>Blackwave/Weapons/12gaBelted/Sabot</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>

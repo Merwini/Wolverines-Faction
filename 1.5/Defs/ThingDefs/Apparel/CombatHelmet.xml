@@ -4,11 +4,11 @@
 	<!-- ==================== Heavy Composite Helmet ==================== -->
 
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>Must_CommandoHelmet</defName>
+    <defName>REP_BW_CommandoHelmet</defName>
     <label>combat helmet (digital camo)</label>
     <description>Composite helmet with ear protectors and mounting points for night vision.</description>
     <graphicData>
-      <texPath>Wolverines/Apparel/Digi-Helmet/Digi-Helmet</texPath>
+      <texPath>Blackwave/Apparel/Digi-Helmet/Digi-Helmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Industrial</techLevel>
@@ -37,7 +37,7 @@
       <li>ArmorHeadgear</li>
     </thingCategories>
     <apparel>
-      <wornGraphicPath>Wolverines/Apparel/Digi-Helmet/Digi-Helmet</wornGraphicPath>
+      <wornGraphicPath>Blackwave/Apparel/Digi-Helmet/Digi-Helmet</wornGraphicPath>
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
@@ -46,8 +46,8 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>Must_MediumArmor</li>
-        <li>Must_LightArmor</li>
+        <li>REP_BW_MediumArmor</li>
+        <li>REP_BW_LightArmor</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>

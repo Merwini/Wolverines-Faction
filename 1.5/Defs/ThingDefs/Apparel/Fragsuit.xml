@@ -3,11 +3,11 @@
 
 	
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Must_Fragsuit</defName>
+    <defName>REP_BW_Fragsuit</defName>
     <label>fragmentation overall</label>
     <description>Thick overall with fragmentation rated armor sewn into the plates not covered by the infantryman's plate carrier. Includes gloves and boots.</description>
     <graphicData>
-      <texPath>Wolverines/Apparel/Digi-FragSuit/Digi-FragSuit</texPath>
+      <texPath>Blackwave/Apparel/Digi-FragSuit/Digi-FragSuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <recipeMaker>
@@ -50,12 +50,12 @@
         <li>Hands</li>
         <li>Feet</li>
       </bodyPartGroups>
-      <wornGraphicPath>Wolverines/Apparel/Digi-FragSuit/Digi-FragSuit</wornGraphicPath>
+      <wornGraphicPath>Blackwave/Apparel/Digi-FragSuit/Digi-FragSuit</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
       <tags>
-        <li>Must_MediumArmor</li>
+        <li>REP_BW_MediumArmor</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>

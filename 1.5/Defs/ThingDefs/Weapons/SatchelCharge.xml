@@ -4,10 +4,10 @@
 	<!-- ==================== Incendiary grenade ========================== -->
 
 	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>Must_Proj_SatchelCharge</defName>
+		<defName>REP_BW_Proj_SatchelCharge</defName>
 		<label>satchel charge</label>
 		<graphicData>
-			<texPath>Wolverines/Weapons/PROJECTILE/Satchel_projectile</texPath>
+			<texPath>Blackwave/Weapons/PROJECTILE/Satchel_projectile</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -32,12 +32,12 @@
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
-		<defName>Must_SatchelCharge</defName>
+		<defName>REP_BW_SatchelCharge</defName>
 		<equipmentType>Primary</equipmentType>
 		<label>satchel charge</label>
 		<description>A demolition charge for breaching and sabotage.</description>
 		<graphicData>
-			<texPath>Wolverines/Weapons/Satchel</texPath>
+			<texPath>Blackwave/Weapons/Satchel</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Grenade</soundInteract>
@@ -55,9 +55,9 @@
 			<li>CE_AI_Grenade</li>
 			<li>CE_AI_AOE</li>
 			<li>CE_OneHandedWeapon</li>
-			<li>Must_Grenade</li>
-			<li>Must_Demolition</li>
-			<li>Must_Satchel</li>
+			<li>REP_BW_Grenade</li>
+			<li>REP_BW_Demolition</li>
+			<li>REP_BW_Satchel</li>
 		</weaponTags>
 		<thingCategories>
 			<li>Grenades</li>
@@ -76,13 +76,13 @@
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<defaultProjectile>Must_Proj_SatchelCharge</defaultProjectile>
+				<defaultProjectile>REP_BW_Proj_SatchelCharge</defaultProjectile>
 				<onlyManualCast>true</onlyManualCast>
 				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
 				<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
 			</li>
 		</verbs>
-		<detonateProjectile>Must_Proj_SatchelCharge</detonateProjectile>
+		<detonateProjectile>REP_BW_Proj_SatchelCharge</detonateProjectile>
 	</ThingDef>
 	
 	
@@ -128,7 +128,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Must_SatchelCharge>5</Must_SatchelCharge>
+			<REP_BW_SatchelCharge>5</REP_BW_SatchelCharge>
 		</products>
 	</RecipeDef>
 

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	
-	<FactionDef ParentName="FactionBase" Abstract="True" Name="Must_FactionBase">
+	<FactionDef ParentName="FactionBase" Abstract="True" Name="REP_BW_FactionBase">
 		<autoFlee>true</autoFlee>
 		<permanentEnemy>false</permanentEnemy>
 		<canStageAttacks>true</canStageAttacks>
@@ -28,7 +28,7 @@
 			</thingDefs>
 		</apparelStuffFilter>
         <fixedLeaderKinds>
-            <li>Must_FieldMarshal</li>
+            <li>REP_BW_FieldMarshal</li>
         </fixedLeaderKinds>
 		<leaderTitle>field marshal</leaderTitle>
 		<techLevel>Industrial</techLevel>
@@ -62,10 +62,10 @@
 			<li>Base_Outlander_Standard</li>
 		</baseTraderKinds>
         <allowedCultures>
-            <li>Must_Mercanarism</li>
+            <li>REP_BW_Mercanarism</li>
         </allowedCultures>
         <structureMemeWeights>
-            <Structure_Ideological>1</Structure_Ideological>
+            <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
         </structureMemeWeights>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
@@ -87,408 +87,122 @@
 				<li>(300, 100)</li> <!--No raids unless it can send at least a few soldiers-->
 				<li>(1000, 200)</li> <!--Polecats become possible-->
 				<li>(2500, 400)</li> <!--Badgers become possible-->
-				<li>(4500, 2000)</li> <!--Warrens become possible-->
+				<li>(4500, 2000)</li> <!--Wolverines become possible-->
 				<li>(100000, 10000)</li>
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
 		<pawnGroupMakers>
-			<!--token Combat group to prevent errors-->
-			<li>
-				<commonality>100</commonality>
-				<kindDef>Combat</kindDef>
-				<options>
-					<Must_LightInfantry_FMJ>1</Must_LightInfantry_FMJ>
-				</options>
-			</li>
+            <li>
+                <!-- Basic Blend -->
+                <kindDef>Combat</kindDef>
+                <commonality>5</commonality>
+                <options>
+                    <REP_BW_HeavyInfantry_FMJ>10</REP_BW_HeavyInfantry_FMJ>
+                    <REP_BW_DemoInfantry_FMJ>5</REP_BW_DemoInfantry_FMJ>
+                    <REP_BW_LightInfantry_FMJ>20</REP_BW_LightInfantry_FMJ>
+                    <REP_BW_Polecat_LMGKind>10</REP_BW_Polecat_LMGKind>
+                    <REP_BW_Ferret_SMGKind>10</REP_BW_Ferret_SMGKind>
+                    <REP_BW_Badger_MinigunKind>5</REP_BW_Badger_MinigunKind>
+                </options>
+            </li>
+            <li>
+                <!-- Ferret Swarm -->
+                <kindDef>Combat</kindDef>
+                <commonality>2</commonality>
+                <disallowedStrategies>
+                    <li>Siege</li>
+                </disallowedStrategies>
+                <options>
+                    <REP_BW_LightInfantry_FMJ>1</REP_BW_LightInfantry_FMJ>
+                    <REP_BW_Ferret_SMGKind>4</REP_BW_Ferret_SMGKind>
+                </options>
+            </li>
+            <li>
+                <!-- Prometheum Blend -->
+                <kindDef>Combat</kindDef>
+                <commonality>5</commonality>
+                <options>
+                    <REP_BW_HeavyInfantry_API>10</REP_BW_HeavyInfantry_API>
+                    <REP_BW_LightInfantry_API>20</REP_BW_LightInfantry_API>
+                    <REP_BW_DemoInfantry_API>5</REP_BW_DemoInfantry_API>
+                    <REP_BW_Polecat_LMGAPIKind>10</REP_BW_Polecat_LMGAPIKind>
+                    <REP_BW_Polecat_FlamerKind>5</REP_BW_Polecat_FlamerKind>
+                    <REP_BW_Badger_MinigunAPIKind>5</REP_BW_Badger_MinigunAPIKind>
+                </options>
+            </li>
+            <li>
+                <!-- FSX Blend -->
+                <kindDef>Combat</kindDef>
+                <commonality>5</commonality>
+                <options>
+                    <REP_BW_HeavyInfantry_APHE>10</REP_BW_HeavyInfantry_APHE>
+                    <REP_BW_LightInfantry_APHE>20</REP_BW_LightInfantry_APHE>
+                    <REP_BW_DemoInfantry_APHE>5</REP_BW_DemoInfantry_APHE>
+                    <REP_BW_Polecat_LMGAPHEKind>10</REP_BW_Polecat_LMGAPHEKind>
+                    <REP_BW_Polecat_AGLKind>5</REP_BW_Polecat_AGLKind>
+                    <!--<REP_BW_Badger_MMGKind>5</REP_BW_Badger_MMGKind>-->
+                </options>
+            </li>
+            <li>
+
+                <!-- Sabot Blend -->
+                <kindDef>Combat</kindDef>
+                <commonality>5</commonality>
+                <options>
+                    <REP_BW_HeavyInfantry_Sabot>10</REP_BW_HeavyInfantry_Sabot>
+                    <REP_BW_LightInfantry_Sabot>20</REP_BW_LightInfantry_Sabot>
+                    <REP_BW_DemoInfantry_Sabot>5</REP_BW_DemoInfantry_Sabot>
+                    <REP_BW_Polecat_LMGSabotKind>10</REP_BW_Polecat_LMGSabotKind>
+                    <REP_BW_Polecat_AMRKind>5</REP_BW_Polecat_AMRKind>
+                    <!--<REP_BW_Badger_MMGKind>5</REP_BW_Badger_MMGKind>-->
+                    <REP_BW_Badger_MinigunKind>5</REP_BW_Badger_MinigunKind>
+                </options>
+            </li>
+            <li>
+                <!-- Commando Blend -->
+                <kindDef>Combat</kindDef>
+                <commonality>5</commonality>
+                <disallowedStrategies>
+                    <li>Siege</li>
+                </disallowedStrategies>
+                <options>
+                    <REP_BW_Commando_PDW>20</REP_BW_Commando_PDW>
+                    <REP_BW_Commando_SG>10</REP_BW_Commando_SG>
+                    <REP_BW_Commando_Satchel>5</REP_BW_Commando_Satchel>
+                    <REP_BW_Commando_Marksman>10</REP_BW_Commando_Marksman>
+                </options>
+            </li>
 			<li>
 				<commonality>100</commonality>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<Must_FieldMarshal>1</Must_FieldMarshal>
-					<Must_Commando_Marksman>5</Must_Commando_Marksman>
-					<Must_HeavyInfantry_API>20</Must_HeavyInfantry_API>
-					<Must_HeavyInfantry_APHE>20</Must_HeavyInfantry_APHE>
-					<Must_LightInfantry_API>20</Must_LightInfantry_API>
-					<Must_LightInfantry_APHE>20</Must_LightInfantry_APHE>
-					<Must_Polecat_AMRKind>5</Must_Polecat_AMRKind>
-					<Must_Badger_MMGKind>5</Must_Badger_MMGKind>
+					<REP_BW_FieldMarshal>1</REP_BW_FieldMarshal>
+					<REP_BW_Commando_Marksman>5</REP_BW_Commando_Marksman>
+					<REP_BW_HeavyInfantry_API>20</REP_BW_HeavyInfantry_API>
+					<REP_BW_HeavyInfantry_APHE>20</REP_BW_HeavyInfantry_APHE>
+					<REP_BW_LightInfantry_API>20</REP_BW_LightInfantry_API>
+					<REP_BW_LightInfantry_APHE>20</REP_BW_LightInfantry_APHE>
+					<REP_BW_Polecat_AMRKind>5</REP_BW_Polecat_AMRKind>
+                    <REP_BW_Badger_MinigunKind>5</REP_BW_Badger_MinigunKind>
+					<!--<REP_BW_Badger_MMGKind>5</REP_BW_Badger_MMGKind>-->
 				</options>
 			</li>
 		</pawnGroupMakers>
-
-		<modExtensions>
-			<li Class="rep.heframework.PawnGroupMakerExtensionHE">
-				<alwaysUseHighestTier>true</alwaysUseHighestTier>
-				<taggedPawnGroupMakers>
-					<!--Basic Groups-->
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>BasicBlend</groupName>
-						<commonality>5</commonality>
-						<groupTier>1</groupTier>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>EdgeWalkIn</li>
-							<li>EdgeWalkInGroups</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_HeavyInfantry_FMJ>10</Must_HeavyInfantry_FMJ>
-							<Must_DemoInfantry_FMJ>5</Must_DemoInfantry_FMJ>
-							<Must_LightInfantry_FMJ>20</Must_LightInfantry_FMJ>
-							<Must_Polecat_LMGKind>10</Must_Polecat_LMGKind>
-							<Must_Ferret_SMGKind>10</Must_Ferret_SMGKind>
-							<Must_Badger_MinigunKind>5</Must_Badger_MinigunKind>
-						</options>
-					</li>
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>BasicInfantry</groupName>
-						<commonality>5</commonality>
-						<groupTier>1</groupTier>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>EdgeWalkIn</li>
-							<li>EdgeWalkInGroups</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_HeavyInfantry_FMJ>10</Must_HeavyInfantry_FMJ>
-							<Must_LightInfantry_FMJ>20</Must_LightInfantry_FMJ>
-							<Must_DemoInfantry_FMJ>5</Must_DemoInfantry_FMJ>
-						</options>
-					</li>
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>BasicFerretSwarm</groupName>
-						<commonality>2</commonality>
-						<groupTier>1</groupTier>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>EdgeWalkIn</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_LightInfantry_FMJ>1</Must_LightInfantry_FMJ>
-							<Must_Ferret_SMGKind>4</Must_Ferret_SMGKind>
-						</options>
-					</li>
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>BasicHeavies</groupName>
-						<commonality>2</commonality>
-						<groupTier>1</groupTier>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>EdgeWalkIn</li>
-							<li>EdgeWalkInGroups</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_HeavyInfantry_FMJ>10</Must_HeavyInfantry_FMJ>
-							<Must_DemoInfantry_FMJ>5</Must_DemoInfantry_FMJ>
-							<Must_Badger_MinigunKind>5</Must_Badger_MinigunKind>
-						</options>
-					</li>
-					<!--Prometheum-->
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>PrometheumBlend</groupName>
-						<commonality>5</commonality>
-						<groupTier>2</groupTier>
-						<requiredSiteTags>
-							<li>Must_PGM_Prometheum</li>
-						</requiredSiteTags>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>EdgeWalkIn</li>
-							<li>EdgeWalkInGroups</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_HeavyInfantry_API>10</Must_HeavyInfantry_API>
-							<Must_LightInfantry_API>20</Must_LightInfantry_API>
-							<Must_DemoInfantry_API>5</Must_DemoInfantry_API>
-							<Must_Polecat_LMGAPIKind>10</Must_Polecat_LMGAPIKind>
-							<Must_Polecat_FlamerKind>5</Must_Polecat_FlamerKind>
-							<Must_Badger_MinigunAPIKind>5</Must_Badger_MinigunAPIKind>
-						</options>
-					</li>
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>PrometheumInfantry</groupName>
-						<commonality>5</commonality>
-						<groupTier>2</groupTier>
-						<requiredSiteTags>
-							<li>Must_PGM_Prometheum</li>
-						</requiredSiteTags>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>EdgeWalkIn</li>
-							<li>EdgeWalkInGroups</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_HeavyInfantry_API>10</Must_HeavyInfantry_API>
-							<Must_LightInfantry_API>20</Must_LightInfantry_API>
-							<Must_DemoInfantry_API>5</Must_DemoInfantry_API>
-						</options>
-					</li>
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>PrometheumHeavies</groupName>
-						<commonality>2</commonality>
-						<groupTier>2</groupTier>
-						<requiredSiteTags>
-							<li>Must_PGM_Prometheum</li>
-						</requiredSiteTags>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>EdgeWalkIn</li>
-							<li>EdgeWalkInGroups</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_HeavyInfantry_API>10</Must_HeavyInfantry_API>
-							<Must_DemoInfantry_API>5</Must_DemoInfantry_API>
-							<Must_Badger_MinigunAPIKind>5</Must_Badger_MinigunAPIKind>
-						</options>
-					</li>
-					<!--FSX-->
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>ExplosiveBlend</groupName>
-						<commonality>5</commonality>
-						<groupTier>2</groupTier>
-						<requiredSiteTags>
-							<li>Must_PGM_Explosive</li>
-						</requiredSiteTags>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>EdgeWalkIn</li>
-							<li>EdgeWalkInGroups</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_HeavyInfantry_APHE>10</Must_HeavyInfantry_APHE>
-							<Must_LightInfantry_APHE>20</Must_LightInfantry_APHE>
-							<Must_DemoInfantry_APHE>5</Must_DemoInfantry_APHE>
-							<Must_Polecat_LMGAPHEKind>10</Must_Polecat_LMGAPHEKind>
-							<Must_Polecat_AGLKind>5</Must_Polecat_AGLKind>
-							<Must_Badger_MMGKind>5</Must_Badger_MMGKind>
-						</options>
-					</li>
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>ExplosiveInfantry</groupName>
-						<commonality>5</commonality>
-						<groupTier>2</groupTier>
-						<requiredSiteTags>
-							<li>Must_PGM_Explosive</li>
-						</requiredSiteTags>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>EdgeWalkIn</li>
-							<li>EdgeWalkInGroups</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_HeavyInfantry_APHE>10</Must_HeavyInfantry_APHE>
-							<Must_LightInfantry_APHE>20</Must_LightInfantry_APHE>
-							<Must_DemoInfantry_APHE>5</Must_DemoInfantry_APHE>
-						</options>
-					</li>
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>ExplosiveHeavies</groupName>
-						<commonality>2</commonality>
-						<groupTier>2</groupTier>
-						<requiredSiteTags>
-							<li>Must_PGM_Explosive</li>
-						</requiredSiteTags>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>EdgeWalkIn</li>
-							<li>EdgeWalkInGroups</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_HeavyInfantry_APHE>10</Must_HeavyInfantry_APHE>
-							<Must_DemoInfantry_APHE>5</Must_DemoInfantry_APHE>
-							<Must_Badger_MMGKind>5</Must_Badger_MMGKind>
-						</options>
-					</li>
-					<!--Munitions/Sabot-->
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>MunitionsBlend</groupName>
-						<commonality>5</commonality>
-						<groupTier>2</groupTier>
-						<requiredSiteTags>
-							<li>Must_PGM_Munitions</li>
-						</requiredSiteTags>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>EdgeWalkIn</li>
-							<li>EdgeWalkInGroups</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_HeavyInfantry_Sabot>10</Must_HeavyInfantry_Sabot>
-							<Must_LightInfantry_Sabot>20</Must_LightInfantry_Sabot>
-							<Must_DemoInfantry_Sabot>5</Must_DemoInfantry_Sabot>
-							<Must_Polecat_LMGSabotKind>10</Must_Polecat_LMGSabotKind>
-							<Must_Polecat_AMRKind>5</Must_Polecat_AMRKind>
-							<Must_Badger_MMGKind>5</Must_Badger_MMGKind>
-						</options>
-					</li>
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>MunitionsInfantry</groupName>
-						<commonality>5</commonality>
-						<groupTier>2</groupTier>
-						<requiredSiteTags>
-							<li>Must_PGM_Munitions</li>
-						</requiredSiteTags>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>EdgeWalkIn</li>
-							<li>EdgeWalkInGroups</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_HeavyInfantry_Sabot>10</Must_HeavyInfantry_Sabot>
-							<Must_LightInfantry_Sabot>20</Must_LightInfantry_Sabot>
-							<Must_DemoInfantry_Sabot>5</Must_DemoInfantry_Sabot>
-						</options>
-					</li>
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>MunitionsHeavies</groupName>
-						<commonality>2</commonality>
-						<groupTier>2</groupTier>
-						<requiredSiteTags>
-							<li>Must_PGM_Munitions</li>
-						</requiredSiteTags>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>EdgeWalkIn</li>
-							<li>EdgeWalkInGroups</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_HeavyInfantry_Sabot>10</Must_HeavyInfantry_Sabot>
-							<Must_DemoInfantry_Sabot>5</Must_DemoInfantry_Sabot>
-							<Must_Badger_MMGKind>5</Must_Badger_MMGKind>
-						</options>
-					</li>
-					<!--Commandos-->
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>CommandoBlend</groupName>
-						<commonality>5</commonality>
-						<groupTier>2</groupTier>
-						<requiredSiteTags>
-							<li>Must_PGM_Commando</li>
-						</requiredSiteTags>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackBreachingSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>CenterDrop</li>
-							<li>RandomDrop</li>
-						</allowedArrivalModes>
-						<options>
-                            <Must_Commando_PDW>20</Must_Commando_PDW>
-                            <Must_Commando_SG>10</Must_Commando_SG>
-                            <Must_Commando_Satchel>5</Must_Commando_Satchel>
-                            <Must_Commando_Marksman>10</Must_Commando_Marksman>
-						</options>
-					</li>
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>CommandoCloseCombat</groupName>
-						<commonality>5</commonality>
-						<groupTier>2</groupTier>
-						<requiredSiteTags>
-							<li>Must_PGM_Commando</li>
-						</requiredSiteTags>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackBreachingSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>CenterDrop</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_Commando_PDW>20</Must_Commando_PDW>
-							<Must_Commando_SG>10</Must_Commando_SG>
-							<Must_Commando_Flashbang>10</Must_Commando_Flashbang>
-							<Must_Commando_Satchel>5</Must_Commando_Satchel>
-						</options>
-					</li>
-					<li>
-						<kindDef>Combat</kindDef>
-						<groupName>CommandoRanged</groupName>
-						<commonality>5</commonality>
-						<groupTier>2</groupTier>
-						<requiredSiteTags>
-							<li>Must_PGM_Commando</li>
-						</requiredSiteTags>
-						<allowedRaidStrategies>
-							<li>ImmediateAttackBreachingSmart</li>
-						</allowedRaidStrategies>
-						<allowedArrivalModes>
-							<li>EdgeDrop</li>
-						</allowedArrivalModes>
-						<options>
-							<Must_Commando_PDW>20</Must_Commando_PDW>
-							<Must_Commando_Marksman>20</Must_Commando_Marksman>
-							<Must_Commando_Satchel>5</Must_Commando_Satchel>
-						</options>
-					</li>
-				</taggedPawnGroupMakers>
-			</li>
-            <li Class="rep.heframework.WorldObjectExtensionHE">
-                <mapGenerator>HEMapGeneratorSettlement</mapGenerator>
-                <defenderThreatPointsRange>6000~12000</defenderThreatPointsRange>
-            </li>
-			<li Class="KCSG.CustomGenOption">
-				<preventBridgeable>true</preventBridgeable>
-				<chooseFromlayouts>
-					<li>Must_Fortress_One</li>
-				</chooseFromlayouts>
-			</li>
-		</modExtensions>
 	</FactionDef>
 
-	<FactionDef ParentName="Must_FactionBase">
-		<defName>Must_FactionHostile</defName>
+	<FactionDef ParentName="REP_BW_FactionBase">
+		<defName>REP_BW_FactionHostile</defName>
 		<label>hostile mercenary company</label>
-		<description>An industrial-tech mercenary company hired by offworlders to eliminate inhabitants of this RimWorld in preparation of future mining operations. Despite their limited technology, they will use more advanced military tactics than other factions.</description>
+		<description>An industrial-tech mercenary company hired by offworlders to eliminate inhabitants of this RimWorld in preparation of future mining operations.</description>
         <listOrderPriority>22</listOrderPriority>
         <configurationListOrderPriority>22</configurationListOrderPriority>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
         <maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
 		<permanentEnemy>true</permanentEnemy>
-		<!--Placeholder-->
-		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
-        <factionNameMaker>Must_FactionNamer</factionNameMaker>
-        <settlementNameMaker>Must_SettlementNamer</settlementNameMaker>
-		<!--Placeholder-->
-		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<factionIconPath>Blackwave/World/WorldObjects/BlackwaveIcon</factionIconPath>
+        <factionNameMaker>REP_BW_FactionNamer</factionNameMaker>
+        <settlementNameMaker>REP_BW_SettlementNamer</settlementNameMaker>
+		<settlementTexturePath>Blackwave/World/WorldObjects/BlackwaveIcon</settlementTexturePath>
 		<!--Placeholder-->
 		<allowedCultures>
 			<li>Rustican</li>

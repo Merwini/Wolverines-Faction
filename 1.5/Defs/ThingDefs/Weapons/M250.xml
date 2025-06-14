@@ -4,11 +4,11 @@
 	<!-- ==================== M250 ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>Must_M250lmg</defName>
+		<defName>REP_BW_M250lmg</defName>
 		<label>M250</label>
 		<description>A late-industrial military light machine gun using the high velocity .277 cartridge. Fitted with a holographic sight and high-capacity ammo feed pouch.</description>
 		<graphicData>
-			<texPath>Wolverines/Weapons/M250</texPath>
+			<texPath>Blackwave/Weapons/M250</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
@@ -64,7 +64,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>Must_LMG</li>
+			<li>REP_BW_LMG</li>
 			<li>Bipod_LMG</li>
 		</weaponTags>
 		<recipeMaker>

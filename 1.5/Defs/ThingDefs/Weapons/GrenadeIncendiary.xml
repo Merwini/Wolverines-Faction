@@ -4,10 +4,10 @@
 	<!-- ==================== Incendiary grenade ========================== -->
 
 	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>Must_Proj_GrenadeIncendiary</defName>
+		<defName>REP_BW_Proj_GrenadeIncendiary</defName>
 		<label>incendiary grenade</label>
 		<graphicData>
-			<texPath>Wolverines/Weapons/PROJECTILE/IncendiaryGrenade_projectile</texPath>
+			<texPath>Blackwave/Weapons/PROJECTILE/IncendiaryGrenade_projectile</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -35,12 +35,12 @@
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
-		<defName>Must_GrenadeIncendiary</defName>
+		<defName>REP_BW_GrenadeIncendiary</defName>
 		<equipmentType>Primary</equipmentType>
 		<label>incendiary grenade</label>
 		<description>A cylindrical incendiary grenade, lighter and more compact than a molotov cocktail but performs slightly better due to improved materials.</description>
 		<graphicData>
-			<texPath>Wolverines/Weapons/IncendiaryGrenade</texPath>
+			<texPath>Blackwave/Weapons/IncendiaryGrenade</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Grenade</soundInteract>
@@ -58,8 +58,8 @@
 			<li>CE_AI_Grenade</li>
 			<li>CE_AI_AOE</li>
 			<li>CE_OneHandedWeapon</li>
-			<li>Must_Grenade</li>
-			<li>Must_Incendiary</li>
+			<li>REP_BW_Grenade</li>
+			<li>REP_BW_Incendiary</li>
 		</weaponTags>
 		<thingCategories>
 			<li>Grenades</li>
@@ -78,13 +78,13 @@
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<defaultProjectile>Must_Proj_GrenadeIncendiary</defaultProjectile>
+				<defaultProjectile>REP_BW_Proj_GrenadeIncendiary</defaultProjectile>
 				<onlyManualCast>true</onlyManualCast>
 				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
 				<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
 			</li>
 		</verbs>
-		<detonateProjectile>Must_Proj_GrenadeIncendiary</detonateProjectile>
+		<detonateProjectile>REP_BW_Proj_GrenadeIncendiary</detonateProjectile>
 	</ThingDef>
 	
 	
@@ -138,7 +138,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Must_GrenadeIncendiary>10</Must_GrenadeIncendiary>
+			<REP_BW_GrenadeIncendiary>10</REP_BW_GrenadeIncendiary>
 		</products>
 	</RecipeDef>
 

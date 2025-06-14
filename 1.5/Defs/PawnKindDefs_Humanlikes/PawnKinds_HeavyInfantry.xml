@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<PawnKindDef ParentName="Must_HumanCombatantBase" Abstract="True" Name ="Must_HeavyInfantryBase">
+	<PawnKindDef ParentName="REP_BW_HumanCombatantBase" Abstract="True" Name ="REP_BW_HeavyInfantryBase">
 		<combatPower>240</combatPower>
 		<weaponTags>
-			<li>Must_BR</li>
-			<li>Must_LMG</li>
+			<li>REP_BW_BR</li>
+			<li>REP_BW_LMG</li>
 		</weaponTags>
 		<weaponMoney>800~1700</weaponMoney>
 		<apparelRequired>
-			<li>Must_BattleDress</li>
-			<li>Must_HeavyArmor</li>
-			<li>Must_HeavyHelmet</li>
-			<li>Must_LargeBackpack</li>
+			<li>REP_BW_BattleDress</li>
+			<li>REP_BW_HeavyArmor</li>
+			<li>REP_BW_HeavyHelmet</li>
+			<li>REP_BW_LargeBackpack</li>
 		</apparelRequired>
 		<apparelTags>
-			<li>Must_HeavyArmor</li>
+			<li>REP_BW_HeavyArmor</li>
 		</apparelTags>
 		<apparelMoney>1300~1900</apparelMoney>
 		<skills>
@@ -25,18 +25,18 @@
 		</skills>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_HumanCombatantBase" Abstract="True" Name ="Must_DemoInfantryBase">
+	<PawnKindDef ParentName="REP_BW_HumanCombatantBase" Abstract="True" Name ="REP_BW_DemoInfantryBase">
 		<combatPower>260</combatPower>
 		<weaponTags Inherit="false" />
 		<weaponMoney>800~1700</weaponMoney>
 		<apparelRequired>
-			<li>Must_BattleDress</li>
-			<li>Must_HeavyArmor</li>
-			<li>Must_HeavyHelmet</li>
-			<li>Must_LargeBackpack</li>
+			<li>REP_BW_BattleDress</li>
+			<li>REP_BW_HeavyArmor</li>
+			<li>REP_BW_HeavyHelmet</li>
+			<li>REP_BW_LargeBackpack</li>
 		</apparelRequired>
 		<apparelTags>
-			<li>Must_HeavyArmor</li>
+			<li>REP_BW_HeavyArmor</li>
 		</apparelTags>
 		<apparelMoney>1300~1900</apparelMoney>
 		<skills>
@@ -47,8 +47,8 @@
 		</skills>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_HeavyInfantryBase">
-		<defName>Must_HeavyInfantry_FMJ</defName>
+	<PawnKindDef ParentName="REP_BW_HeavyInfantryBase">
+		<defName>REP_BW_HeavyInfantry_FMJ</defName>
 		<label>heavy infantry (FMJ)</label>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -74,8 +74,8 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_HeavyInfantryBase">
-		<defName>Must_HeavyInfantry_API</defName>
+	<PawnKindDef ParentName="REP_BW_HeavyInfantryBase">
+		<defName>REP_BW_HeavyInfantry_API</defName>
 		<label>heavy infantry (AP-I)</label>
         <combatPower>264</combatPower>
 		<modExtensions>
@@ -102,8 +102,8 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_HeavyInfantryBase">
-		<defName>Must_HeavyInfantry_APHE</defName>
+	<PawnKindDef ParentName="REP_BW_HeavyInfantryBase">
+		<defName>REP_BW_HeavyInfantry_APHE</defName>
 		<label>heavy infantry (AP-HE)</label>
         <combatPower>264</combatPower>
 		<modExtensions>
@@ -132,8 +132,8 @@
 
 	
 
-	<PawnKindDef ParentName="Must_HeavyInfantryBase">
-		<defName>Must_HeavyInfantry_Sabot</defName>
+	<PawnKindDef ParentName="REP_BW_HeavyInfantryBase">
+		<defName>REP_BW_HeavyInfantry_Sabot</defName>
 		<label>heavy infantry (Sabot)</label>
         <combatPower>264</combatPower>
 		<modExtensions>
@@ -160,11 +160,11 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_DemoInfantryBase">
-		<defName>Must_DemoInfantry_FMJ</defName>
+	<PawnKindDef ParentName="REP_BW_DemoInfantryBase">
+		<defName>REP_BW_DemoInfantry_FMJ</defName>
 		<label>demolition infantry (FMJ)</label>
 		<weaponTags Inherit="False">
-			<li>Must_BasicLAW</li>
+			<li>REP_BW_BasicLAW</li>
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -179,7 +179,7 @@
 						<max>1200</max>
 					</sidearmMoney>
 					<weaponTags>
-						<li>Must_BR</li>
+						<li>REP_BW_BR</li>
 					</weaponTags>
 					<magazineCount>
 						<min>2</min>
@@ -190,12 +190,12 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_DemoInfantryBase">
-		<defName>Must_DemoInfantry_API</defName>
+	<PawnKindDef ParentName="REP_BW_DemoInfantryBase">
+		<defName>REP_BW_DemoInfantry_API</defName>
 		<label>demolition infantry (AP-I)</label>
         <combatPower>286</combatPower>
 		<weaponTags Inherit="False">
-			<li>Must_IncendiaryLAW</li>
+			<li>REP_BW_IncendiaryLAW</li>
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -210,7 +210,7 @@
 						<max>1200</max>
 					</sidearmMoney>
 					<weaponTags>
-						<li>Must_BR</li>
+						<li>REP_BW_BR</li>
 					</weaponTags>
 					<magazineCount>
 						<min>2</min>
@@ -221,12 +221,12 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_DemoInfantryBase">
-		<defName>Must_DemoInfantry_APHE</defName>
+	<PawnKindDef ParentName="REP_BW_DemoInfantryBase">
+		<defName>REP_BW_DemoInfantry_APHE</defName>
 		<label>demolition infantry (AP-HE)</label>
         <combatPower>286</combatPower>
 		<weaponTags Inherit="False">
-			<li>Must_ASM</li>
+			<li>REP_BW_ASM</li>
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -241,7 +241,7 @@
 						<max>1200</max>
 					</sidearmMoney>
 					<weaponTags>
-						<li>Must_BR</li>
+						<li>REP_BW_BR</li>
 					</weaponTags>
 					<magazineCount>
 						<min>2</min>
@@ -252,12 +252,12 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_DemoInfantryBase">
-		<defName>Must_DemoInfantry_Sabot</defName>
+	<PawnKindDef ParentName="REP_BW_DemoInfantryBase">
+		<defName>REP_BW_DemoInfantry_Sabot</defName>
 		<label>demolition infantry (Sabot)</label>
         <combatPower>286</combatPower>
 		<weaponTags Inherit="False">
-			<li>Must_ASM</li>
+			<li>REP_BW_ASM</li>
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -272,7 +272,7 @@
 						<max>1200</max>
 					</sidearmMoney>
 					<weaponTags>
-						<li>Must_BR</li>
+						<li>REP_BW_BR</li>
 					</weaponTags>
 					<magazineCount>
 						<min>2</min>

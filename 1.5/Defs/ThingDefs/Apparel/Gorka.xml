@@ -4,11 +4,11 @@
   <!-- ==================== Gorka ==================== -->
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Must_Gorka</defName>
+    <defName>REP_BW_Gorka</defName>
     <label>cold weather overall (digital camo)</label>
     <description>An outer garment designed for keeping its wearer at comfortable cold weather while leaving movement unimpeded. Can also provide near perfect gas sealing if worn with a gas mask.</description>
     <graphicData>
-      <texPath>Wolverines/Apparel/Digi-Gorka/Digi-Gorka</texPath>
+      <texPath>Blackwave/Apparel/Digi-Gorka/Digi-Gorka</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <recipeMaker>
@@ -46,13 +46,13 @@
         <li>Hands</li>
         <li>Feet</li>
       </bodyPartGroups>
-      <wornGraphicPath>Wolverines/Apparel/Digi-Gorka/Digi-Gorka</wornGraphicPath>
+      <wornGraphicPath>Blackwave/Apparel/Digi-Gorka/Digi-Gorka</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <layers>
         <li>Shell</li>
       </layers>
       <tags>
-        <li>Must_LightArmor</li>
+        <li>REP_BW_LightArmor</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>

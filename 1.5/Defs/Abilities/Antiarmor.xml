@@ -8,7 +8,7 @@
 	</AbilityDef>
 
 	<AbilityDef ParentName="AntiarmorBase">
-		<defName>Must_B_Antiarmor</defName>
+		<defName>REP_BW_B_Antiarmor</defName>
 		<cooldownTicksRange>300~300</cooldownTicksRange>
 		<charges>5</charges>
 		<verbProperties Class="CombatExtended.VerbPropertiesCE">

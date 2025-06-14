@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!--Ferret-->
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FerretGunProp_North</defName>
+		<thing>REP_BW_FerretGunProp</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FerretGunProp_East</defName>
+		<thing>REP_BW_FerretGunProp</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FerretGunProp_South</defName>
+		<thing>REP_BW_FerretGunProp</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FerretGunProp_West</defName>
+		<thing>REP_BW_FerretGunProp</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FerretIncProp_North</defName>
+		<thing>REP_BW_FerretIncProp</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FerretIncProp_East</defName>
+		<thing>REP_BW_FerretIncProp</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FerretIncProp_South</defName>
+		<thing>REP_BW_FerretIncProp</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FerretIncProp_West</defName>
+		<thing>REP_BW_FerretIncProp</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FerretBombProp_North</defName>
+		<thing>REP_BW_FerretBombProp</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FerretBombProp_East</defName>
+		<thing>REP_BW_FerretBombProp</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FerretBombProp_South</defName>
+		<thing>REP_BW_FerretBombProp</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_FerretBombProp_West</defName>
+		<thing>REP_BW_FerretBombProp</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+
+	<!--Polecat-->
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatGunProp_North</defName>
+		<thing>REP_BW_PolecatGunProp</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatGunProp_East</defName>
+		<thing>REP_BW_PolecatGunProp</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatGunProp_South</defName>
+		<thing>REP_BW_PolecatGunProp</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatGunProp_West</defName>
+		<thing>REP_BW_PolecatGunProp</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatIncProp_North</defName>
+		<thing>REP_BW_PolecatIncProp</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatIncProp_East</defName>
+		<thing>REP_BW_PolecatIncProp</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatIncProp_South</defName>
+		<thing>REP_BW_PolecatIncProp</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatIncProp_West</defName>
+		<thing>REP_BW_PolecatIncProp</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatBombProp_North</defName>
+		<thing>REP_BW_PolecatBombProp</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatBombProp_East</defName>
+		<thing>REP_BW_PolecatBombProp</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatBombProp_South</defName>
+		<thing>REP_BW_PolecatBombProp</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_PolecatBombProp_West</defName>
+		<thing>REP_BW_PolecatBombProp</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+
+	<!--Badger-->
+	<KCSG.SymbolDef>
+		<defName>REP_BW_BadgerGunProp_North</defName>
+		<thing>REP_BW_BadgerGunProp</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_BadgerGunProp_East</defName>
+		<thing>REP_BW_BadgerGunProp</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_BadgerGunProp_South</defName>
+		<thing>REP_BW_BadgerGunProp</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>REP_BW_BadgerGunProp_West</defName>
+		<thing>REP_BW_BadgerGunProp</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+</Defs>

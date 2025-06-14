@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="Must_DroneWeaponBase">
-		<defName>Must_B_HMG</defName>
+	<ThingDef ParentName="REP_BW_DroneWeaponBase">
+		<defName>REP_BW_B_HMG</defName>
 		<label>.338 HMG</label>
 		<description>A drone-mounted heavy machinegun chambered in .338 Norma Magnum. The high-powered rounds easily penetrate light infantry armor, and outrange most light arms. Attached smoke grenade dischargers create an instant smoke screen when needed.</description>
 		<graphicData>
-			<texPath>Wolverines/Weapons/UGBadgerTurretHMG</texPath>
+			<texPath>Blackwave/Weapons/UGBadgerTurretHMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>3</drawSize>
 		</graphicData>
@@ -50,7 +50,7 @@
 			</li>
 		</comps>
 		<weaponTags Inherit="False">
-			<li>Must_Badger_HMG</li>
+			<li>REP_BW_Badger_HMG</li>
 			<li>CE_AI_Suppressive</li>
 			<li>NoSwitch</li>
 		</weaponTags>
@@ -68,12 +68,12 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="Must_DroneWeaponBase">
-		<defName>Must_B_Minigun</defName>
+	<ThingDef ParentName="REP_BW_DroneWeaponBase">
+		<defName>REP_BW_B_Minigun</defName>
 		<label>7.62x51mm NATO minigun</label>
 		<description>A drone-mounted minigun chambered in 7.62x51mm NATO. While the cartridge is not as powerful as other drone-mounted weapon variants, the sheer volume of fire is sufficient to shred most targets. Integrated smoke grenade dischargers create an instant smoke screen when needed.</description>
 		<graphicData>
-			<texPath>Wolverines/Weapons/UGBadgerTurretMinigun</texPath>
+			<texPath>Blackwave/Weapons/UGBadgerTurretMinigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>3</drawSize>
 		</graphicData>
@@ -118,7 +118,7 @@
 			</li>
 		</comps>
 		<weaponTags Inherit="False">
-			<li>Must_Badger_Minigun</li>
+			<li>REP_BW_Badger_Minigun</li>
 			<li>CE_AI_Suppressive</li>
 			<li>NoSwitch</li>
 		</weaponTags>
@@ -136,12 +136,12 @@
 		</tools>
 	</ThingDef>
 	
-	<ThingDef ParentName="Must_DroneWeaponBase">
-		<defName>Must_B_MMG</defName>
+	<ThingDef ParentName="REP_BW_DroneWeaponBase">
+		<defName>REP_BW_B_MMG</defName>
 		<label>.277 MMG with MLRS</label>
 		<description>A combined weapon featuring a medium machinegun for anti-infantry, along with a small number of anti-armor rocket tubes. Integrated smoke grenade dischargers create an instant smoke screen when needed.</description>
 		<graphicData>
-			<texPath>Wolverines/Weapons/UGBadgerTurretMMG</texPath>
+			<texPath>Blackwave/Weapons/UGBadgerTurretMMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>3</drawSize>
 		</graphicData>
@@ -186,7 +186,7 @@
 			</li>
 		</comps>
 		<weaponTags Inherit="False">
-			<li>Must_Badger_MMG</li>
+			<li>REP_BW_Badger_MMG</li>
 			<li>CE_AI_Suppressive</li>
 			<li>NoSwitch</li>
 		</weaponTags>

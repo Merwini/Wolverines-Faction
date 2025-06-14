@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!--Badger Drone Race-->
-	<ThingDef ParentName="Must_DroneBase" Name="Must_BadgerBase" Abstract="True">
+	<ThingDef ParentName="REP_BW_DroneBase" Name="REP_BW_BadgerBase" Abstract="True">
 		<statBases>
 			<MarketValue>2700</MarketValue>
 			<MoveSpeed>2.3</MoveSpeed>
@@ -26,12 +26,12 @@
 		<race>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
-			<body>Must_Badger_Body</body>
+			<body>REP_BW_Badger_Body</body>
 			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>4</baseHealthScale>
 			<lifeStageAges>
 				<li>
-					<def>Must_DroneCompleted</def>
+					<def>REP_BW_DroneCompleted</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
@@ -74,37 +74,37 @@
                     <li>
                         <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
                         <parts>
-                            <li>Must_DroneEye</li>
+                            <li>REP_BW_DroneEye</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
                         <parts>
-                            <li>Must_DroneEye</li>
+                            <li>REP_BW_DroneEye</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
                         <parts>
-                            <li>Must_DroneEar</li>
+                            <li>REP_BW_DroneEar</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
                         <parts>
-                            <li>Must_DroneEar</li>
+                            <li>REP_BW_DroneEar</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
                         <parts>
-                            <li>Must_Badger_Leg</li>
+                            <li>REP_BW_Badger_Leg</li>
                         </parts>
                     </li>
                     <li>
                         <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
                         <parts>
-                            <li>Must_Badger_Leg</li>
+                            <li>REP_BW_Badger_Leg</li>
                         </parts>
                     </li>
                 </stats>
@@ -112,14 +112,14 @@
         </modExtensions>
 	</ThingDef>
 
-	<PawnKindDef  ParentName="BaseMechanoidKind" Name="Must_BadgerBaseKind" Abstract="True">
-		<defaultFactionType>Must_FactionHostile</defaultFactionType>
+	<PawnKindDef  ParentName="BaseMechanoidKind" Name="REP_BW_BadgerBaseKind" Abstract="True">
+		<defaultFactionType>REP_BW_FactionHostile</defaultFactionType>
 		<weaponMoney>9999~9999</weaponMoney>
 		<forceNormalGearQuality>True</forceNormalGearQuality>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Wolverines/Drones/UGBadger/UGBadger</texPath>
+					<texPath>Blackwave/Drones/UGBadger/UGBadger</texPath>
 					<drawSize>2.7</drawSize>
 				</bodyGraphicData>
 			</li>
@@ -127,11 +127,11 @@
 		<combatPower>400</combatPower>
 	</PawnKindDef>
 
-	<ThingDef ParentName="Must_BadgerBase">
-		<defName>Must_Badger_HMG</defName>
+	<ThingDef ParentName="REP_BW_BadgerBase">
+		<defName>REP_BW_Badger_HMG</defName>
 		<label>HMG badger</label>
 		<comps>
-			<li Class="rep.heframework.CompProperties_Smokescreen">
+			<li Class="rep.factions.blackwave.CompProperties_Smokescreen">
 				<smokeProjectile>Bullet_SmokeLauncher</smokeProjectile>
 				<range>7</range>
 				<projectileCount>5</projectileCount>
@@ -140,12 +140,12 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="Must_BadgerBaseKind">
-		<defName>Must_Badger_HMGKind</defName>
+	<PawnKindDef ParentName="REP_BW_BadgerBaseKind">
+		<defName>REP_BW_Badger_HMGKind</defName>
 		<label>HMG badger</label>
-		<race>Must_Badger_HMG</race>
+		<race>REP_BW_Badger_HMG</race>
 		<weaponTags>
-			<li>Must_Badger_HMG</li>
+			<li>REP_BW_Badger_HMG</li>
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -158,11 +158,11 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<ThingDef ParentName="Must_BadgerBase">
-		<defName>Must_Badger_Minigun</defName>
+	<ThingDef ParentName="REP_BW_BadgerBase">
+		<defName>REP_BW_Badger_Minigun</defName>
 		<label>Minigun badger</label>
 		<comps>
-			<li Class="rep.heframework.CompProperties_Smokescreen">
+			<li Class="rep.factions.blackwave.CompProperties_Smokescreen">
 				<smokeProjectile>Bullet_SmokeLauncher</smokeProjectile>
 				<range>7</range>
 				<projectileCount>5</projectileCount>
@@ -171,12 +171,12 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="Must_BadgerBaseKind">
-		<defName>Must_Badger_MinigunKind</defName>
+	<PawnKindDef ParentName="REP_BW_BadgerBaseKind">
+		<defName>REP_BW_Badger_MinigunKind</defName>
 		<label>Minigun badger</label>
-		<race>Must_Badger_Minigun</race>
+		<race>REP_BW_Badger_Minigun</race>
 		<weaponTags>
-			<li>Must_Badger_Minigun</li>
+			<li>REP_BW_Badger_Minigun</li>
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -189,12 +189,12 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Must_BadgerBaseKind">
-		<defName>Must_Badger_MinigunAPIKind</defName>
+	<PawnKindDef ParentName="REP_BW_BadgerBaseKind">
+		<defName>REP_BW_Badger_MinigunAPIKind</defName>
 		<label>Minigun badger</label>
-		<race>Must_Badger_Minigun</race>
+		<race>REP_BW_Badger_Minigun</race>
 		<weaponTags>
-			<li>Must_Badger_Minigun</li>
+			<li>REP_BW_Badger_Minigun</li>
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -207,31 +207,34 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<ThingDef ParentName="Must_BadgerBase">
-		<defName>Must_Badger_MMG</defName>
+    <!--TODO remake Comp_AntiArmor-->
+	<!--<ThingDef ParentName="REP_BW_BadgerBase">
+		<defName>REP_BW_Badger_MMG</defName>
 		<label>anti-armor badger</label>
 		<comps>
-			<li Class="rep.heframework.CompProperties_Smokescreen">
+			<li Class="rep.factions.blackwave.CompProperties_Smokescreen">
 				<smokeProjectile>Bullet_SmokeLauncher</smokeProjectile>
 				<range>7</range>
 				<projectileCount>5</projectileCount>
 				<projectileSpreadDegrees>30</projectileSpreadDegrees>
 			</li>
-			<li Class="rep.heframework.cecompat.CompProperties_AntiarmorCE">
-				<ability>Must_B_Antiarmor</ability>
+			<li Class="rep.factions.blackwave.cecompat.CompProperties_AntiarmorCE">
+				<ability>REP_BW_B_Antiarmor</ability>
 				<magazineSize>6</magazineSize>
 				<ticksBetweenShots>180</ticksBetweenShots>
 				<armorSharpThreshold>10</armorSharpThreshold>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef>-->
 
-	<PawnKindDef ParentName="Must_BadgerBaseKind">
-		<defName>Must_Badger_MMGKind</defName>
+
+    <!--TODO remake Comp_AntiArmor-->
+	<!--<PawnKindDef ParentName="REP_BW_BadgerBaseKind">
+		<defName>REP_BW_Badger_MMGKind</defName>
 		<label>anti-armor badger</label>
-		<race>Must_Badger_MMG</race>
+		<race>REP_BW_Badger_MMG</race>
 		<weaponTags>
-			<li>Must_Badger_MMG</li>
+			<li>REP_BW_Badger_MMG</li>
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -242,5 +245,5 @@
 				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
 			</li>
 		</modExtensions>
-	</PawnKindDef>
+	</PawnKindDef>-->
 </Defs>

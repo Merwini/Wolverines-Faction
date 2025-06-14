@@ -4,11 +4,11 @@
 	<!-- ==================== Large Backpack ==================== -->
 
 	<ThingDef ParentName="ApparelCarryGearBase">
-		<defName>Must_LargeBackpack</defName>
+		<defName>REP_BW_LargeBackpack</defName>
 		<label>army backpack (digital camo)</label>
 		<description>A large infantry backpack to fit all the needed kit.</description>
 		<graphicData>
-			<texPath>Wolverines/Apparel/Digi-Backpack/Digi-Backpack</texPath>
+			<texPath>Blackwave/Apparel/Digi-Backpack/Digi-Backpack</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -45,12 +45,12 @@
 				<li>Backpack</li>
 			</layers>
 			<tags>
-				<li>Must_Backpack</li>
+				<li>REP_BW_Backpack</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
-			<wornGraphicPath>Wolverines/Apparel/Digi-Backpack/Digi-Backpack</wornGraphicPath>
+			<wornGraphicPath>Blackwave/Apparel/Digi-Backpack/Digi-Backpack</wornGraphicPath>
 			<wornGraphicData>
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<east>
