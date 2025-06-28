@@ -4,7 +4,8 @@
 	<ThingDef ParentName="REP_BW_DroneBase" Name="REP_BW_BadgerBase" Abstract="True">
 		<statBases>
 			<MarketValue>2700</MarketValue>
-			<MoveSpeed>2.3</MoveSpeed>
+            <!-- Wanted to do 2.3, but then they never show up before casualties cause a retreat -->
+			<MoveSpeed>4.2</MoveSpeed>
 			<ArmorRating_Sharp>16</ArmorRating_Sharp>
 			<ArmorRating_Blunt>37</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>

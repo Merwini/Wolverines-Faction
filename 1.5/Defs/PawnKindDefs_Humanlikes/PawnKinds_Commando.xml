@@ -13,7 +13,7 @@
 	<PawnKindDef ParentName="REP_BW_CommandoBase">
 		<defName>REP_BW_Commando_PDW</defName>
 		<label>commando</label>
-		<combatPower>185</combatPower>
+		<combatPower>140</combatPower>
 		<weaponTags>
 			<li>REP_BW_PDW</li>
 		</weaponTags>
@@ -45,7 +45,7 @@
 	<PawnKindDef ParentName="REP_BW_CommandoBase">
 		<defName>REP_BW_Commando_SG</defName>
 		<label>shotgun commando</label>
-		<combatPower>185</combatPower>
+		<combatPower>145</combatPower>
 		<weaponTags>
 			<li>REP_BW_SG</li>
 		</weaponTags>
@@ -77,7 +77,7 @@
 	<PawnKindDef ParentName="REP_BW_CommandoBase">
 		<defName>REP_BW_Commando_Flashbang</defName>
 		<label>flashbang commando</label>
-		<combatPower>195</combatPower>
+		<combatPower>150</combatPower>
 		<weaponTags>
 			<li>CE_GrenadeFlashbang</li>
 		</weaponTags>
@@ -109,7 +109,7 @@
 	<PawnKindDef ParentName="REP_BW_CommandoBase">
 		<defName>REP_BW_Commando_Satchel</defName>
 		<label>satchel commando</label>
-		<combatPower>195</combatPower>
+		<combatPower>160</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<isGoodBreacher>true</isGoodBreacher>
 		<weaponTags>
@@ -143,7 +143,7 @@
 	<PawnKindDef ParentName="REP_BW_CommandoBase">
 		<defName>REP_BW_Commando_Marksman</defName>
 		<label>marksman commando</label>
-		<combatPower>205</combatPower>
+		<combatPower>160</combatPower>
 		<weaponTags>
 			<li>REP_BW_DMR</li>
 		</weaponTags>

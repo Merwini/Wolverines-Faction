@@ -5,10 +5,11 @@
 		<autoFlee>true</autoFlee>
 		<permanentEnemy>false</permanentEnemy>
 		<canStageAttacks>true</canStageAttacks>
-		<canSiege>true</canSiege>
 		<canMakeRandomly>true</canMakeRandomly>
 		<pawnSingular>mercenary</pawnSingular>
 		<pawnsPlural>mercenaries</pawnsPlural>
+        <!-- The drones break sieges -->
+        <canSiege>false</canSiege>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<displayInFactionSelection>true</displayInFactionSelection>
 		<raidLootValueFromPointsCurve>
@@ -95,7 +96,7 @@
             <li>
                 <!-- Basic Blend -->
                 <kindDef>Combat</kindDef>
-                <commonality>5</commonality>
+                <commonality>100</commonality>
                 <options>
                     <REP_BW_HeavyInfantry_FMJ>10</REP_BW_HeavyInfantry_FMJ>
                     <REP_BW_DemoInfantry_FMJ>5</REP_BW_DemoInfantry_FMJ>
@@ -108,10 +109,7 @@
             <li>
                 <!-- Ferret Swarm -->
                 <kindDef>Combat</kindDef>
-                <commonality>2</commonality>
-                <disallowedStrategies>
-                    <li>Siege</li>
-                </disallowedStrategies>
+                <commonality>10</commonality>
                 <options>
                     <REP_BW_LightInfantry_FMJ>1</REP_BW_LightInfantry_FMJ>
                     <REP_BW_Ferret_SMGKind>4</REP_BW_Ferret_SMGKind>
@@ -120,7 +118,7 @@
             <li>
                 <!-- Prometheum Blend -->
                 <kindDef>Combat</kindDef>
-                <commonality>5</commonality>
+                <commonality>40</commonality>
                 <options>
                     <REP_BW_HeavyInfantry_API>10</REP_BW_HeavyInfantry_API>
                     <REP_BW_LightInfantry_API>20</REP_BW_LightInfantry_API>
@@ -133,7 +131,7 @@
             <li>
                 <!-- FSX Blend -->
                 <kindDef>Combat</kindDef>
-                <commonality>5</commonality>
+                <commonality>40</commonality>
                 <options>
                     <REP_BW_HeavyInfantry_APHE>10</REP_BW_HeavyInfantry_APHE>
                     <REP_BW_LightInfantry_APHE>20</REP_BW_LightInfantry_APHE>
@@ -147,7 +145,7 @@
 
                 <!-- Sabot Blend -->
                 <kindDef>Combat</kindDef>
-                <commonality>5</commonality>
+                <commonality>40</commonality>
                 <options>
                     <REP_BW_HeavyInfantry_Sabot>10</REP_BW_HeavyInfantry_Sabot>
                     <REP_BW_LightInfantry_Sabot>20</REP_BW_LightInfantry_Sabot>
@@ -161,14 +159,11 @@
             <li>
                 <!-- Commando Blend -->
                 <kindDef>Combat</kindDef>
-                <commonality>5</commonality>
-                <disallowedStrategies>
-                    <li>Siege</li>
-                </disallowedStrategies>
+                <commonality>40</commonality>
                 <options>
                     <REP_BW_Commando_PDW>20</REP_BW_Commando_PDW>
                     <REP_BW_Commando_SG>10</REP_BW_Commando_SG>
-                    <REP_BW_Commando_Satchel>5</REP_BW_Commando_Satchel>
+                    <REP_BW_Commando_Satchel>3</REP_BW_Commando_Satchel>
                     <REP_BW_Commando_Marksman>10</REP_BW_Commando_Marksman>
                 </options>
             </li>
@@ -195,17 +190,18 @@
 		<label>hostile mercenary company</label>
 		<description>An industrial-tech mercenary company hired by offworlders to eliminate inhabitants of this RimWorld in preparation of future mining operations.</description>
         <listOrderPriority>22</listOrderPriority>
-        <configurationListOrderPriority>22</configurationListOrderPriority>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
-        <maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>80</configurationListOrderPriority>
 		<permanentEnemy>true</permanentEnemy>
-		<factionIconPath>Blackwave/World/WorldObjects/BlackwaveIcon</factionIconPath>
+		<factionIconPath>Blackwave/World/WorldObjects/BlackwaveSettlement</factionIconPath>
         <factionNameMaker>REP_BW_FactionNamer</factionNameMaker>
         <settlementNameMaker>REP_BW_SettlementNamer</settlementNameMaker>
-		<settlementTexturePath>Blackwave/World/WorldObjects/BlackwaveIcon</settlementTexturePath>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<!--Placeholder-->
 		<allowedCultures>
 			<li>Rustican</li>
+            <li>Kriminul</li>
 		</allowedCultures>
 	</FactionDef>
 </Defs>
