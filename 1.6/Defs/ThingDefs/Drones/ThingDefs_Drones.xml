@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<LifeStageDef>
+		<defName>REP_BW_DroneCompleted</defName>
+		<label>complete</label>
+		<visible>false</visible>
+	</LifeStageDef>
+
+	<ThingDef ParentName="BaseMechanoid" Name="REP_BW_DroneBase" Abstract="True">
+		<statBases>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>120</ComfyTemperatureMax>
+			<SmokeSensitivity>0</SmokeSensitivity>
+			<NightVisionEfficiency>0.80</NightVisionEfficiency>
+		</statBases>
+		<race>
+			<fleshType>REP_BW_Drone</fleshType>
+			<trainability>None</trainability>
+		</race>
+        <modExtensions Inherit="False"/>
+	</ThingDef>
+
+</Defs>

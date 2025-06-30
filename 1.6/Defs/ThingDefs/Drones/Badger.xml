@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--Badger Drone Race-->
+	<ThingDef ParentName="REP_BW_DroneBase" Name="REP_BW_BadgerBase" Abstract="True">
+		<statBases>
+			<MarketValue>2700</MarketValue>
+            <!-- Wanted to do 2.3, but then they never show up before casualties cause a retreat -->
+			<MoveSpeed>4.2</MoveSpeed>
+			<ArmorRating_Sharp>16</ArmorRating_Sharp>
+			<ArmorRating_Blunt>37</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<CarryWeight>40</CarryWeight>
+			<CarryBulk>15</CarryBulk>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>ram</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>REP_BW_Badger_Body</body>
+			<baseBodySize>3</baseBodySize>
+			<baseHealthScale>4</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>REP_BW_DroneCompleted</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+					<soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<Steel>60</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</butcherProducts>
+		<comps>
+			<li Class="DroneTank.CompProperties_VehicleWeapon">
+				<turretRotationFollowPawn>true</turretRotationFollowPawn>
+				<layerOverrideNorth>true</layerOverrideNorth>
+			</li>
+            <li Class="CombatExtended.CompProperties_ArmorDurability">
+                <Durability>2500</Durability>
+                <Regenerates>false</Regenerates>
+                <MinArmorPct>0.5</MinArmorPct>
+                <Repairable>true</Repairable>
+                <RepairIngredients>
+                    <Steel>5</Steel>
+                </RepairIngredients>
+                <RepairTime>200</RepairTime>
+                <RepairValue>250</RepairValue>
+                <MinArmorValueSharp>8</MinArmorValueSharp>
+                <MinArmorValueBlunt>8.5</MinArmorValueBlunt>
+            </li>
+		</comps>
+        <modExtensions>
+            <li Class="CombatExtended.RacePropertiesExtensionCE">
+                <bodyShape>Vehicle</bodyShape>
+            </li>
+            <li Class="CombatExtended.PartialArmorExt">
+                <stats>
+                    <li>
+                        <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+                        <parts>
+                            <li>REP_BW_DroneEye</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+                        <parts>
+                            <li>REP_BW_DroneEye</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+                        <parts>
+                            <li>REP_BW_DroneEar</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+                        <parts>
+                            <li>REP_BW_DroneEar</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+                        <parts>
+                            <li>REP_BW_Badger_Leg</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+                        <parts>
+                            <li>REP_BW_Badger_Leg</li>
+                        </parts>
+                    </li>
+                </stats>
+            </li>
+        </modExtensions>
+	</ThingDef>
+
+	<PawnKindDef  ParentName="BaseMechanoidKind" Name="REP_BW_BadgerBaseKind" Abstract="True">
+		<defaultFactionType>REP_BW_FactionHostile</defaultFactionType>
+		<weaponMoney>9999~9999</weaponMoney>
+		<forceNormalGearQuality>True</forceNormalGearQuality>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Blackwave/Drones/UGBadger/UGBadger</texPath>
+					<drawSize>2.7</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<combatPower>400</combatPower>
+	</PawnKindDef>
+
+	<ThingDef ParentName="REP_BW_BadgerBase">
+		<defName>REP_BW_Badger_HMG</defName>
+		<label>HMG badger</label>
+		<comps>
+			<li Class="rep.factions.blackwave.CompProperties_Smokescreen">
+				<smokeProjectile>Bullet_SmokeLauncher</smokeProjectile>
+				<range>7</range>
+				<projectileCount>5</projectileCount>
+				<projectileSpreadDegrees>30</projectileSpreadDegrees>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="REP_BW_BadgerBaseKind">
+		<defName>REP_BW_Badger_HMGKind</defName>
+		<label>HMG badger</label>
+		<race>REP_BW_Badger_HMG</race>
+		<weaponTags>
+			<li>REP_BW_Badger_HMG</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>0</min>
+					<max>0</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<ThingDef ParentName="REP_BW_BadgerBase">
+		<defName>REP_BW_Badger_Minigun</defName>
+		<label>Minigun badger</label>
+		<comps>
+			<li Class="rep.factions.blackwave.CompProperties_Smokescreen">
+				<smokeProjectile>Bullet_SmokeLauncher</smokeProjectile>
+				<range>7</range>
+				<projectileCount>5</projectileCount>
+				<projectileSpreadDegrees>30</projectileSpreadDegrees>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="REP_BW_BadgerBaseKind">
+		<defName>REP_BW_Badger_MinigunKind</defName>
+		<label>Minigun badger</label>
+		<race>REP_BW_Badger_Minigun</race>
+		<weaponTags>
+			<li>REP_BW_Badger_Minigun</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>0</min>
+					<max>0</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="REP_BW_BadgerBaseKind">
+		<defName>REP_BW_Badger_MinigunAPIKind</defName>
+		<label>Minigun badger</label>
+		<race>REP_BW_Badger_Minigun</race>
+		<weaponTags>
+			<li>REP_BW_Badger_Minigun</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>0</min>
+					<max>0</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>IncendiaryAP</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+    <!--TODO remake Comp_AntiArmor-->
+	<!--<ThingDef ParentName="REP_BW_BadgerBase">
+		<defName>REP_BW_Badger_MMG</defName>
+		<label>anti-armor badger</label>
+		<comps>
+			<li Class="rep.factions.blackwave.CompProperties_Smokescreen">
+				<smokeProjectile>Bullet_SmokeLauncher</smokeProjectile>
+				<range>7</range>
+				<projectileCount>5</projectileCount>
+				<projectileSpreadDegrees>30</projectileSpreadDegrees>
+			</li>
+			<li Class="rep.factions.blackwave.cecompat.CompProperties_AntiarmorCE">
+				<ability>REP_BW_B_Antiarmor</ability>
+				<magazineSize>6</magazineSize>
+				<ticksBetweenShots>180</ticksBetweenShots>
+				<armorSharpThreshold>10</armorSharpThreshold>
+			</li>
+		</comps>
+	</ThingDef>-->
+
+
+    <!--TODO remake Comp_AntiArmor-->
+	<!--<PawnKindDef ParentName="REP_BW_BadgerBaseKind">
+		<defName>REP_BW_Badger_MMGKind</defName>
+		<label>anti-armor badger</label>
+		<race>REP_BW_Badger_MMG</race>
+		<weaponTags>
+			<li>REP_BW_Badger_MMG</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>0</min>
+					<max>0</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>-->
+</Defs>

@@ -4,8 +4,29 @@
 	<author>Serina and Nuff</author>
 	<supportedVersions>
 		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
-	<description>A late industrial faction that utilizes advanced warfare tactics. If left unchecked, they will develop new and more powerful technologies and tactics to use against you.</description>
+	<description>
+		Tribals raiding your mining camps?
+		Send in the Blackwave.
+
+		Void horrors preventing your terraforming efforts?
+		Send in the Blackwave.
+
+		Some annoying crashlander colony ruining the view from your new château?
+		Send in the Blackwave.
+
+
+		The Blackwave is an interstellar umbrella organization composed of numerous semi-autonomous mercenary companies. Considered little better than pirates by most civilized planets, they operate on the fringes of human space, doing dirty work for shady corporations, corrupt governments, and cruel nobles. Their specialty is eradicating hostile factions (and anyone else that they feel like) on distant rimworlds, in preparation for mining or terraforming operations.
+
+		While the central Blackwave organization has spacer technology, they act almost exclusively in brokering contracts and arranging transport for the various industrial-tech chapters. The chapters themselves come from many backgrounds; midworld war criminals, desperate urbworld gangs, pirates feigning legitimacy, and questionably willing recruits from previous rimworld purges.
+
+		Despite their motley composition, Blackwave chapters fight with fierce discipline. Instead of undergoing cryptosleep, members spend the months or years of transit from planet to planet doing daily combat drills and undergoing harsh indoctrination.
+
+
+
+		Blackwave is a permanently-hostile faction themed around 21st century military technology. It includes a number of new weapons and apparels, as well as contemporary combat drones. It was designed and balanced around Combat Extended, and while there are currently no plans to make a non-CE version, I'm fully open to collaborating on one if someone is interested in working on it.
+	</description>
 	<packageId>rep.factions.blackwave</packageId>
 	<modDependencies>
 		<li>
@@ -15,4 +36,7 @@
 			<downloadUrl>https://github.com/CombatExtended-Continued/CombatExtended/releases/</downloadUrl>
 		</li>
 	</modDependencies>
+	<loadAfter>
+		<li>CETeam.CombatExtended</li>
+	</loadAfter>
 </ModMetaData>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef ParentName="REP_BW_HumanCombatantBase" Abstract="True" Name="REP_BW_LightInfantryBase">
+		<combatPower>100</combatPower>
+		<weaponTags>
+			<li>REP_BW_BR</li>
+		</weaponTags>
+		<weaponMoney>600~1400</weaponMoney>
+		<apparelRequired>
+			<li>REP_BW_BattleDress</li>
+			<li>REP_BW_ArmorVest</li>
+			<li>REP_BW_CommandoHelmet</li>
+			<li>REP_BW_LargeBackpack</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>REP_BW_LightArmor</li>
+		</apparelTags>
+		<apparelMoney>1200~1800</apparelMoney>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~8</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="REP_BW_LightInfantryBase">
+		<defName>REP_BW_LightInfantry_FMJ</defName>
+		<label>light infantry (FMJ)</label>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>5</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>100</min>
+						<max>250</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>1</min>
+						<max>1</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="REP_BW_LightInfantryBase">
+		<defName>REP_BW_LightInfantry_API</defName>
+		<label>light infantry (AP-I)</label>
+        <combatPower>110</combatPower>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>5</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>IncendiaryAP</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>100</min>
+						<max>250</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>1</min>
+						<max>1</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef ParentName="REP_BW_LightInfantryBase">
+		<defName>REP_BW_LightInfantry_APHE</defName>
+		<label>light infantry (AP-HE)</label>
+        <combatPower>110</combatPower>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>5</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>ExplosiveAP</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>100</min>
+						<max>250</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>1</min>
+						<max>1</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef ParentName="REP_BW_LightInfantryBase">
+		<defName>REP_BW_LightInfantry_Sabot</defName>
+		<label>light infantry (Sabot)</label>
+        <combatPower>110</combatPower>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>5</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>Sabot</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>100</min>
+						<max>250</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>1</min>
+						<max>1</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+
+</Defs>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<DamageDef>
+		<defName>REP_BW_Ferret_BombSelfDestruct</defName>
+		<label>bomb self-destruct</label>
+		<workerClass>rep.heframework.DamageWorker_SelfDestruct</workerClass>
+		<externalViolence>true</externalViolence>
+		<canInterruptJobs>false</canInterruptJobs>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>0</defaultDamage>
+		<harmsHealth>true</harmsHealth>
+		<explosionCellMote>Bullet_Shell_HighExplosive</explosionCellMote>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
+
+	<DamageDef>
+		<defName>REP_BW_Ferret_IncendiarySelfDestruct</defName>
+		<label>incendiary self-destruct</label>
+		<workerClass>rep.heframework.DamageWorker_SelfDestruct</workerClass>
+		<externalViolence>true</externalViolence>
+		<canInterruptJobs>false</canInterruptJobs>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>0</defaultDamage>
+		<harmsHealth>true</harmsHealth>
+		<explosionCellMote>Bullet_Shell_Incendiary</explosionCellMote>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
+
+	<DamageDef>
+		<defName>REP_BW_Polecat_BombSelfDestruct</defName>
+		<label>bomb self-destruct</label>
+		<workerClass>rep.heframework.DamageWorker_SelfDestruct</workerClass>
+		<externalViolence>true</externalViolence>
+		<canInterruptJobs>false</canInterruptJobs>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>0</defaultDamage>
+		<harmsHealth>true</harmsHealth>
+		<explosionCellMote>Bullet_Shell_HighExplosive</explosionCellMote>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
+</Defs>

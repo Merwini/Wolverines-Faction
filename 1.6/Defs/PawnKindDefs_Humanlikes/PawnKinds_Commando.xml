@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="REP_BW_HumanEliteCombatantBase" Abstract="True" Name="REP_BW_CommandoBase">
+		<apparelRequired>
+			<li>REP_BW_BattleDress</li>
+			<li>REP_BW_ArmorVest</li>
+			<li>REP_BW_CommandoHelmet</li>
+			<li>REP_BW_LargeBackpack</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="REP_BW_CommandoBase">
+		<defName>REP_BW_Commando_PDW</defName>
+		<label>commando</label>
+		<combatPower>140</combatPower>
+		<weaponTags>
+			<li>REP_BW_PDW</li>
+		</weaponTags>
+		<weaponMoney>800~1400</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>3</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>ArmorPiercing</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>600</min>
+						<max>1400</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>5</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="REP_BW_CommandoBase">
+		<defName>REP_BW_Commando_SG</defName>
+		<label>shotgun commando</label>
+		<combatPower>145</combatPower>
+		<weaponTags>
+			<li>REP_BW_SG</li>
+		</weaponTags>
+		<weaponMoney>800~1400</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>3</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>Slug</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>600</min>
+						<max>1400</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>CE_Sidearm</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>5</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+		
+	<PawnKindDef ParentName="REP_BW_CommandoBase">
+		<defName>REP_BW_Commando_Flashbang</defName>
+		<label>flashbang commando</label>
+		<combatPower>150</combatPower>
+		<weaponTags>
+			<li>CE_GrenadeFlashbang</li>
+		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>3</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>ArmorPiercing</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>600</min>
+						<max>1400</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>REP_BW_PDW</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>5</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="REP_BW_CommandoBase">
+		<defName>REP_BW_Commando_Satchel</defName>
+		<label>satchel commando</label>
+		<combatPower>160</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		<weaponTags>
+			<li>REP_BW_Satchel</li>
+		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>3</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>ArmorPiercing</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>600</min>
+						<max>1400</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>REP_BW_PDW</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>5</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="REP_BW_CommandoBase">
+		<defName>REP_BW_Commando_Marksman</defName>
+		<label>marksman commando</label>
+		<combatPower>160</combatPower>
+		<weaponTags>
+			<li>REP_BW_DMR</li>
+		</weaponTags>
+		<weaponMoney>1200~1400</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>3</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>ArmorPiercing</forcedAmmoCategory>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>800</min>
+						<max>1400</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>REP_BW_PDW</li>
+					</weaponTags>
+					<magazineCount>
+						<min>2</min>
+						<max>5</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+</Defs>
