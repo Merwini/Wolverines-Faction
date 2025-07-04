@@ -6,7 +6,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>REP_BW_M7rifle</defName>
 		<label>M7</label>
-		<description>A late-industrial military battle rifle using the high velocity .277 cartridge. Fitted with a holographic sight for close combat.</description>
+		<description>A general-purpose military battle rifle chambered in the .277 Fury cartridge. Fitted with a holographic sight for close to mid-range combat.</description>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<graphicData>
 			<texPath>Blackwave/Weapons/M7</texPath>

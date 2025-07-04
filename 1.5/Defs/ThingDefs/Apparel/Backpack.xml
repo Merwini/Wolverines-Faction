@@ -5,8 +5,8 @@
 
 	<ThingDef ParentName="ApparelCarryGearBase">
 		<defName>REP_BW_LargeBackpack</defName>
-		<label>army backpack (digital camo)</label>
-		<description>A large infantry backpack to fit all the needed kit.</description>
+		<label>infantry backpack (digital camo)</label>
+		<description>A large infantry backpack to fit all the necessary gear for extended missions.</description>
 		<graphicData>
 			<texPath>Blackwave/Apparel/Digi-Backpack/Digi-Backpack</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

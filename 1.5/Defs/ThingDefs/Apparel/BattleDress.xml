@@ -6,7 +6,7 @@
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>REP_BW_BattleDress</defName>
 		<label>battle dress (digital camo)</label>
-		<description>Standard combat uniform.</description>
+		<description>Standard Blackwave combat uniform.</description>
 		<graphicData>
 			<texPath>Blackwave/Apparel/Digi-Fatigues/Digi-Fatigues</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

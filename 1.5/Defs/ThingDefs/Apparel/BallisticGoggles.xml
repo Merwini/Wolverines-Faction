@@ -35,11 +35,11 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Blackwave/Apparel/BallisticGoggles/BallisticGoggles</wornGraphicPath>
 			<layers>
-				<!--TODO<li>StrappedHead</li>-->
-				<li>EyeCover</li>
+				<li>StrappedHead</li>
 			</layers>
 			<tags>
 				<li>IndustrialMilitaryBasic</li>
+				<li>REP_BW_Eyepro</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

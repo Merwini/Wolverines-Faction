@@ -34,8 +34,8 @@
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
 		<defName>REP_BW_SatchelCharge</defName>
 		<equipmentType>Primary</equipmentType>
-		<label>satchel charge</label>
-		<description>A demolition charge for breaching and sabotage.</description>
+		<label>breacher satchel charge</label>
+		<description>A remote-activated demolition charge for breaching and sabotage. Too heavy to throw properly, it is not meant for direct combat.</description>
 		<graphicData>
 			<texPath>Blackwave/Weapons/Satchel</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>

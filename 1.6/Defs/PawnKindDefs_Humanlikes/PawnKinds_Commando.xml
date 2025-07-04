@@ -8,6 +8,11 @@
 			<li>REP_BW_CommandoHelmet</li>
 			<li>REP_BW_LargeBackpack</li>
 		</apparelRequired>
+		<apparelTags>
+			<li>REP_BW_Eyepro</li>
+			<li>REP_BW_NV</li>
+		</apparelTags>
+		<apparelMoney>100~200</apparelMoney>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="REP_BW_CommandoBase">

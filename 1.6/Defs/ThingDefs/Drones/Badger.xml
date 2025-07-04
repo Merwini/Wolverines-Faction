@@ -2,6 +2,7 @@
 <Defs>
 	<!--Badger Drone Race-->
 	<ThingDef ParentName="REP_BW_DroneBase" Name="REP_BW_BadgerBase" Abstract="True">
+		<description>Featuring enhanced weaponry, enough armor to shrug off most small-arms fire, and a built-in defensive smokescreen, the Badger tank drone is highly effective at breaking through defensive lines. It is typically reserved for targets that have proven particularly resilient.</description>
 		<statBases>
 			<MarketValue>2700</MarketValue>
             <!-- Wanted to do 2.3, but then they never show up before casualties cause a retreat -->

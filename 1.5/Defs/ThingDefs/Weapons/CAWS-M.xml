@@ -6,7 +6,7 @@
   <ThingDef ParentName="BaseMakeableGun">		
 	<defName>REP_BW_CAWS-Mshotgun</defName>
 	<label>CAWS-M Tactical</label>
-	<description>A late-industrial bullpup automatic military shotgun, chambered for 12-gauge shells. Fitted with a holo sight and flashlight. Specialized belted ammo offers significantly higher performance.</description>
+	<description>A bullpup automatic military shotgun, accepting standard 12-gauge shells but designed for proprietary higher-power shells. Utilizes a box magazine, and is fitted with a holographic sight and flashlight for close-ranged combat.</description>
     <soundInteract>Interact_Shotgun</soundInteract>
     <graphicData>
       <texPath>Blackwave/Weapons/CAWS-M</texPath>

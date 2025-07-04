@@ -2,6 +2,7 @@
 <Defs>
 	<!--Gun Polecat Race-->
 	<ThingDef ParentName="REP_BW_DroneBase" Name="REP_BW_PolecatBase" Abstract="True">
+		<description>The Polecat walking drone is the backbone of the Blackwave's drone fleet. While lightly armored, the Polecat's diverse weapon loadouts and humanlike mobility makes it the preferred support for infantry operations.</description>
 		<statBases>
 			<MarketValue>900</MarketValue>
 			<MoveSpeed>4.6</MoveSpeed>

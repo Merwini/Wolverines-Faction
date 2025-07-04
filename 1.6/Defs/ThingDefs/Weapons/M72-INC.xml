@@ -6,7 +6,7 @@
     <ThingDef ParentName="BaseEquipment">
         <defName>REP_BW_M72-INC</defName>
         <label>M72-74 incendiary munition</label>
-        <description>M72 variant refitted to shoot M74 incendiary rockets.</description>
+		<description>A modernized M72 variant refitted to launch M74 incendiary rockets.</description>
         <graphicData>
             <texPath>Blackwave/Weapons/M72-INC</texPath>
             <graphicClass>Graphic_Single</graphicClass>

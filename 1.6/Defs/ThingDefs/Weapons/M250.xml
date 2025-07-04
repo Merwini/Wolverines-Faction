@@ -6,7 +6,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>REP_BW_M250lmg</defName>
 		<label>M250</label>
-		<description>A late-industrial military light machine gun using the high velocity .277 cartridge. Fitted with a holographic sight and high-capacity ammo feed pouch.</description>
+		<description>A pouch-fed light machine gun chambered in the .277 Fury cartridge. Fitted with a holographic sight for close to mid-ranged combat.</description>
 		<graphicData>
 			<texPath>Blackwave/Weapons/M250</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

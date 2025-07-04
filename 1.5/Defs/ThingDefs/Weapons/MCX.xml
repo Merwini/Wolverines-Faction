@@ -6,7 +6,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>REP_BW_MCX300BLcarbine</defName>
 		<label>MCX carbine</label>
-		<description>A late-industrial military carbine chambered for the subsonic .300 Blackout cartridge. The slow, heavy rounds are effective at close ranges, but quickly lose effectiveness at range.</description>
+		<description>A lightweight carbine chambered in the subsonic .300 Blackout cartridge. The slow, heavy rounds are effective at close ranges, but quickly lose effectiveness at range.</description>
 		<graphicData>
 			<texPath>Blackwave/Weapons/MCX</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -6,7 +6,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>REP_BW_M7dmr</defName>
 		<label>M7 DMR</label>
-		<description>A late-industrial military designated marksman rifle using the high velocity .277 cartridge. Fitted with midrange scope and deployable bipod for a unit's marksmen.</description>
+		<description>A designated marksman rifle retrofitted from a standard M7 rifle, still chambered in the .277 Fury cartridge. Fitted with midrange scope and deployable bipod for mid to long-ranged combat.</description>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<graphicData>
 			<texPath>Blackwave/Weapons/M7-DMR</texPath>

@@ -39,8 +39,7 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Blackwave/Apparel/MountedNV/MountedNV</wornGraphicPath>
 			<layers>
-				<!--TODO<li>StrappedHead</li>-->
-				<li>EyeCover</li>
+				<li>StrappedHead</li>
 			</layers>
 			<tags>
 				<li>REP_BW_NV</li>

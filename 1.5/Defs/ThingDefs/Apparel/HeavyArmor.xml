@@ -5,8 +5,8 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>REP_BW_HeavyArmor</defName>
-		<label>heavy armor (digital camo)</label>
-		<description>Ceramic armor vest with all the available coverage extension addon parts, covering the user from neck to toe. It is rather heavy and impractical for prolonged use, intended mainly for turret gunners and entrance teams.</description>
+		<label>heavy armor suit (digital camo)</label>
+		<description>A full-body armor suit, with advanced ceramic plates in critical areas and thick soft armor everywhere else. It is rather heavy and impractical for prolonged use, intended mainly for turret gunners and entrance teams.</description>
 		<graphicData>
 			<texPath>Blackwave/Apparel/Digi-HeavyArmor/Digi-HeavyArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
