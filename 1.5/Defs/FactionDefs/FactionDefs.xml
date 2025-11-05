@@ -140,7 +140,7 @@
                     <REP_BW_LightInfantry_APHE>20</REP_BW_LightInfantry_APHE>
                     <REP_BW_DemoInfantry_APHE>5</REP_BW_DemoInfantry_APHE>
                     <REP_BW_Polecat_LMGAPHEKind>10</REP_BW_Polecat_LMGAPHEKind>
-                    <REP_BW_Polecat_AGLKind>5</REP_BW_Polecat_AGLKind>
+                    <!--<REP_BW_Polecat_AGLKind>5</REP_BW_Polecat_AGLKind>-->
                     <!--<REP_BW_Badger_MMGKind>5</REP_BW_Badger_MMGKind>-->
                 </options>
             </li>

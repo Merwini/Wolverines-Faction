@@ -108,7 +108,7 @@
 				<recoilAmount>4.1</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_30x29mmGrenade_HE</defaultProjectile>
+				<defaultProjectile>Bullet_20x42mmGrenade_HE</defaultProjectile>
 				<warmupTime>1.3</warmupTime>
 				<range>15</range>
 				<burstShotCount>1</burstShotCount>
@@ -124,7 +124,7 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>16</magazineSize>
 				<reloadTime>19.8</reloadTime>
-				<ammoSet>AmmoSet_30x29mmGrenade</ammoSet>
+				<ammoSet>AmmoSet_20x42mmGrenade</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiAimMode>AimedShot</aiAimMode>

@@ -53,6 +53,7 @@
 		<combatPower>145</combatPower>
 		<weaponTags>
 			<li>REP_BW_SG</li>
+			<li>REP_BW_PDW</li>
 		</weaponTags>
 		<weaponMoney>800~1400</weaponMoney>
 		<modExtensions>
@@ -61,7 +62,14 @@
 					<min>2</min>
 					<max>3</max>
 				</primaryMagazineCount>
-				<forcedAmmoCategory>Slug</forcedAmmoCategory>
+				<forcedAmmoCategory>ArmorPiercing</forcedAmmoCategory>
+				<weightedAmmoCategories>
+					<APBuck>0.75</APBuck>
+					<ElectroSlug>0.25</ElectroSlug>
+					<IncendiaryAP>0.75</IncendiaryAP>
+					<ExplosiveAP>0.25</ExplosiveAP>
+					<GrenadeHE>1</GrenadeHE>
+				</weightedAmmoCategories>
 				<forcedSidearm>
 					<sidearmMoney>
 						<min>600</min>

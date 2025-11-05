@@ -72,7 +72,7 @@
 	<ThingDef ParentName="REP_BW_DroneWeaponBase">
 		<defName>REP_BW_PC_AMR</defName>
 		<label>mounted AMR</label>
-		<description>A drone-mounted anti-materiel rifle chambered for .50 BMG cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
+		<description>A drone-mounted anti-materiel rifle chambered for .338 Lapua Magnum cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
 		<graphicData>
 			<texPath>Blackwave/Weapons/TurretLight_AMRgun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -97,7 +97,7 @@
 				<recoilAmount>2.13</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+				<defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
 				<warmupTime>2.8</warmupTime>
 				<range>135</range>
 				<soundCast>Shot_SniperRifle</soundCast>
@@ -109,7 +109,7 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>60</magazineSize>
 				<reloadTime>14.9</reloadTime>
-				<ammoSet>AmmoSet_50BMG</ammoSet>
+				<ammoSet>AmmoSet_338Lapua</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>FALSE</aiUseBurstMode>
@@ -228,7 +228,7 @@
 				<recoilAmount>2.38</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_30x29mmGrenade_HE</defaultProjectile>
+				<defaultProjectile>Bullet_40x53mmGrenade_HE</defaultProjectile>
 				<warmupTime>1.435</warmupTime>
 				<minRange>3</minRange>
 				<range>62</range>
@@ -248,7 +248,7 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>30</magazineSize>
 				<reloadTime>15</reloadTime>
-				<ammoSet>AmmoSet_30x29mmGrenade</ammoSet>
+				<ammoSet>AmmoSet_40x53mmGrenade</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>FALSE</aiUseBurstMode>
