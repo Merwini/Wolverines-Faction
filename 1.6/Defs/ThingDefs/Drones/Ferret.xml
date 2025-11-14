@@ -9,7 +9,7 @@
 			<ArmorRating_Sharp>1</ArmorRating_Sharp>
 			<ArmorRating_Blunt>3</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
-			<CarryWeight>100</CarryWeight>
+			<CarryWeight>50</CarryWeight>
 			<CarryBulk>50</CarryBulk>
 		</statBases>
 		<tools>
@@ -28,7 +28,7 @@
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
 			<body>REP_BW_Ferret_Body</body>
-			<baseBodySize>0.2</baseBodySize>
+			<baseBodySize>0.4</baseBodySize>
 			<baseHealthScale>0.4</baseHealthScale>
 			<lifeStageAges>
 				<li>
@@ -99,7 +99,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Blackwave/Drones/UGFerret/UGFerret</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>1.1</drawSize>
 				</bodyGraphicData>
 			</li>
 		</lifeStages>

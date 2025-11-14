@@ -88,8 +88,8 @@
 	
 	<RecipeDef ParentName="GrenadeRecipeBase">
 		<defName>MakeSatchelCharge</defName>
-		<label>make satchel charge x10</label>
-		<description>Craft 10 satchel charge.</description>
+		<label>make satchel charge x5</label>
+		<description>Craft 5 satchel charge.</description>
 		<jobString>Making satchel charge.</jobString>
 		<researchPrerequisite>Machining</researchPrerequisite>
 		<workAmount>9000</workAmount>
@@ -123,7 +123,6 @@
 			<thingDefs>
 				<li>Steel</li>
 				<li>FSX</li>
-				<li>Prometheum</li>
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>

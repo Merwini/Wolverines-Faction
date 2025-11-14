@@ -130,7 +130,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Blackwave/Drones/UGPolecat/UGPolecat</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.65</drawSize>
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
@@ -274,7 +274,7 @@
 		<label>AGL polecat</label>
 	</ThingDef>
 
-	<PawnKindDef ParentName="REP_BW_PolecatBaseKind">
+	<!--PawnKindDef ParentName="REP_BW_PolecatBaseKind">
 		<defName>REP_BW_Polecat_AGLKind</defName>
 		<label>AGL polecat</label>
 		<race>REP_BW_Polecat_AGL</race>
@@ -299,7 +299,7 @@
 				<forcedAmmoCategory>GrenadeHE</forcedAmmoCategory>
 			</li>
 		</modExtensions>
-	</PawnKindDef>
+	</PawnKindDef-->
 
 
 	<!--<ThingDef ParentName="REP_BW_PolecatBase">
