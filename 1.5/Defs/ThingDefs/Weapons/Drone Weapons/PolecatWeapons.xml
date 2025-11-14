@@ -187,7 +187,6 @@
 		</comps>
 		<weaponTags Inherit="False">
 			<li>REP_BW_PC_Flamer</li>
-			<li>GunHeavy</li>
 			<li>CE_AI_AOE</li>
 		</weaponTags>
 		<tools>

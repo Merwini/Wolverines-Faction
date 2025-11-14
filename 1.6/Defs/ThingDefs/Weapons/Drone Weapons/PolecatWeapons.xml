@@ -187,7 +187,6 @@
 		</comps>
 		<weaponTags Inherit="False">
 			<li>REP_BW_PC_Flamer</li>
-			<li>GunHeavy</li>
 			<li>CE_AI_AOE</li>
 		</weaponTags>
 		<tools>
@@ -204,7 +203,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="REP_BW_DroneWeaponBase">
+	<!-- ThingDef ParentName="REP_BW_DroneWeaponBase">
 		<defName>REP_BW_PC_AGL</defName>
 		<label>mounted automatic grenade launcher</label>
 		<description>A drone-mounted 30mm automatic grenade launcher. Belt fed from a box of miniature grenades.</description>
@@ -273,5 +272,5 @@
 				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
 			</li>
 		</tools>
-	</ThingDef>
+	</ThingDef-->
 </Defs>

@@ -69,6 +69,75 @@
 	</ThingDef>
 
 	<ThingDef ParentName="REP_BW_DroneWeaponBase">
+		<defName>REP_BW_B_MGL</defName>
+		<label>40mm MGL</label>
+		<description>A drone-mounted grenade machinegun chambered in 40x53mm. Attached smoke grenade dischargers create an instant smoke screen when needed.</description>
+		<graphicData>
+			<texPath>Blackwave/Weapons/UGBadgerTurretMGL</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>32.94</Mass>
+			<Bulk>14.36</Bulk>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.15</ShotSpread>
+			<SwayFactor>0.92</SwayFactor>
+			<RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>2</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_40x53mmGrenade_HEDP</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>68</range>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>AGS</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>200</magazineSize>
+				<reloadTime>17.8</reloadTime>
+				<ammoSet>AmmoSet_40x53mmGrenade</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+				<aiAimMode>SuppressFire</aiAimMode>
+				<aiUseBurstMode>False</aiUseBurstMode>
+			</li>
+		</comps>
+		<weaponTags Inherit="False">
+			<li>REP_BW_Badger_MGL</li>
+			<li>CE_AI_Suppressive</li>
+			<li>NoSwitch</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.44</cooldownTime>
+				<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="REP_BW_DroneWeaponBase">
 		<defName>REP_BW_B_Minigun</defName>
 		<label>.277 Fury minigun</label>
 		<description>A drone-mounted minigun chambered in .277 Fury. The sheer volume of fire is sufficient to shred most targets. Integrated smoke grenade dischargers create an instant smoke screen when needed.</description>
@@ -94,7 +163,7 @@
 				<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
 				<warmupTime>2.3</warmupTime>
 				<range>68</range>
-				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
 				<burstShotCount>50</burstShotCount>
 				<soundCast>Shot_Minigun</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
@@ -102,6 +171,20 @@
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+			<li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
+				<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
+				<recoilAmount>0.52</recoilAmount>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>110</range>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<burstShotCount>50</burstShotCount>
+				<soundCast>Shot_Minigun</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
 		</verbs>

@@ -14,7 +14,7 @@
 	<BodyPartDef ParentName="REP_BW_DroneBodyPartBase">
 		<defName>REP_BW_DroneBody</defName>
 		<label>chassis</label>
-		<hitPoints>40</hitPoints>
+		<hitPoints>50</hitPoints>
 		<executionPartPriority>500</executionPartPriority>
 	</BodyPartDef>
 
