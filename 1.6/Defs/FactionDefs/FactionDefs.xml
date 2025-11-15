@@ -96,14 +96,18 @@
             <li>
                 <!-- Basic Blend -->
                 <kindDef>Combat</kindDef>
-                <commonality>100</commonality>
+                <commonality>1000</commonality>
                 <options>
                     <REP_BW_HeavyInfantry_FMJ>10</REP_BW_HeavyInfantry_FMJ>
                     <REP_BW_DemoInfantry_FMJ>5</REP_BW_DemoInfantry_FMJ>
                     <REP_BW_LightInfantry_FMJ>20</REP_BW_LightInfantry_FMJ>
                     <REP_BW_Polecat_LMGKind>10</REP_BW_Polecat_LMGKind>
                     <REP_BW_Ferret_SMGKind>10</REP_BW_Ferret_SMGKind>
-                    <REP_BW_Badger_MinigunKind>5</REP_BW_Badger_MinigunKind>
+					<REP_BW_Ferret_GLKind>5</REP_BW_Ferret_GLKind>
+					<REP_BW_Ferret_ExplosiveKind>5</REP_BW_Ferret_ExplosiveKind>
+                    <REP_BW_Badger_MinigunKind>2</REP_BW_Badger_MinigunKind>
+                    <REP_BW_Badger_MGLKind>3</REP_BW_Badger_MGLKind>
+                    <REP_BW_Badger_HMGKind>4</REP_BW_Badger_HMGKind>
                 </options>
             </li>
             <li>

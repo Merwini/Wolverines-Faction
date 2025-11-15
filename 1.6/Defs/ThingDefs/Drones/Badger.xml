@@ -8,7 +8,7 @@
             <!-- Wanted to do 2.3, but then they never show up before casualties cause a retreat -->
 			<MoveSpeed>4.2</MoveSpeed>
 			<ArmorRating_Sharp>16</ArmorRating_Sharp>
-			<ArmorRating_Blunt>37</ArmorRating_Blunt>
+			<ArmorRating_Blunt>50</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<CarryWeight>40</CarryWeight>
 			<CarryBulk>15</CarryBulk>
@@ -133,12 +133,12 @@
 		<defName>REP_BW_Badger_HMG</defName>
 		<label>HMG badger</label>
 		<comps>
-			<li Class="rep.factions.blackwave.CompProperties_Smokescreen">
+			<!--li Class="rep.factions.blackwave.CompProperties_Smokescreen">
 				<smokeProjectile>Bullet_SmokeLauncher</smokeProjectile>
 				<range>7</range>
 				<projectileCount>5</projectileCount>
 				<projectileSpreadDegrees>30</projectileSpreadDegrees>
-			</li>
+			</li-->
 		</comps>
 	</ThingDef>
 
@@ -155,7 +155,45 @@
 					<min>0</min>
 					<max>0</max>
 				</primaryMagazineCount>
-				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+				<weightedAmmoCategories>
+					<FullMetalJacket>0.4</FullMetalJacket>
+					<ArmorPiercing>0.3</ArmorPiercing>
+				</weightedAmmoCategories>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<ThingDef ParentName="REP_BW_BadgerBase">
+		<defName>REP_BW_Badger_MGL</defName>
+		<label>MGL badger</label>
+		<comps>
+			<!--li Class="rep.factions.blackwave.CompProperties_Smokescreen">
+				<smokeProjectile>Bullet_SmokeLauncher</smokeProjectile>
+				<range>7</range>
+				<projectileCount>5</projectileCount>
+				<projectileSpreadDegrees>30</projectileSpreadDegrees>
+			</li-->
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="REP_BW_BadgerBaseKind">
+		<defName>REP_BW_Badger_MGLKind</defName>
+		<label>MGL badger</label>
+		<race>REP_BW_Badger_MGL</race>
+		<weaponTags>
+			<li>REP_BW_Badger_MGL</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>0</min>
+					<max>0</max>
+				</primaryMagazineCount>
+				<weightedAmmoCategories>
+					<GrenadeHEDP>0.4</GrenadeHEDP>
+					<GrenadeHE>0.3</GrenadeHE>
+					<GrenadeEMP>0.1</GrenadeEMP>
+				</weightedAmmoCategories>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -164,12 +202,12 @@
 		<defName>REP_BW_Badger_Minigun</defName>
 		<label>Minigun badger</label>
 		<comps>
-			<li Class="rep.factions.blackwave.CompProperties_Smokescreen">
+			<!--li Class="rep.factions.blackwave.CompProperties_Smokescreen">
 				<smokeProjectile>Bullet_SmokeLauncher</smokeProjectile>
 				<range>7</range>
 				<projectileCount>5</projectileCount>
 				<projectileSpreadDegrees>30</projectileSpreadDegrees>
-			</li>
+			</li-->
 		</comps>
 	</ThingDef>
 
