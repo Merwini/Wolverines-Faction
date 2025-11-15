@@ -64,7 +64,7 @@
       </li>
     </comps>
     <recipeMaker>
-      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">
