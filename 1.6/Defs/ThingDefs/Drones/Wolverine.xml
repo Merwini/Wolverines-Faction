@@ -1,13 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="REP_BW_DroneBase" Name="REP_BW_WolverineBase" Abstract="True">
+	<!--ThingDef ParentName="REP_BW_DroneBase" Name="REP_BW_WolverineBase" Abstract="True">
 		<description>The Wolverine is an armored vehicle platform designed with modularity in mind. To free up space for mission payloads, they are fitted with remote drone control systems instead of a traditional cockpit.</description>
 		<statBases>
 			<MarketValue>2700</MarketValue>
-			<MoveSpeed>2.3</MoveSpeed>
+			<MoveSpeed>4.2</MoveSpeed>
 			<ArmorRating_Sharp>16</ArmorRating_Sharp>
 			<ArmorRating_Blunt>37</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<AimingAccuracy>1.25</AimingAccuracy>
+			<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+			<MeleeDodgeChance>0.15</MeleeDodgeChance>
+			<MeleeCritChance>0.12</MeleeCritChance>
+			<MeleeParryChance>0.19</MeleeParryChance>
 			<CarryWeight>40</CarryWeight>
 			<CarryBulk>15</CarryBulk>
 		</statBases>
@@ -19,6 +24,7 @@
 				</capacities>
 				<power>26</power>
 				<cooldownTime>3.2</cooldownTime>
+				<armorPenetrationBlunt>15</armorPenetrationBlunt>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
@@ -55,6 +61,7 @@
 
 	<PawnKindDef  ParentName="BaseMechanoidKind" Name="REP_BW_WolverineBaseKind" Abstract="True">
 		<defaultFactionType>REP_BW_FactionHostile</defaultFactionType>
+		<allowInMechClusters>false</allowInMechClusters>
 		<weaponMoney>9999~9999</weaponMoney>
 		<forceNormalGearQuality>True</forceNormalGearQuality>
 		<lifeStages>
@@ -141,5 +148,5 @@
 				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
 			</li>
 		</modExtensions>
-	</PawnKindDef>
+	</PawnKindDef-->
 </Defs>

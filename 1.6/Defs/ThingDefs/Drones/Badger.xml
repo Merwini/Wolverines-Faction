@@ -10,6 +10,11 @@
 			<ArmorRating_Sharp>16</ArmorRating_Sharp>
 			<ArmorRating_Blunt>37</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<AimingAccuracy>1.25</AimingAccuracy>
+			<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+			<MeleeDodgeChance>0.15</MeleeDodgeChance>
+			<MeleeCritChance>0.12</MeleeCritChance>
+			<MeleeParryChance>0.19</MeleeParryChance>
 			<CarryWeight>40</CarryWeight>
 			<CarryBulk>15</CarryBulk>
 		</statBases>
@@ -21,6 +26,7 @@
 				</capacities>
 				<power>17</power>
 				<cooldownTime>2.6</cooldownTime>
+				<armorPenetrationBlunt>15</armorPenetrationBlunt>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
@@ -116,6 +122,7 @@
 
 	<PawnKindDef  ParentName="BaseMechanoidKind" Name="REP_BW_BadgerBaseKind" Abstract="True">
 		<defaultFactionType>REP_BW_FactionHostile</defaultFactionType>
+		<allowInMechClusters>false</allowInMechClusters>
 		<weaponMoney>9999~9999</weaponMoney>
 		<forceNormalGearQuality>True</forceNormalGearQuality>
 		<lifeStages>

@@ -9,9 +9,9 @@
 			<def>REP_BW_DroneBody</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
-            <groups>
-                <li>CoveredByNaturalArmor</li>
-            </groups>
+			<groups>
+				<li>CoveredByNaturalArmor</li>
+			</groups>
 			<parts>
 				<!--Head Section-->
 				<li>
@@ -36,14 +36,23 @@
 				<li>
 					<def>REP_BW_DroneFace</def>
 					<coverage>0.05</coverage>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>REP_BW_DroneEye</def>
 							<coverage>0.25</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 						<li>
 							<def>REP_BW_DroneEar</def>
 							<coverage>0.25</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 					</parts>
 				</li>
@@ -64,10 +73,16 @@
 					<customLabel>left front wheel</customLabel>
 					<coverage>0.0825</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>REP_BW_Ferret_Foot</def>
 							<coverage>0.5</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 							<customLabel>left front tire</customLabel>
 						</li>
 					</parts>
@@ -77,11 +92,17 @@
 					<customLabel>right front wheel</customLabel>
 					<coverage>0.0825</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>REP_BW_Ferret_Foot</def>
 							<coverage>0.5</coverage>
 							<customLabel>right front tire</customLabel>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 					</parts>
 				</li>
@@ -90,11 +111,17 @@
 					<customLabel>left rear wheel</customLabel>
 					<coverage>0.0825</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>REP_BW_Ferret_Foot</def>
 							<coverage>0.5</coverage>
 							<customLabel>left rear tire</customLabel>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 					</parts>
 				</li>
@@ -103,11 +130,17 @@
 					<customLabel>right rear wheel</customLabel>
 					<coverage>0.0825</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>REP_BW_Ferret_Foot</def>
 							<coverage>0.5</coverage>
 							<customLabel>right rear tire</customLabel>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 					</parts>
 				</li>
@@ -117,6 +150,7 @@
 					<coverage>0.1</coverage>
 					<groups>
 						<li>HeadAttackTool</li>
+						<li>CoveredByNaturalArmor</li>
 					</groups>
 				</li>
 			</parts>
@@ -131,9 +165,10 @@
 			<def>REP_BW_DroneBody</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
-            <groups>
-                <li>CoveredByNaturalArmor</li>
-            </groups>
+			<groups>
+				<li>CoveredByNaturalArmor</li>
+				<li>HeadAttackTool</li>
+			</groups>
 			<parts>
 				<!--Head Section-->
 				<li>
@@ -158,22 +193,37 @@
 				<li>
 					<def>REP_BW_DroneFace</def>
 					<coverage>0.05</coverage>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>REP_BW_DroneEye</def>
 							<coverage>0.10</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 						<li>
 							<def>REP_BW_DroneEye</def>
 							<coverage>0.10</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 						<li>
 							<def>REP_BW_DroneEye</def>
 							<coverage>0.10</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 						<li>
 							<def>REP_BW_DroneEar</def>
 							<coverage>0.10</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 					</parts>
 				</li>
@@ -196,6 +246,7 @@
 					<height>Bottom</height>
 					<groups>
 						<!--might not need this now that I changed tools to the clamps-->
+						<li>CoveredByNaturalArmor</li>
 						<li>FrontLeftLeg</li>
 					</groups>
 				</li>
@@ -205,6 +256,7 @@
 					<coverage>0.11</coverage>
 					<height>Bottom</height>
 					<groups>
+						<li>CoveredByNaturalArmor</li>
 						<li>FrontRightLeg</li>
 					</groups>
 				</li>
@@ -213,12 +265,18 @@
 					<customLabel>left rear leg</customLabel>
 					<coverage>0.11</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 				</li>
 				<li>
 					<def>REP_BW_PC_Leg</def>
 					<customLabel>right rear leg</customLabel>
 					<coverage>0.11</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 				</li>
 				<!--Arms Section-->
 				<li>
@@ -226,6 +284,7 @@
 					<customLabel>left manipulator arm</customLabel>
 					<coverage>0.08</coverage>
 					<groups>
+						<li>CoveredByNaturalArmor</li>
 						<li>Arms</li>
 					</groups>
 					<parts>
@@ -234,6 +293,7 @@
 							<customLabel>left manipulator clamp</customLabel>
 							<coverage>0.25</coverage>
 							<groups>
+								<li>CoveredByNaturalArmor</li>
 								<li>Hands</li>
 								<li>LeftHand</li>
 							</groups>
@@ -245,6 +305,7 @@
 					<customLabel>right manipulator arm</customLabel>
 					<coverage>0.08</coverage>
 					<groups>
+						<li>CoveredByNaturalArmor</li>
 						<li>Arms</li>
 					</groups>
 					<parts>
@@ -253,6 +314,7 @@
 							<customLabel>right manipulator clamp</customLabel>
 							<coverage>0.25</coverage>
 							<groups>
+								<li>CoveredByNaturalArmor</li>
 								<li>Hands</li>
 								<li>RightHand</li>
 							</groups>
@@ -271,9 +333,9 @@
 			<def>REP_BW_DroneBody</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
-            <groups>
-                <li>CoveredByNaturalArmor</li>
-            </groups>
+			<groups>
+				<li>CoveredByNaturalArmor</li>
+			</groups>
 			<parts>
 				<!--Head Section-->
 				<li>
@@ -298,22 +360,37 @@
 				<li>
 					<def>REP_BW_DroneFace</def>
 					<coverage>0.05</coverage>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>REP_BW_DroneEye</def>
 							<coverage>0.10</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 						<li>
 							<def>REP_BW_DroneEye</def>
 							<coverage>0.10</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 						<li>
 							<def>REP_BW_DroneEye</def>
 							<coverage>0.10</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 						<li>
 							<def>REP_BW_DroneEar</def>
 							<coverage>0.10</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 					</parts>
 				</li>
@@ -336,6 +413,7 @@
 					<height>Bottom</height>
 					<groups>
 						<!--might not need this now that I changed tools to the clamps-->
+						<li>CoveredByNaturalArmor</li>
 						<li>FrontLeftLeg</li>
 					</groups>
 				</li>
@@ -345,6 +423,7 @@
 					<coverage>0.11</coverage>
 					<height>Bottom</height>
 					<groups>
+						<li>CoveredByNaturalArmor</li>
 						<li>FrontRightLeg</li>
 					</groups>
 				</li>
@@ -353,25 +432,32 @@
 					<customLabel>left rear leg</customLabel>
 					<coverage>0.11</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 				</li>
 				<li>
 					<def>REP_BW_PC_LegArm</def>
 					<customLabel>right rear leg</customLabel>
 					<coverage>0.11</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 				</li>
 				<!--Weapon Section-->
 				<li>
 					<def>REP_BW_Ferret_Tool</def>
 					<coverage>0.1</coverage>
 					<groups>
+						<li>CoveredByNaturalArmor</li>
 						<li>HeadAttackTool</li>
 					</groups>
 				</li>
 			</parts>
 		</corePart>
 	</BodyDef>
-	
+
 	<!--Badger-->
 	<BodyDef>
 		<defName>REP_BW_Badger_Body</defName>
@@ -380,9 +466,9 @@
 			<def>REP_BW_DroneBody</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
-            <groups>
-                <li>CoveredByNaturalArmor</li>
-            </groups>
+			<groups>
+				<li>CoveredByNaturalArmor</li>
+			</groups>
 			<parts>
 				<!--Head Section-->
 				<li>
@@ -407,22 +493,37 @@
 				<li>
 					<def>REP_BW_DroneFace</def>
 					<coverage>0.05</coverage>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>REP_BW_DroneEye</def>
 							<coverage>0.10</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 						<li>
 							<def>REP_BW_DroneEye</def>
 							<coverage>0.10</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 						<li>
 							<def>REP_BW_DroneEye</def>
 							<coverage>0.10</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 						<li>
 							<def>REP_BW_DroneEar</def>
 							<coverage>0.10</coverage>
+							<groups>
+								<li>CoveredByNaturalArmor</li>
+							</groups>
 						</li>
 					</parts>
 				</li>
@@ -443,6 +544,9 @@
 					<customLabel>left tank tread</customLabel>
 					<coverage>0.16</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>REP_BW_Badger_Foot</def>
@@ -493,6 +597,9 @@
 					<customLabel>right tank tread</customLabel>
 					<coverage>0.16</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 						<li>
 							<def>REP_BW_Badger_Foot</def>
@@ -543,6 +650,7 @@
 					<def>REP_BW_Badger_Tool</def>
 					<coverage>0.1</coverage>
 					<groups>
+						<li>CoveredByNaturalArmor</li>
 						<li>HeadAttackTool</li>
 					</groups>
 				</li>
@@ -558,9 +666,9 @@
 			<def>REP_BW_DroneBody</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
-            <groups>
-                <li>CoveredByNaturalArmor</li>
-            </groups>
+			<groups>
+				<li>CoveredByNaturalArmor</li>
+			</groups>
 			<parts>
 				<!--Head Section-->
 				<li>

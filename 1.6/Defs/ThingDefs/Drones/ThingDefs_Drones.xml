@@ -15,7 +15,7 @@
 			<NightVisionEfficiency>0.80</NightVisionEfficiency>
 		</statBases>
 		<race>
-			<fleshType>REP_BW_Drone</fleshType>
+			<fleshType>Mechanoid</fleshType>
 			<trainability>None</trainability>
 		</race>
         <modExtensions Inherit="False"/>

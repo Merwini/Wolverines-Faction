@@ -8,12 +8,27 @@
 			<MoveSpeed>4.6</MoveSpeed>
 			<ArmorRating_Sharp>3</ArmorRating_Sharp>
 			<ArmorRating_Blunt>5</ArmorRating_Blunt>
+			<AimingAccuracy>1.35</AimingAccuracy>
+			<ShootingAccuracyPawn>1.15</ShootingAccuracyPawn>
+			<MeleeDodgeChance>0.17</MeleeDodgeChance>
+			<MeleeCritChance>0.08</MeleeCritChance>
+			<MeleeParryChance>0.07</MeleeParryChance>
 			<ArmorRating_Heat>0.1</ArmorRating_Heat>
 			<!--These are so high because the body size multiplier is so small-->
 			<CarryWeight>30</CarryWeight>
 			<CarryBulk>30</CarryBulk>
 		</statBases>
 		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>ram</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.5</cooldownTime>
+				<armorPenetrationBlunt>2</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
 			<li Class="CombatExtended.ToolCE">
 				<label>left clamp</label>
 				<capacities>
@@ -22,6 +37,7 @@
 				</capacities>
 				<power>10</power>
 				<cooldownTime>2</cooldownTime>
+				<armorPenetrationBlunt>5</armorPenetrationBlunt>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 			</li>
 			<li Class="CombatExtended.ToolCE">
@@ -32,6 +48,7 @@
 				</capacities>
 				<power>10</power>
 				<cooldownTime>2</cooldownTime>
+				<armorPenetrationBlunt>5</armorPenetrationBlunt>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 			</li>
 		</tools>
@@ -125,12 +142,13 @@
 
 	<PawnKindDef  ParentName="BaseMechanoidKind" Name="REP_BW_PolecatBaseKind" Abstract="True">
 		<defaultFactionType>REP_BW_FactionHostile</defaultFactionType>
+		<allowInMechClusters>false</allowInMechClusters>
 		<forceNormalGearQuality>True</forceNormalGearQuality>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>Blackwave/Drones/UGPolecat/UGPolecat</texPath>
-					<drawSize>1.65</drawSize>
+					<drawSize>2</drawSize>
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
@@ -274,7 +292,7 @@
 		<label>AGL polecat</label>
 	</ThingDef>
 
-	<!--PawnKindDef ParentName="REP_BW_PolecatBaseKind">
+	<PawnKindDef ParentName="REP_BW_PolecatBaseKind">
 		<defName>REP_BW_Polecat_AGLKind</defName>
 		<label>AGL polecat</label>
 		<race>REP_BW_Polecat_AGL</race>
@@ -299,7 +317,7 @@
 				<forcedAmmoCategory>GrenadeHE</forcedAmmoCategory>
 			</li>
 		</modExtensions>
-	</PawnKindDef-->
+	</PawnKindDef>
 
 
 	<!--<ThingDef ParentName="REP_BW_PolecatBase">

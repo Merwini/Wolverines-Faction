@@ -9,7 +9,12 @@
 			<ArmorRating_Sharp>1</ArmorRating_Sharp>
 			<ArmorRating_Blunt>3</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
-			<CarryWeight>50</CarryWeight>
+			<AimingAccuracy>0.8</AimingAccuracy>
+			<ShootingAccuracyPawn>0.75</ShootingAccuracyPawn>
+			<MeleeDodgeChance>0.25</MeleeDodgeChance>
+			<MeleeCritChance>0.06</MeleeCritChance>
+			<MeleeParryChance>0</MeleeParryChance>
+			<CarryWeight>100</CarryWeight>
 			<CarryBulk>50</CarryBulk>
 		</statBases>
 		<tools>
@@ -28,7 +33,7 @@
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
 			<body>REP_BW_Ferret_Body</body>
-			<baseBodySize>0.4</baseBodySize>
+			<baseBodySize>0.2</baseBodySize>
 			<baseHealthScale>0.4</baseHealthScale>
 			<lifeStageAges>
 				<li>
@@ -95,11 +100,12 @@
 
 	<PawnKindDef  ParentName="BaseMechanoidKind" Name="REP_BW_Ferret_BaseKind" Abstract="True">
 		<defaultFactionType>REP_BW_FactionHostile</defaultFactionType>
+		<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>Blackwave/Drones/UGFerret/UGFerret</texPath>
-					<drawSize>1.1</drawSize>
+					<drawSize>1</drawSize>
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
