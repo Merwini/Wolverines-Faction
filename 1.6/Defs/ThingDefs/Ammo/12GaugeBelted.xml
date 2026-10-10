@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingCategoryDef>
-		<defName>Ammo12Gauge</defName>
-		<label>12 gauge</label>
-		<parent>AmmoShotguns</parent>
-		<iconPath>UI/Icons/ThingCategories/CaliberShotgun</iconPath>
-	</ThingCategoryDef>
-
 	<!-- ==================== AmmoSet ========================== -->
 
 	<CombatExtended.AmmoSetDef>
@@ -25,7 +18,7 @@
 
 	<!-- ==================== Ammo ========================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="12GaugeBase" ParentName="AmmoBase" Abstract="True">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="12GaugeBeltedBase" ParentName="AmmoBase" Abstract="True">
 		<description>Extremely common shotgun caliber used in almost every application, from hunting over riot control to military firearms.</description>
 		<statBases>
 			<Mass>0.045</Mass>
@@ -41,7 +34,7 @@
 		<stackLimit>5000</stackLimit>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="12GaugeBase">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="12GaugeBeltedBase">
 		<defName>Ammo_12GaugeBelted_TungstenBuck</defName>
 		<label>12 gauge belted (Tungsten Buck)</label>
 		<graphicData>
@@ -56,7 +49,7 @@
 		<cookOffProjectile>Bullet_12Gauge_Buck</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="12GaugeBase">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="12GaugeBeltedBase">
 		<defName>Ammo_12GaugeBelted_Flechette</defName>
 		<label>12 gauge belted (Flechette)</label>
 		<graphicData>
@@ -72,7 +65,7 @@
 		<cookOffProjectile>Bullet_12Gauge_Buck</cookOffProjectile>
 	</ThingDef>
 	
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="12GaugeBase">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="12GaugeBeltedBase">
 		<defName>Ammo_12GaugeBelted_Sabot</defName>
 		<label>12 gauge belted (Sabot)</label>
 		<graphicData>
