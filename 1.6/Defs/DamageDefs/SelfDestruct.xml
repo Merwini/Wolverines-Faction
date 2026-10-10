@@ -3,7 +3,7 @@
 	<DamageDef>
 		<defName>REP_BW_Ferret_BombSelfDestruct</defName>
 		<label>bomb self-destruct</label>
-		<workerClass>rep.heframework.DamageWorker_SelfDestruct</workerClass>
+		<workerClass>rep.factions.blackwave.DamageWorker_SelfDestruct</workerClass>
 		<externalViolence>true</externalViolence>
 		<canInterruptJobs>false</canInterruptJobs>
 		<makesBlood>false</makesBlood>
@@ -16,7 +16,7 @@
 	<DamageDef>
 		<defName>REP_BW_Ferret_IncendiarySelfDestruct</defName>
 		<label>incendiary self-destruct</label>
-		<workerClass>rep.heframework.DamageWorker_SelfDestruct</workerClass>
+		<workerClass>rep.factions.blackwave.DamageWorker_SelfDestruct</workerClass>
 		<externalViolence>true</externalViolence>
 		<canInterruptJobs>false</canInterruptJobs>
 		<makesBlood>false</makesBlood>
@@ -29,7 +29,7 @@
 	<DamageDef>
 		<defName>REP_BW_Polecat_BombSelfDestruct</defName>
 		<label>bomb self-destruct</label>
-		<workerClass>rep.heframework.DamageWorker_SelfDestruct</workerClass>
+		<workerClass>rep.factions.blackwave.DamageWorker_SelfDestruct</workerClass>
 		<externalViolence>true</externalViolence>
 		<canInterruptJobs>false</canInterruptJobs>
 		<makesBlood>false</makesBlood>
