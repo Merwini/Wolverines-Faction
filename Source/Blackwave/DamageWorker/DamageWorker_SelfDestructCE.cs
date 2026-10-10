@@ -16,7 +16,7 @@ namespace rep.factions.blackwave
 		public override DamageResult Apply(DamageInfo dinfo, Thing victim)
 		{
 			DamageResult result = base.Apply(dinfo, victim);
-			Thing kamikaze = dinfo.Instigator;
+			Pawn kamikaze = dinfo.Instigator as Pawn;
 			IntVec3 c = kamikaze.Position;
 			ThingDef projectileDef = dinfo.Def.explosionCellMote;
 
@@ -24,13 +24,17 @@ namespace rep.factions.blackwave
 			GenSpawn.Spawn(projectile, c, kamikaze.Map);
 			projectile.Launch(
 				launcher: kamikaze,
-				origin: new Vector2(c.x, c.y),
+				origin: new Vector2(c.x, c.z),
 				shotAngle: 0,
 				shotRotation: 0,
 				shotSpeed: 1000
 				);
 			projectile.Impact(victim);
-			kamikaze.Kill();
+
+			if (kamikaze != null && kamikaze.Spawned && !kamikaze.Dead)
+			{
+				kamikaze.Kill(dinfo);
+			}
 
 			return result;
 		}

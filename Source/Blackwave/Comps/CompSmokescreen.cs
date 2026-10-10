@@ -105,8 +105,8 @@ namespace rep.factions.blackwave
                 }
 
                 // Calculate position for projectile
-                float x = Mathf.Clamp(parent.Position.x + Props.range * Mathf.Cos(angleToTarget + offsetAngle), 0, parent.Map.Size.x);
-                float z = Mathf.Clamp(parent.Position.z + Props.range * Mathf.Sin(angleToTarget + offsetAngle), 0, parent.Map.Size.z);
+                float x = Mathf.Clamp(parent.Position.x + Props.range * Mathf.Cos(angleToTarget + offsetAngle), 0, parent.Map.Size.x - 1);
+                float z = Mathf.Clamp(parent.Position.z + Props.range * Mathf.Sin(angleToTarget + offsetAngle), 0, parent.Map.Size.z - 1);
                 IntVec3 targetCell = new IntVec3(Mathf.RoundToInt(x), 0, Mathf.RoundToInt(z));
 
                 // Add target cell to array
@@ -140,8 +140,8 @@ namespace rep.factions.blackwave
                     x -= 1;
                 }
 
-                x = Mathf.Clamp(0, x, parent.Map.Size.x);
-                z = Mathf.Clamp(0, z, parent.Map.Size.z);
+                x = Mathf.Clamp(x, 0, parent.Map.Size.x - 1);
+                z = Mathf.Clamp(z, 0, parent.Map.Size.z - 1);
 
                 return new IntVec3(x, 0, z);
             }
