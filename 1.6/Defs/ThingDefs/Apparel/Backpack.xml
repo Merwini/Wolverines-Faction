@@ -121,10 +121,13 @@
 		<tradeTags>
 			<li>Clothing</li>
 		</tradeTags>
-		<li Class="CombatExtended.ApparelDefExtension">
+		<modExtensions>
+			<li Class="CombatExtended.ApparelDefExtension">
 				<isBackpack>true</isBackpack>
 				<isSoftArmor>true</isSoftArmor> <!-- since it's not stuffed, throws "penAmount or armorAmount are zero" error -->
 			</li>
+		</modExtensions>
+		
 	</ThingDef>
 
 </Defs>
