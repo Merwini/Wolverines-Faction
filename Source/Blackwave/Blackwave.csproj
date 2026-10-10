@@ -14,7 +14,7 @@
     <Deterministic>true</Deterministic>
     <RimWorldDir Condition="'$(RimWorldDir)' == ''">$(MSBuildProjectDirectory)/../../../..</RimWorldDir>
     <CombatExtendedDir Condition="'$(CombatExtendedDir)' == ''">$(RimWorldDir)/Mods/CombatExtended</CombatExtendedDir>
-    <OutputPath>$(MSBuildProjectDirectory)/../../Assemblies/</OutputPath>
+    <OutputPath>$(MSBuildProjectDirectory)/../../1.6/Assemblies/</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
