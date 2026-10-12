@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Verse;
 using CombatExtended;
 using UnityEngine;
+using UnityStubs;
 
 namespace rep.factions.blackwave
 {

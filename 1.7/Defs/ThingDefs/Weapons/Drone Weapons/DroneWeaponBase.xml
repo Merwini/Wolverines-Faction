@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BaseGun" Name="REP_BW_DroneWeaponBase" Abstract="True">
+        <techLevel>Industrial</techLevel>
+        <tradeability>None</tradeability>
+        <destroyOnDrop>true</destroyOnDrop>
+        <relicChance>0</relicChance>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+    </ThingDef>
+</Defs>

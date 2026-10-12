@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>REP_BW_FakePlantBlazebulb</defName>
+		<label>Stabilized Blazebulb</label>
+		<description>Genetically engineered plant designed to yield pyrophoric compounds for use in incendiary weapons.\n\nThis variant has been re-engineered for greater temperature stability, at a cost of severely reduced prometheum yield.</description>
+		<statBases>
+			<MaxHitPoints>35</MaxHitPoints>
+			<Beauty>-1</Beauty>
+			<Flammability>1</Flammability>
+			<Nutrition>0.02</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Blazebulb</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible>
+			<foodType>Plant</foodType>
+			<preferability>NeverForNutrition</preferability>
+		</ingestible>
+		<plant>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>Prometheum</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>9</growDays>
+			<immatureGraphicPath>Things/Plant/Blazebulb_Immature</immatureGraphicPath>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+			<fertilityMin>0.2</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<harvestWork>800</harvestWork>
+		</plant>
+	</ThingDef>
+</Defs>

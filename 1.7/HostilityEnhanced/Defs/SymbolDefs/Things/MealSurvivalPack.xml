@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<KCSG.SymbolDef>
+		<defName>REP_BW_MealSurvivalPack_One</defName>
+		<thing>MealSurvivalPack</thing>
+		<maxStackSize>1</maxStackSize>
+	</KCSG.SymbolDef>
+</Defs>

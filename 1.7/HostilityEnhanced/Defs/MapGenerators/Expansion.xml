@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<MapGeneratorDef Name="MustExpansionBase" Abstract="True">
+		<genSteps>
+			<li>ElevationFertility</li>
+		</genSteps>
+	</MapGeneratorDef>
+</Defs>

@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <Configurations>Release</Configurations>
     <Configuration>Release</Configuration>
     <DebugType>none</DebugType>
@@ -14,30 +14,26 @@
     <Deterministic>true</Deterministic>
     <RimWorldDir Condition="'$(RimWorldDir)' == ''">$(MSBuildProjectDirectory)/../../../..</RimWorldDir>
     <CombatExtendedDir Condition="'$(CombatExtendedDir)' == ''">$(RimWorldDir)/Mods/CombatExtended</CombatExtendedDir>
-    <OutputPath>$(MSBuildProjectDirectory)/../../1.6/Assemblies/</OutputPath>
+    <OutputPath>$(MSBuildProjectDirectory)/../../1.7/Assemblies/</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>$(RimWorldDir)/RimWorldWin64_Data/Managed/Assembly-CSharp.dll</HintPath>
+      <HintPath>$(RimWorldDir)/Assembly-CSharp.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="CombatExtended">
       <HintPath>$(CombatExtendedDir)/Assemblies/CombatExtended.dll</HintPath>
       <Private>false</Private>
     </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>$(RimWorldDir)/RimWorldWin64_Data/Managed/UnityEngine.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>$(RimWorldDir)/RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+    <Reference Include="UnityStubs">
+      <HintPath>$(RimWorldDir)/UnityStubs.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>
   <Target Name="ValidateModReferences" BeforeTargets="ResolveReferences">
-    <Error Condition="!Exists('$(RimWorldDir)/RimWorldWin64_Data/Managed/Assembly-CSharp.dll')" Text="RimWorld assemblies not found. Set RimWorldDir to your RimWorld installation using -p:RimWorldDir=... ." />
+    <Error Condition="!Exists('$(RimWorldDir)/Assembly-CSharp.dll')" Text="RimWorld assemblies not found. Set RimWorldDir to your RimWorld installation using -p:RimWorldDir=... ." />
     <Error Condition="!Exists('$(CombatExtendedDir)/Assemblies/CombatExtended.dll')" Text="Combat Extended assembly not found. Set CombatExtendedDir to the folder containing its Assemblies directory using -p:CombatExtendedDir=... ." />
   </Target>
 </Project>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef ParentName="REP_BW_HumanNonComBase" Abstract="True" Name="REP_BW_NonCom_Armorer_Base">
+		<apparelRequired>
+			<li>REP_BW_BattleDress</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="REP_BW_NonCom_Armorer_Base">
+		<defName>REP_BW_NonCom_Armorer_API</defName>
+		<label>armorer</label>
+		<combatPower>25</combatPower>
+		<weaponMoney>150~200</weaponMoney>
+		<weaponTags>
+			<li>CE_Sidearm</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Crafting</skill>
+				<range>2~5</range>
+			</li>
+		</skills>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>2</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>IncendiaryAP</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="REP_BW_NonCom_Armorer_Base">
+		<defName>REP_BW_NonCom_Armorer_Normal</defName>
+		<label>armorer (normal)</label>
+		<combatPower>50</combatPower>
+		<weaponMoney>150~200</weaponMoney>
+		<weaponTags>
+			<li>CE_Sidearm</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Crafting</skill>
+				<range>4~7</range>
+			</li>
+		</skills>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>1</min>
+					<max>2</max>
+				</primaryMagazineCount>
+				<forcedAmmoCategory>FullMetalJacket</forcedAmmoCategory>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+</Defs>

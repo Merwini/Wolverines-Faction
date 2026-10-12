@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/DamageDef[defName="REP_BW_Ferret_BombSelfDestruct" or defName="REP_BW_Ferret_IncendiarySelfDestruct" or defName="REP_BW_Polecat_BombSelfDestruct"]/workerClass</xpath>
+					<value>
+						<workerClass>rep.factions.blackwave.DamageWorker_SelfDestructCE</workerClass>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/DamageDef[defName="REP_BW_Ferret_BombSelfDestruct"]/explosionCellMote</xpath>
+					<value>
+						<explosionCellMote>Bullet_81mmMortarShell_HE</explosionCellMote>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/DamageDef[defName="REP_BW_Ferret_IncendiarySelfDestruct"]/explosionCellMote</xpath>
+					<value>
+						<explosionCellMote>Bullet_81mmMortarShell_Incendiary</explosionCellMote>
+					</value>
+				</li>
+				<!--<li Class="PatchOperationReplace">
+					<xpath>Defs/DamageDef[defName="REP_BW_Polecat_BombSelfDestruct"]/explosionCellMote</xpath>
+					<value>
+						<explosionCellMote>Bullet_81mmMortarShell_HE</explosionCellMote>
+					</value>
+				</li>-->
+			</operations>
+		</match>
+	</Operation>
+</Patch>

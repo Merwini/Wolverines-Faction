@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RulePackDef>
+        <defName>REP_BW_FactionNamer</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[prefix] [suffix]</li>
+                
+                <li>prefix->Steel</li>
+                <li>prefix->Iron</li>
+                <li>prefix->Plasteel</li>
+                <li>prefix->Titanium</li>
+                <li>prefix->Metal</li>
+                <li>prefix->Onyx</li>
+                <li>prefix->Obsidian</li>
+                <li>prefix->Diamond</li>
+                <li>prefix->Silver</li>
+                <li>prefix->Oak</li>
+                <li>prefix->Stone</li>
+
+                <li>suffix->Vipers</li>
+                <li>suffix->Cobras</li>
+                <li>suffix->Cougars</li>
+                <li>suffix->Hounds</li>
+                <li>suffix->Wolves</li>
+                <li>suffix->Hyenas</li>
+                <li>suffix->Jackals</li>
+                <li>suffix->Hawks</li>
+                <li>suffix->Eagles</li>
+                <li>suffix->Tigers</li>
+                <li>suffix->Sharks</li>
+                <li>suffix->Dragons</li>
+                <li>suffix->Razorbacks</li>
+                
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>REP_BW_SettlementNamer</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[prefix] [suffix]</li>
+
+                <li>prefix->Firebase</li>
+                <li>prefix->Command Post</li>
+                <li>prefix->Operations Base</li>
+                <li>prefix->Listening Post</li>
+                <li>prefix->Checkpoint</li>
+                <li>prefix->Supply Depot</li>
+                <li>prefix->Patrol Base</li>
+                <li>prefix->Control Station</li>
+                <li>prefix->Recon Hub</li>
+                <li>prefix->Watchtower</li>
+
+                <li>suffix->Alpha</li>
+                <li>suffix->Bravo</li>
+                <li>suffix->Charlie</li>
+                <li>suffix->Delta</li>
+                <li>suffix->Echo</li>
+                <li>suffix->Foxtrot</li>
+                <li>suffix->Golf</li>
+                <li>suffix->Hotel</li>
+                <li>suffix->India</li>
+                <li>suffix->Juliett</li>
+                <li>suffix->Kilo</li>
+                <li>suffix->Lima</li>
+                <li>suffix->Mike</li>
+                <li>suffix->November</li>
+                <li>suffix->Oscar</li>
+                <li>suffix->Papa</li>
+                <li>suffix->Quebec</li>
+                <li>suffix->Romeo</li>
+                <li>suffix->Sierra</li>
+                <li>suffix->Tango</li>
+                <li>suffix->Uniform</li>
+                <li>suffix->Victor</li>
+                <li>suffix->Whiskey</li>
+                <li>suffix->X-ray</li>
+                <li>suffix->Yankee</li>
+                <li>suffix->Zulu</li>
+                
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+    
+
+    <RulePackDef>
+        <defName>REP_BW_NamerPerson_Male</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=6)->[REP_BW_Names_Male] [REP_BW_Surnames]</li>
+                <li>r_name(p=3)->[REP_BW_Names_Male] '[REP_BW_Nicknames]' [REP_BW_Surnames]</li>
+            </rulesStrings>
+            <rulesRaw>
+                <li Class="Rule_File">
+                    <keyword>REP_BW_Names_Male</keyword>
+                    <path>NameBanks/REP_BW_Names_Male</path>
+                </li>
+                <li Class="Rule_File">
+                    <keyword>REP_BW_Surnames</keyword>
+                    <path>NameBanks/REP_BW_Surnames</path>
+                </li>
+                <li Class="Rule_File">
+                    <keyword>REP_BW_Nicknames</keyword>
+                    <path>NameBanks/REP_BW_Nicknames</path>
+                </li>
+            </rulesRaw>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>REP_BW_NamerPerson_Female</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=3)->[REP_BW_Names_Female] [REP_BW_Surnames]</li>
+                <li>r_name(p=3)->[REP_BW_Names_Female] '[REP_BW_Nicknames]' [REP_BW_Surnames]</li>
+                <li>r_name(p=3)->[REP_BW_Names_Female] [REP_BW_Surnames]</li>
+            </rulesStrings>
+            <rulesRaw>
+                <li Class="Rule_File">
+                    <keyword>REP_BW_Names_Female</keyword>
+                    <path>NameBanks/REP_BW_Names_Female</path>
+                </li>
+                <li Class="Rule_File">
+                    <keyword>REP_BW_Surnames</keyword>
+                    <path>NameBanks/REP_BW_Surnames</path>
+                </li>
+                <li Class="Rule_File">
+                    <keyword>REP_BW_Nicknames</keyword>
+                    <path>NameBanks/REP_BW_Nicknames</path>
+                </li>
+            </rulesRaw>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<!--
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_LMG"]/weaponTags</xpath>
+		<value>
+			<li>REP_BW_LMG</li>
+		</value>
+	</Operation>
+-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="CE_DisposableRocketLauncher"]/weaponTags</xpath>
+		<value>
+			<li>REP_BW_LAW</li>
+			<li>REP_BW_BasicLAW</li>
+		</value>
+	</Operation>
+</Patch>

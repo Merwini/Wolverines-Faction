@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="REP_BW_DroneWeaponBase">
+		<defName>REP_BW_PC_LMG</defName>
+		<label>mounted LMG</label>
+		<description>A drone-mounted light machine gun chambered for .277 cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
+		<graphicData>
+			<texPath>Blackwave/Weapons/TurretLight_MGgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5,1.5</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<Bulk>11.63</Bulk>
+			<Mass>8.7</Mass>
+			<ShotSpread>0.08</ShotSpread>
+			<SwayFactor>0.82</SwayFactor>
+			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+			<SightsEfficiency>1.1</SightsEfficiency>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.47</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>72</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<soundCast>Shot_CE_BattleRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>300</magazineSize>
+				<reloadTime>14.9</reloadTime>
+				<ammoSet>AmmoSet_277Fury</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>SuppressFire</aiAimMode>
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+			</li>
+		</comps>
+		<weaponTags Inherit="False">
+			<li>REP_BW_PC_LMG</li>
+			<li>CE_AI_Suppressive</li>
+			<li>NoSwitch</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="REP_BW_DroneWeaponBase">
+		<defName>REP_BW_PC_AMR</defName>
+		<label>mounted AMR</label>
+		<description>A drone-mounted anti-materiel rifle chambered for .338 Lapua Magnum cartridges. Belt-fed from a sizeable ammo box to eliminate the need to reload mid-fight.</description>
+		<graphicData>
+			<texPath>Blackwave/Weapons/TurretLight_AMRgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5,1.5</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<Bulk>15.48</Bulk>
+			<Mass>17.39</Mass>
+			<ShotSpread>0.02</ShotSpread>
+			<SwayFactor>1.09</SwayFactor>
+			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+			<SightsEfficiency>2.00</SightsEfficiency>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>2.13</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
+				<warmupTime>2.8</warmupTime>
+				<range>135</range>
+				<soundCast>Shot_SniperRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>60</magazineSize>
+				<reloadTime>14.9</reloadTime>
+				<ammoSet>AmmoSet_338Lapua</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+				<noSnapshot>TRUE</noSnapshot>
+			</li>
+		</comps>
+		<weaponTags Inherit="False">
+			<li>REP_BW_PC_AMR</li>
+			<li>NoSwitch</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.25</cooldownTime>
+				<armorPenetrationBlunt>1.730</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="REP_BW_DroneWeaponBase">
+		<defName>REP_BW_PC_Flamer</defName>
+		<label>mounted flamethrower</label>
+		<description>A drone-mounted flamethrower. Sprays a stream of flammable liquid, effective at denying enemies the use of fortified positions.</description>
+		<graphicData>
+			<texPath>Blackwave/Weapons/TurretLight_Flamergun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5,1.5</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>5.0</ShotSpread>
+			<SwayFactor>0.95</SwayFactor>
+			<Bulk>6</Bulk>
+			<Mass>9.5</Mass>
+			<RangedWeapon_Cooldown>0.69</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.35</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Flamethrower_Prometheum</defaultProjectile>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<warmupTime>1.3</warmupTime>
+				<range>20</range>
+				<minRange>3</minRange>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>40</burstShotCount>
+				<soundCast>HissFlamethrower</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>400</magazineSize>
+				<reloadTime>15</reloadTime>
+				<ammoSet>AmmoSet_Flamethrower</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>true</aiUseBurstMode>
+				<aimedBurstShotCount>20</aimedBurstShotCount>
+				<aiAimMode>SuppressFire</aiAimMode>
+			</li>
+		</comps>
+		<weaponTags Inherit="False">
+			<li>REP_BW_PC_Flamer</li>
+			<li>CE_AI_AOE</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.25</cooldownTime>
+				<armorPenetrationBlunt>1.730</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!--ThingDef ParentName="REP_BW_DroneWeaponBase">
+		<defName>REP_BW_PC_AGL</defName>
+		<label>mounted automatic grenade launcher</label>
+		<description>A drone-mounted 30mm automatic grenade launcher. Belt fed from a box of miniature grenades.</description>
+		<graphicData>
+			<texPath>Blackwave/Weapons/UGPolecatTurretMGL</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>3,3</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>5.0</ShotSpread>
+			<SwayFactor>0.95</SwayFactor>
+			<Bulk>6</Bulk>
+			<Mass>9.5</Mass>
+			<RangedWeapon_Cooldown>0.69</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>2.38</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_40x53mmGrenade_HE</defaultProjectile>
+				<warmupTime>1.435</warmupTime>
+				<minRange>3</minRange>
+				<range>62</range>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>AGS</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>30</magazineSize>
+				<reloadTime>15</reloadTime>
+				<ammoSet>AmmoSet_40x53mmGrenade</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+				<noSnapshot>TRUE</noSnapshot>
+			</li>
+		</comps>
+		<weaponTags Inherit="False">
+			<li>REP_BW_PC_AGL</li>
+			<li>CE_AI_AOE</li>
+		</weaponTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.25</cooldownTime>
+				<armorPenetrationBlunt>1.730</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef-->
+</Defs>

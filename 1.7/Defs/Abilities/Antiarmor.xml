@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AbilityDef Name="AntiarmorBase" Abstract="True">
+		<label>fire anti-armor</label>
+		<description>Fires anti-armor ordinance at a target.</description>
+		<writeCombatLog>True</writeCombatLog>
+		<showPsycastEffects>False</showPsycastEffects>
+	</AbilityDef>
+
+	<AbilityDef ParentName="AntiarmorBase">
+		<defName>REP_BW_B_Antiarmor</defName>
+		<cooldownTicksRange>300~300</cooldownTicksRange>
+		<charges>5</charges>
+		<verbProperties Class="CombatExtended.VerbPropertiesCE">
+			<verbClass>CombatExtended.Verb_AbilityShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_M72LAW</defaultProjectile>
+			<warmupTime>0.5</warmupTime>
+			<range>35.9</range>
+			<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+			<burstShotCount>3</burstShotCount>
+			<soundCast>InfernoCannon_Fire</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+			<ai_IsWeapon>false</ai_IsWeapon>
+			<ejectsCasings>false</ejectsCasings>
+		</verbProperties>
+		<statBases>
+			<SwayFactor>0.0</SwayFactor>
+			<ShotSpread>100.0</ShotSpread>
+			<SightsEfficiency>1</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+	</AbilityDef>
+
+</Defs>

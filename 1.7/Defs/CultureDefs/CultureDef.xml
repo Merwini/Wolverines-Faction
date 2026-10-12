@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <CultureDef>
+        <defName>REP_BW_Mercanarism</defName>
+        <label>mercanarism</label>
+        <description>An austere culture shared by many who have chosen a life of war for pay.</description>
+
+        <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">REP_BW_NamerIdeo</ideoNameMaker>
+        <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">REP_BW_LeaderTitleMaker</leaderTitleMaker>
+        <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
+        <allowedPlaceTags>
+            <li>OriginSpacer</li>
+        </allowedPlaceTags>
+
+        <iconPath>World/WorldObjects/Expanding/PirateOutpost</iconPath>
+
+        <styleItemTags>
+            <li>
+                <tag>Urban</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoBeard</tag>
+                <baseWeight>10</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>BeardRural</tag>
+                <baseWeight>0.1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>BeardUrban</tag>
+                <baseWeight>0.2</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>TattooBodyPunk</tag>
+                <baseWeight>0.4</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoTattoo</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+        </styleItemTags>
+    </CultureDef>
+
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>REP_BW_LeaderTitleMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_leaderTitle->field marshal</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>REP_BW_NamerIdeo</defName>
+        <include>
+            <li>GlobalUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_ideoName->[r_memberName] [creed]</li>
+                <li>r_ideoName->[creed] of the [r_memberName]</li>
+
+                <li>r_memberName->mercenary</li>
+                <li>r_memberName->soldier of fortune</li>
+                <li>r_memberName->freelancer</li>
+                <li>r_memberName->hired gun</li>
+
+                <li>r_ideoAdjective(priority=1)->mercenary</li>
+
+                <li>creed->[genericCreed]</li>
+
+                <li>genericCreed->creed</li>
+                <li>genericCreed->doctrine</li>
+                <li>genericCreed->oath</li>
+                <li>genericCreed->discipline</li>
+                <li>genericCreed->contract</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>
